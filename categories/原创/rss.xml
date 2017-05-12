@@ -221,7 +221,7 @@ mount --bind /sys /mnt/new/sys
     <guid>http://www.jiazhoulvke.com/2014/02/08/e697b6e99a94e4b8a4e5b9b4efbc8cmyprojecte7bb88e4ba8ee69bb4e696b0e4ba86/</guid>
     <description>
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/170.html&#34;&gt;2012年6月我写了myproject这个插件&lt;/a&gt;，还只是个半成品，不过凑合着也能用，就这样一直用下去了。每次想完善一下的时候就想着先凑合着用，等有时间再改，就这样居然拖了近两年……这次终于下定决心，利用过年前的空闲时间完全重写了myproject。其实真的写起来一天就搞定了，剩下几天都是测试、修复bug。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/2012/06/28/e68891e79a84e9a1b9e79baee7aea1e79086e68f92e4bbb6myproject/&#34;&gt;2012年6月我写了myproject这个插件&lt;/a&gt;，还只是个半成品，不过凑合着也能用，就这样一直用下去了。每次想完善一下的时候就想着先凑合着用，等有时间再改，就这样居然拖了近两年……这次终于下定决心，利用过年前的空闲时间完全重写了myproject。其实真的写起来一天就搞定了，剩下几天都是测试、修复bug。&lt;/p&gt;
 
 &lt;h2 id=&#34;更新内容&#34;&gt;更新内容&lt;/h2&gt;
 
@@ -1712,7 +1712,7 @@ Vim 在分析文本的时候不对整个文件进行处理，它只分析你要�
     <link>http://www.jiazhoulvke.com/2012/01/06/e585b3e4ba8epathogene5ae89e8a385vbae58c85e79a84e997aee9a298/</link>
     <pubDate>2012-01-06 00:00:00</pubDate> 
     <guid>http://www.jiazhoulvke.com/2012/01/06/e585b3e4ba8epathogene5ae89e8a385vbae58c85e79a84e997aee9a298/</guid>
-    <description>&lt;p&gt;在之前的&lt;a href=&#34;http://jiazhoulvke.com/?p=100&#34;&gt;一篇文章&lt;/a&gt;中我推荐了几款vim比较实用的插件，其中第一款就是pathogen，是的，虽然只有短短两百来行的代码，但就像我给它的评分一样：Life Changing。&lt;/p&gt;
+    <description>&lt;p&gt;在之前的&lt;a href=&#34;http://www.jiazhoulvke.com/2011/07/05/vime68f92e4bbb6e68ea8e88d90/&#34;&gt;一篇文章&lt;/a&gt;中我推荐了几款vim比较实用的插件，其中第一款就是pathogen，是的，虽然只有短短两百来行的代码，但就像我给它的评分一样：Life Changing。&lt;/p&gt;
 
 &lt;p&gt;为了解决文件混乱的问题vim搞出了vba这种格式，想法很好，但实际应用中效果却不能尽如人意。因为并非所有的插件发布者都会把插件打包成vba格式，很多都只是简单的压缩成zip或者tar.gz之类的压缩包，假如插件只有一个vim文件的话连压缩都不用了……&lt;/p&gt;
 
@@ -1991,7 +1991,7 @@ all:
 // Version  1.0
 // Author   jiazhoulvke
 // email    jiazhoulvke@gmail.com
-// blog     http://jiazhoulvke
+// blog     http://jiazhoulvke.com
 // ----------------------------------------
 // ==UserScript==
 // @name          open in current tab

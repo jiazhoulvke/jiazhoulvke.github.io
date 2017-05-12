@@ -32,13 +32,13 @@
 
     
     <meta name="description" content="今天逛谷歌众包论坛时看到有人有这个需求：“如何强制在当前页打开链接？”，之前从来没有为chrome写过扩展或者脚本，这次google了一下油猴脚本的写法，写了个简单的小玩意。
-// ---------------------------------------- // Name open in current tab // Version 1.0 // Author jiazhoulvke // email jiazhoulvke@gmail.com // blog http://jiazhoulvke // ---------------------------------------- // ==UserScript== // @name open in current tab // @namespace [http://jiazhoulvke.com/](http://jiazhoulvke.com/) // @version 1.0 // @description 强制在当前窗口打开链接 // @include * // @exclude http://chrome.google.com/* // ==/UserScript== var linkArray=document.getElementsByTagName(&quot;A&quot;); for (i=0;i&lt;linkArray.length;i&#43;&#43;) { if (linkArray[i].target!=&quot;&quot;) { linkArray[i].target=&quot;_self&quot;; } }  上传到了userscripts:http://userscripts.org/scripts/show/97166
+// ---------------------------------------- // Name open in current tab // Version 1.0 // Author jiazhoulvke // email jiazhoulvke@gmail.com // blog http://jiazhoulvke.com // ---------------------------------------- // ==UserScript== // @name open in current tab // @namespace [http://jiazhoulvke.com/](http://jiazhoulvke.com/) // @version 1.0 // @description 强制在当前窗口打开链接 // @include * // @exclude http://chrome.google.com/* // ==/UserScript== var linkArray=document.getElementsByTagName(&quot;A&quot;); for (i=0;i&lt;linkArray.length;i&#43;&#43;) { if (linkArray[i].target!=&quot;&quot;) { linkArray[i].target=&quot;_self&quot;; } }  上传到了userscripts:http://userscripts.org/scripts/show/97166
 update:
 由于没有考虑到有人在网页的头部添加
 &lt;base target=&quot;_blank&quot;&gt;  所以之前的版本对于某些网站网站无效(比如网易)，于是重新写了一个。
 // ---------------------------------------- // Name open in current tab // Version 1.">
     <meta property="og:description" content="今天逛谷歌众包论坛时看到有人有这个需求：“如何强制在当前页打开链接？”，之前从来没有为chrome写过扩展或者脚本，这次google了一下油猴脚本的写法，写了个简单的小玩意。
-// ---------------------------------------- // Name open in current tab // Version 1.0 // Author jiazhoulvke // email jiazhoulvke@gmail.com // blog http://jiazhoulvke // ---------------------------------------- // ==UserScript== // @name open in current tab // @namespace [http://jiazhoulvke.com/](http://jiazhoulvke.com/) // @version 1.0 // @description 强制在当前窗口打开链接 // @include * // @exclude http://chrome.google.com/* // ==/UserScript== var linkArray=document.getElementsByTagName(&quot;A&quot;); for (i=0;i&lt;linkArray.length;i&#43;&#43;) { if (linkArray[i].target!=&quot;&quot;) { linkArray[i].target=&quot;_self&quot;; } }  上传到了userscripts:http://userscripts.org/scripts/show/97166
+// ---------------------------------------- // Name open in current tab // Version 1.0 // Author jiazhoulvke // email jiazhoulvke@gmail.com // blog http://jiazhoulvke.com // ---------------------------------------- // ==UserScript== // @name open in current tab // @namespace [http://jiazhoulvke.com/](http://jiazhoulvke.com/) // @version 1.0 // @description 强制在当前窗口打开链接 // @include * // @exclude http://chrome.google.com/* // ==/UserScript== var linkArray=document.getElementsByTagName(&quot;A&quot;); for (i=0;i&lt;linkArray.length;i&#43;&#43;) { if (linkArray[i].target!=&quot;&quot;) { linkArray[i].target=&quot;_self&quot;; } }  上传到了userscripts:http://userscripts.org/scripts/show/97166
 update:
 由于没有考虑到有人在网页的头部添加
 &lt;base target=&quot;_blank&quot;&gt;  所以之前的版本对于某些网站网站无效(比如网易)，于是重新写了一个。
@@ -240,7 +240,7 @@ update:
 // Version  1.0
 // Author   jiazhoulvke
 // email    jiazhoulvke@gmail.com
-// blog     http://jiazhoulvke
+// blog     http://jiazhoulvke.com
 // ----------------------------------------
 // ==UserScript==
 // @name          open in current tab
