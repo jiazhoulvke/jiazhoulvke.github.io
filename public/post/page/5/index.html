@@ -1,0 +1,1035 @@
+
+
+
+  
+
+
+
+
+  
+
+
+  
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Hugo 0.21-DEV">
+    <meta name="theme" content="Tranquilpeak 0.3.1-BETA">
+    <title>Posts</title>
+    <meta name="author" content="jiazhoulvke">
+    <meta name="keywords" content=", development, coder, golang, vim, linux, google fans">
+
+    <link rel="icon" href="http://www.jiazhoulvke.com/favicon.png">
+    
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.jiazhoulvke.com/post/rss.xml">
+    
+
+    
+    <meta name="description" content="jiazhoulvke&#39;s Blog,golang,vim,linux">
+    <meta property="og:description" content="jiazhoulvke&#39;s Blog,golang,vim,linux">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Posts">
+    <meta property="og:url" content="/post/">
+    <meta property="og:site_name" content="jiazhoulvke&#39;s Blog">
+
+    
+      <meta property="og:image" content="//www.gravatar.com/avatar/e7ef4511b5541c1345ba330dadf8234a?s=640">
+    
+
+    
+    
+    
+
+    
+
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" />
+    
+    
+    <link rel="stylesheet" href="http://www.jiazhoulvke.com/css/style-u6mk0ojoywresbx8iepslrmmhl4stuhrsxuwhkpwrkrx7mryjcaimasnk4pi.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="1">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="http://www.jiazhoulvke.com/">jiazhoulvke&#39;s Blog</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="http://www.jiazhoulvke.com/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="//www.gravatar.com/avatar/e7ef4511b5541c1345ba330dadf8234a?s=90" alt="作者的图片" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="1">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="http://www.jiazhoulvke.com/#about">
+          <img class="sidebar-profile-picture" src="//www.gravatar.com/avatar/e7ef4511b5541c1345ba330dadf8234a?s=110" alt="作者的图片" />
+        </a>
+        <h4 class="sidebar-profile-name">jiazhoulvke</h4>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://www.jiazhoulvke.com/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">分类</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://www.jiazhoulvke.com/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">标签</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://www.jiazhoulvke.com/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">归档</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://www.jiazhoulvke.com/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">关于</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://www.jiazhoulvke.com/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">首页</span>
+    </a>
+  </li>
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/jiazhoulvke" target="_blank">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://www.jiazhoulvke.com/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="1"
+        class="
+               hasCoverMetaIn
+               ">
+        <section class="postShorten-group main-content-wrap">
+          
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+        <a class="link-unstyled" href="http://www.jiazhoulvke.com/2011/05/11/vime794a8e79a84e59bbee78987e783ade782b9e993bee68ea5e7949fe68890e5b7a5e585b7/">
+          vim用的图片热点链接生成工具
+        </a>
+      </h1>
+      <div class="postShorten-meta post-meta">
+  
+    <time itemprop="datePublished" datetime="2011-05-11T00:00:00Z">
+      
+  
+  
+  
+  
+    2011-05-11 00:00:00
+  
+
+    </time>
+  
+  
+  
+  
+    <span>发布在</span>
+    
+      <a class="category-link" href="http://www.jiazhoulvke.com/categories/%e5%8e%9f%e5%88%9b">原创</a>
+    
+  
+
+
+</div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      <p>
+        上次的vim调色板给我很大的启发，利用这种调用图形程序的方式，完全可以将很多原本不能或者很难实现的功能轻易实现，比如这次我需要做一个图片的热点链接（就是在一张图片上划分出N块区域，每块区域都能使用不同的链接），当然不可能还在vim里手工写坐标，那也太逆天了，所以只好无奈的打开N年没用过Dreamweaver，这让我心有不甘，太不装B了！而且Dreamweaver的启动速度也慢得让人蛋疼。这就是我写这个小程序的原因。
+本来是想用gtk开发，无奈目前gtk还刚刚入门呢，所以先用我相对比较拿手的C#来开发（开发工具是vs2008 express），等以后再写个gtk版的。
+c#的代码比较分散，就不贴上来了，程序和源文件我都打包传到了我的googlecode上。直接下载链接：<a href="http://jiazhoulvke.googlecode.com/files/ImageMap%20for%20vim.7z">http://jiazhoulvke.googlecode.com/files/ImageMap%20for%20vim.7z</a>
+下载，解压，复制imagemap.vim到vim的plugin文件夹中，复制imagemap.exe到gvim.exe所在的目录（或者复制到windows系统文件夹下，如c:\windows）,确保已经安装了蛋疼的.net framework（程序用的版本是2.0），在一个空行里输入一个图片名称，必须是有效的，然后在插入模式下按Alt+M(要改快捷键可以到imagemap.vim中改最后一行的代码)，只要图片路径正确，会弹出一个窗口，直接用鼠标拖选一块区域，然后输入链接的属性，就成功添加了一个热点，添加了所有的热点后直接点关闭按钮，生成的代码就出现在vim里了。
+下面是截图:
+        <br>
+        <a href="http://www.jiazhoulvke.com/2011/05/11/vime794a8e79a84e59bbee78987e783ade782b9e993bee68ea5e7949fe68890e5b7a5e585b7/" class="postShorten-excerpt_link link">阅读全文</a>
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+        <a class="link-unstyled" href="http://www.jiazhoulvke.com/2011/04/09/vime9878ce79a84e8b083e889b2e69dbf/">
+          vim里的调色板
+        </a>
+      </h1>
+      <div class="postShorten-meta post-meta">
+  
+    <time itemprop="datePublished" datetime="2011-04-09T00:00:00Z">
+      
+  
+  
+  
+  
+    2011-04-09 00:00:00
+  
+
+    </time>
+  
+  
+  
+  
+    <span>发布在</span>
+    
+      <a class="category-link" href="http://www.jiazhoulvke.com/categories/%e5%8e%9f%e5%88%9b">原创</a>
+    
+  
+
+
+</div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      <p>
+        今天无意中看到了一篇文章《colorpicker: 给 Vim 加一个调色板！》，才知道原来vim里也能调用调色板，唉，火星了。
+colorpicker需要一段vim代码和一个gtk程序的配合，作者给出了gtk程序的代码，但没有windows下的可执行程序，正好我前不久刚刚搭建了一个windows下的gtk开发环境，于是就派上用场啦。写了一个makefile，一次性编译通过，嘿嘿！
+文件下载地址: googlecode:<a href="http://jiazhoulvke.googlecode.com/files/colorpicker_for_vim.7z">http://jiazhoulvke.googlecode.com/files/colorpicker_for_vim.7z</a>
+压缩包下载下来后，解压，将plugin文件夹里的colorpicker.vim复制到vim里的相应目录中，再把colorpicker文件夹中的colorpicker.exe复制到系统目录中，比如c:\windows。不过我比较喜欢把程序放到vim的安装目录里面，比如c:\program files\vim\vim73，vim一样可以访问到，而且更加绿色环保。
+现在一切搞定了，打开vim，按Alt+C，就会弹出一个调色板了，hoho～～</p>
+
+<p>update:回去看了一下依云同学（colorpicker作者）博客的更新，才想起用windows的人基本都没装过gtk运行库的，失策啊，没这玩意是用不了colorpicker，赶紧的，去下载个gtk运行库吧！<a href="http://gtk-win.sourceforge.net">http://gtk-win.sourceforge.net</a>
+        <br>
+        <a href="http://www.jiazhoulvke.com/2011/04/09/vime9878ce79a84e8b083e889b2e69dbf/" class="postShorten-excerpt_link link">阅读全文</a>
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+        <a class="link-unstyled" href="http://www.jiazhoulvke.com/2011/03/30/windowse4b88be9858de7bdaegtke5bc80e58f91e78eafe5a283e590abvime9858de7bdae/">
+          windows下配置gtk开发环境(含vim配置)
+        </a>
+      </h1>
+      <div class="postShorten-meta post-meta">
+  
+    <time itemprop="datePublished" datetime="2011-03-30T00:00:00Z">
+      
+  
+  
+  
+  
+    2011-03-30 00:00:00
+  
+
+    </time>
+  
+  
+  
+  
+    <span>发布在</span>
+    
+      <a class="category-link" href="http://www.jiazhoulvke.com/categories/%e5%8e%9f%e5%88%9b">原创</a>
+    
+  
+
+
+</div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      <p>
+        突然又有了自学C的冲动，决定把遗忘已久的C重新学一遍，不过这次不准备再停留在写些控制台程序的程度，要写一些图形界面的东西了。对我来说，写gui程序当然首选gtk，跨平台，写个程序稍微改一下基本就能在windows和linux下运行了。
+学gtk，用linux是最方便的，可惜由于目前条件所限，已经很久没用心爱的ubuntu了，只好先在windows下将就下了。
+Google了一下，发现在windows下想要搭建个gtk的开发环境还真是够复杂的，神马gcc、make、gtk运行库都得自己一个个下载来然后安装配置，而在ubuntu下，一句apt-get命令足矣～
+看过好几篇文章，发现这篇文章(<a href="http://justforfun.blog.techweb.com.cn/archives/58.html)里的做法相对来说要简单一些，只需要下载一个dev-cpp和一个gtk">http://justforfun.blog.techweb.com.cn/archives/58.html)里的做法相对来说要简单一些，只需要下载一个dev-cpp和一个gtk</a> for windows的开发包即可。我在很久之前自学C时用的就是dev-cpp，它确实是个很不错的开发工具，非常小巧，只有几M，很适合用来学习，而微软的VS…，几G的体积确实够吓人的，对于初学者来说也完全没必要装这么大个玩意。呃，扯远了，回正题。
+按照上面的那篇文章，很快就搭建好了一个gtk开发环境，本来到这一步就可以结束了，但谁叫我是个蛋疼的vim控呢？接下来就配置一下，让vim也能轻松的开发gtk程序。
+先修改一下环境变量，把dev-cpp安装目录下的bin目录添加到path环境变量中，比如我的dev-cpp装在c盘根目录，目录的地址是“C:\Dev-Cpp\bin”，这样不需要写完整路径就能在命令行下访问bin目录下的make、gcc程序了。
+用vim的基本上都会用taglist这个插件的吧？用taglist的话，基本上都已经装了ctags了（没有的话google下），先在控制台里运行这句命令:
+ctags -R &ndash;c++-kinds=+p &ndash;fields=+iaS &ndash;extra=+q C:\dev-cpp\include  将生成的tags文件改名为c.tags，再运行这句命令:
+ctags -R &ndash;c++-kinds=+p &ndash;fields=+iaS &ndash;extra=+q C:\gtk\include  将生成的tags改名为gtk.tags。然后在vim的安装目录的vim7x(用vim7.2的话x就是2，用vim7.3的话x就是3)目录下新建一个文件夹，名字叫做tagfiles,将之前生成的两个tags文件都复制到这个文件夹下，然后打开_vimrc配置文件，加入以下代码:
+autocmd! BufRead *.c set tags+=$VIMRUNTIME/tagfiles/c.tags,$VIMRUNTIME/tagfiles/gtk.tags  这样编辑c语言文件的时候就可以补全函数了。
+接下来写一个简单的gtk文件测试一下。
+将以下内容保存为test.c：
+#include &lt;gtk/gtk.h&gt; int main(int argc, char *argv[]) { GtkWidget *window; gtk_init(&amp;argc, &amp;argv); window = gtk_window_new(GTK_WINDOW_TOPLEVEL); gtk_window_set_title(GTK_WINDOW(window), “Hello World”); gtk_widget_show(window); gtk_main(); return 0 ; }  再写个makefile:
+gtk_include=-IC:/GTK/INCLUDE/LIBXML2 -IC:/GTK/INCLUDE/LIBGLADE-2.0 -IC:/GTK/LIB/GTKGLEXT-1.0/INCLUDE -IC:/GTK/LIB/GLIB-2.0/INCLUDE -IC:/GTK/LIB/GTK-2.0/INCLUDE -IC:/GTK/INCLUDE/GTKGLEXT-1.0 -IC:/GTK/INCLUDE/ATK-1.0 -IC:/GTK/INCLUDE/CAIRO -IC:/GTK/INCLUDE/PANGO-1.0 -IC:/GTK/INCLUDE/GLIB-2.0 -IC:/GTK/INCLUDE/GTK-2.
+        <br>
+        <a href="http://www.jiazhoulvke.com/2011/03/30/windowse4b88be9858de7bdaegtke5bc80e58f91e78eafe5a283e590abvime9858de7bdae/" class="postShorten-excerpt_link link">阅读全文</a>
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+        <a class="link-unstyled" href="http://www.jiazhoulvke.com/2011/03/01/e8aea9windowse4b88be79a84vime694afe68c81vimpress/">
+          让windows下的vim支持vimpress
+        </a>
+      </h1>
+      <div class="postShorten-meta post-meta">
+  
+    <time itemprop="datePublished" datetime="2011-03-01T00:00:00Z">
+      
+  
+  
+  
+  
+    2011-03-01 00:00:00
+  
+
+    </time>
+  
+  
+  
+  
+    <span>发布在</span>
+    
+      <a class="category-link" href="http://www.jiazhoulvke.com/categories/%e5%8e%9f%e5%88%9b">原创</a>
+    
+  
+
+
+</div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      <p>
+        由于wordpress总会很“贴心”的删掉我贴的代码里的空格(还好我贴的是vimscript和javascript，不讲究缩进，如果贴的是python，那不是要抓狂了么？)，所以我一直在找一个比较好用又不会自作聪明的离线编辑器。
+微软的客户端蛋疼的不支持Windows2003，其他的一些离线编辑器感觉也不怎么好用，最终还是选择了vimrepress，依赖python。我用的vim版本是7.2，默认支持的python版本是2.4，有点太低了，所以，还是得重新编译一个vim，让它支持更新版本的python。由于网上已经有人编译了支持python2.5和2.6的vim，所以不需要我们再去编译了，网址:<a href="http://www.gooli.org/blog/gvim-72-with-python-2526-support-windows-binaries/。里面有两个压缩包，一个是支持python2.5,一个是支持2.6，除非有特殊要求，否则一般来说当然是新的更好，所以我下载了gvim72python26.zip这个文件。">http://www.gooli.org/blog/gvim-72-with-python-2526-support-windows-binaries/。里面有两个压缩包，一个是支持python2.5,一个是支持2.6，除非有特殊要求，否则一般来说当然是新的更好，所以我下载了gvim72python26.zip这个文件。</a>
+下载后解压会得到两个文件：gvim.exe和vim.exe，用这两个文件覆盖vim安装目录下的同名文件即可。
+然后从python的官方网站上下载python2.6并安装，并把python的安装路径添加到系统环境变量里面，一切大功告成！
+顺便说句，这篇文章就是在vimrepress里写的，嘿嘿！
+        <br>
+        <a href="http://www.jiazhoulvke.com/2011/03/01/e8aea9windowse4b88be79a84vime694afe68c81vimpress/" class="postShorten-excerpt_link link">阅读全文</a>
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+        <a class="link-unstyled" href="http://www.jiazhoulvke.com/2011/02/17/e4b880e4b8aae5bcbae588b6e59ca8e5bd93e5898de6a087e7adbee68993e5bc80e993bee68ea5e79a84e6b2b9e78cb4e8849ae69cac/">
+          一个强制在当前标签打开链接的油猴脚本
+        </a>
+      </h1>
+      <div class="postShorten-meta post-meta">
+  
+    <time itemprop="datePublished" datetime="2011-02-17T00:00:00Z">
+      
+  
+  
+  
+  
+    2011-02-17 00:00:00
+  
+
+    </time>
+  
+  
+  
+  
+    <span>发布在</span>
+    
+      <a class="category-link" href="http://www.jiazhoulvke.com/categories/%e5%8e%9f%e5%88%9b">原创</a>
+    
+  
+
+
+</div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      <p>
+        今天逛谷歌众包论坛时看到有人有这个需求：“如何强制在当前页打开链接？”，之前从来没有为chrome写过扩展或者脚本，这次google了一下油猴脚本的写法，写了个简单的小玩意。
+// &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;- // Name open in current tab // Version 1.0 // Author jiazhoulvke // email jiazhoulvke@gmail.com // blog <a href="http://jiazhoulvke">http://jiazhoulvke</a> // &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;- // ==UserScript== // @name open in current tab // @namespace <a href="http://jiazhoulvke.com/">http://jiazhoulvke.com/</a> // @version 1.0 // @description 强制在当前窗口打开链接 // @include * // @exclude <a href="http://chrome.google.com/*">http://chrome.google.com/*</a> // ==/UserScript== var linkArray=document.getElementsByTagName(&quot;A&quot;); for (i=0;i&lt;linkArray.length;i++) { if (linkArray[i].target!=&quot;&quot;) { linkArray[i].target=&quot;_self&quot;; } }  上传到了userscripts:<a href="http://userscripts.org/scripts/show/97166">http://userscripts.org/scripts/show/97166</a>
+update:
+由于没有考虑到有人在网页的头部添加
+&lt;base target=&quot;_blank&quot;&gt;  所以之前的版本对于某些网站网站无效(比如网易)，于是重新写了一个。
+// &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;- // Name open in current tab // Version 1.
+        <br>
+        <a href="http://www.jiazhoulvke.com/2011/02/17/e4b880e4b8aae5bcbae588b6e59ca8e5bd93e5898de6a087e7adbee68993e5bc80e993bee68ea5e79a84e6b2b9e78cb4e8849ae69cac/" class="postShorten-excerpt_link link">阅读全文</a>
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+        <a class="link-unstyled" href="http://www.jiazhoulvke.com/2011/02/15/vime9878ce5afb9e69687e69cace8bf9be8a18ce7ae80e7b981e8bdace68da2/">
+          vim里对文本进行简繁转换
+        </a>
+      </h1>
+      <div class="postShorten-meta post-meta">
+  
+    <time itemprop="datePublished" datetime="2011-02-15T00:00:00Z">
+      
+  
+  
+  
+  
+    2011-02-15 00:00:00
+  
+
+    </time>
+  
+  
+  
+  
+    <span>发布在</span>
+    
+      <a class="category-link" href="http://www.jiazhoulvke.com/categories/%e5%8e%9f%e5%88%9b">原创</a>
+    
+  
+
+
+</div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      <p>
+        最近做的一个项目里需要把原本全部是简体中文的文件转换为繁体中文。vim是没有这个功能的，记得有个编辑器是有这个功能，忘了是Notepad++还是UtrlEdit什么的了。咱也不羡慕，vim script能做得更好！
+google了一下，没发现有谁写过类似的vim插件，无奈只好自己搞定。身为vim菜鸟，第一件事就是去看帮助文档，结果发现了牛B的tr()函数，几句代码就解决问题。
+function! G2B() let jianti=&quot;皑蔼碍爱翱袄奥坝罢摆败颁办绊帮绑镑谤剥饱宝报鲍辈贝钡狈备惫绷笔毕毙闭边编贬变辩辫鳖瘪濒滨宾摈饼拨钵铂驳卜补参蚕残惭惨灿苍舱仓沧厕侧册测层诧搀掺蝉馋谗缠铲产阐颤场尝长偿肠厂畅钞车彻尘陈衬撑称惩诚骋痴迟驰耻齿炽冲虫宠畴踌筹绸丑橱厨锄雏础储触处传疮闯创锤纯绰辞词赐聪葱囱从丛凑窜错达带贷担单郸掸胆惮诞弹当挡党荡档捣岛祷导盗灯邓敌涤递缔点垫电淀钓调迭谍叠钉顶锭订东动栋冻斗犊独读赌镀锻断缎兑队对吨顿钝夺鹅额讹恶饿儿尔饵贰发罚阀珐矾钒烦范贩饭访纺飞废费纷坟奋愤粪丰枫锋风疯冯缝讽凤肤辐抚辅赋复负讣妇缚该钙盖干赶秆赣冈刚钢纲岗皋镐搁鸽阁铬个给龚宫巩贡钩沟构购够蛊顾剐关观馆惯贯广规硅归龟闺轨诡柜贵刽辊滚锅国过骇韩汉阂鹤贺横轰鸿红后壶护沪户哗华画划话怀坏欢环还缓换唤痪焕涣黄谎挥辉毁贿秽会烩汇讳诲绘荤浑伙获货祸击机积饥讥鸡绩缉极辑级挤几蓟剂济计记际继纪夹荚颊贾钾价驾歼监坚笺间艰缄茧检碱硷拣捡简俭减荐槛鉴践贱见键舰剑饯渐溅涧浆蒋桨奖讲酱胶浇骄娇搅铰矫侥脚饺缴绞轿较秸阶节茎惊经颈静镜径痉竞净纠厩旧驹举据锯惧剧鹃绢杰洁结诫届紧锦仅谨进晋烬尽劲荆觉决诀绝钧军骏开凯颗壳课垦恳抠库裤夸块侩宽矿旷况亏岿窥馈溃扩阔蜡腊莱来赖蓝栏拦篮阑兰澜谰揽览懒缆烂滥捞劳涝乐镭垒类泪篱离里鲤礼丽厉励砾历沥隶俩联莲连镰怜涟帘敛脸链恋炼练粮凉两辆谅疗辽镣猎临邻鳞凛赁龄铃凌灵岭领馏刘龙聋咙笼垄拢陇楼娄搂篓芦卢颅庐炉掳卤虏鲁赂禄录陆驴吕铝侣屡缕虑滤绿峦挛孪滦乱抡轮伦仑沦纶论萝罗逻锣箩骡骆络妈玛码蚂马骂吗买麦卖迈脉瞒馒蛮满谩猫锚铆贸么霉没镁门闷们锰梦谜弥觅绵缅庙灭悯闽鸣铭谬谋亩钠纳难挠脑恼闹馁腻撵捻酿鸟聂啮镊镍柠狞宁拧泞钮纽脓浓农疟诺欧鸥殴呕沤盘庞国爱赔喷鹏骗飘频贫苹凭评泼颇扑铺朴谱脐齐骑岂启气弃讫牵扦钎铅迁签谦钱钳潜浅谴堑枪呛墙蔷强抢锹桥乔侨翘窍窃钦亲轻氢倾顷请庆琼穷趋区躯驱龋颧权劝却鹊让饶扰绕热韧认纫荣绒软锐闰润洒萨鳃赛伞丧骚扫涩杀纱筛晒闪陕赡缮伤赏烧绍赊摄慑设绅审婶肾渗声绳胜圣师狮湿诗尸时蚀实识驶势释饰视试寿兽枢输书赎属术树竖数帅双谁税顺说硕烁丝饲耸怂颂讼诵擞苏诉肃虽绥岁孙损笋缩琐锁獭挞抬摊贪瘫滩坛谭谈叹汤烫涛绦腾誊锑题体屉条贴铁厅听烃铜统头图涂团颓蜕脱鸵驮驼椭洼袜弯湾顽万网韦违围为潍维苇伟伪纬谓卫温闻纹稳问瓮挝蜗涡窝呜钨乌诬无芜吴坞雾务误锡牺袭习铣戏细虾辖峡侠狭厦锨鲜纤咸贤衔闲显险现献县馅羡宪线厢镶乡详响项萧销晓啸蝎协挟携胁谐写泻谢锌衅兴汹锈绣虚嘘须许绪续轩悬选癣绚学勋询寻驯训讯逊压鸦鸭哑亚讶阉烟盐严颜阎艳厌砚彦谚验鸯杨扬疡阳痒养样瑶摇尧遥窑谣药爷页业叶医铱颐遗仪彝蚁艺亿忆义诣议谊译异绎荫阴银饮樱婴鹰应缨莹萤营荧蝇颖哟拥佣痈踊咏涌优忧邮铀犹游诱舆鱼渔娱与屿语吁御狱誉预驭鸳渊辕园员圆缘远愿约跃钥岳粤悦阅云郧匀陨运蕴酝晕韵杂灾载攒暂赞赃脏凿枣灶责择则泽贼赠扎札轧铡闸诈斋债毡盏斩辗崭栈战绽张涨帐账胀赵蛰辙锗这贞针侦诊镇阵挣睁狰帧郑证织职执纸挚掷帜质钟终种肿众诌轴皱昼骤猪诸诛烛瞩嘱贮铸筑驻专砖转赚桩庄装妆壮状锥赘坠缀谆浊兹资渍踪综总纵邹诅组钻致钟么为只凶准启板里雳余链泄&quot; let fanti=&quot;皚藹礙愛翺襖奧壩罷擺敗頒辦絆幫綁鎊謗剝飽寶報鮑輩貝鋇狽備憊繃筆畢斃閉邊編貶變辯辮鼈癟瀕濱賓擯餅撥缽鉑駁蔔補參蠶殘慚慘燦蒼艙倉滄廁側冊測層詫攙摻蟬饞讒纏鏟産闡顫場嘗長償腸廠暢鈔車徹塵陳襯撐稱懲誠騁癡遲馳恥齒熾沖蟲寵疇躊籌綢醜櫥廚鋤雛礎儲觸處傳瘡闖創錘純綽辭詞賜聰蔥囪從叢湊竄錯達帶貸擔單鄲撣膽憚誕彈當擋黨蕩檔搗島禱導盜燈鄧敵滌遞締點墊電澱釣調叠諜疊釘頂錠訂東動棟凍鬥犢獨讀賭鍍鍛斷緞兌隊對噸頓鈍奪鵝額訛惡餓兒爾餌貳發罰閥琺礬釩煩範販飯訪紡飛廢費紛墳奮憤糞豐楓鋒風瘋馮縫諷鳳膚輻撫輔賦複負訃婦縛該鈣蓋幹趕稈贛岡剛鋼綱崗臯鎬擱鴿閣鉻個給龔宮鞏貢鈎溝構購夠蠱顧剮關觀館慣貫廣規矽歸龜閨軌詭櫃貴劊輥滾鍋國過駭韓漢閡鶴賀橫轟鴻紅後壺護滬戶嘩華畫劃話懷壞歡環還緩換喚瘓煥渙黃謊揮輝毀賄穢會燴彙諱誨繪葷渾夥獲貨禍擊機積饑譏雞績緝極輯級擠幾薊劑濟計記際繼紀夾莢頰賈鉀價駕殲監堅箋間艱緘繭檢堿鹼揀撿簡儉減薦檻鑒踐賤見鍵艦劍餞漸濺澗漿蔣槳獎講醬膠澆驕嬌攪鉸矯僥腳餃繳絞轎較稭階節莖驚經頸靜鏡徑痙競淨糾廄舊駒舉據鋸懼劇鵑絹傑潔結誡屆緊錦僅謹進晉燼盡勁荊覺決訣絕鈞軍駿開凱顆殼課墾懇摳庫褲誇塊儈寬礦曠況虧巋窺饋潰擴闊蠟臘萊來賴藍欄攔籃闌蘭瀾讕攬覽懶纜爛濫撈勞澇樂鐳壘類淚籬離裏鯉禮麗厲勵礫曆瀝隸倆聯蓮連鐮憐漣簾斂臉鏈戀煉練糧涼兩輛諒療遼鐐獵臨鄰鱗凜賃齡鈴淩靈嶺領餾劉龍聾嚨籠壟攏隴樓婁摟簍蘆盧顱廬爐擄鹵虜魯賂祿錄陸驢呂鋁侶屢縷慮濾綠巒攣孿灤亂掄輪倫侖淪綸論蘿羅邏鑼籮騾駱絡媽瑪碼螞馬罵嗎買麥賣邁脈瞞饅蠻滿謾貓錨鉚貿麽黴沒鎂門悶們錳夢謎彌覓綿緬廟滅憫閩鳴銘謬謀畝鈉納難撓腦惱鬧餒膩攆撚釀鳥聶齧鑷鎳檸獰甯擰濘鈕紐膿濃農瘧諾歐鷗毆嘔漚盤龐國愛賠噴鵬騙飄頻貧蘋憑評潑頗撲鋪樸譜臍齊騎豈啓氣棄訖牽扡釺鉛遷簽謙錢鉗潛淺譴塹槍嗆牆薔強搶鍬橋喬僑翹竅竊欽親輕氫傾頃請慶瓊窮趨區軀驅齲顴權勸卻鵲讓饒擾繞熱韌認紉榮絨軟銳閏潤灑薩鰓賽傘喪騷掃澀殺紗篩曬閃陝贍繕傷賞燒紹賒攝懾設紳審嬸腎滲聲繩勝聖師獅濕詩屍時蝕實識駛勢釋飾視試壽獸樞輸書贖屬術樹豎數帥雙誰稅順說碩爍絲飼聳慫頌訟誦擻蘇訴肅雖綏歲孫損筍縮瑣鎖獺撻擡攤貪癱灘壇譚談歎湯燙濤縧騰謄銻題體屜條貼鐵廳聽烴銅統頭圖塗團頹蛻脫鴕馱駝橢窪襪彎灣頑萬網韋違圍爲濰維葦偉僞緯謂衛溫聞紋穩問甕撾蝸渦窩嗚鎢烏誣無蕪吳塢霧務誤錫犧襲習銑戲細蝦轄峽俠狹廈鍁鮮纖鹹賢銜閑顯險現獻縣餡羨憲線廂鑲鄉詳響項蕭銷曉嘯蠍協挾攜脅諧寫瀉謝鋅釁興洶鏽繡虛噓須許緒續軒懸選癬絢學勳詢尋馴訓訊遜壓鴉鴨啞亞訝閹煙鹽嚴顔閻豔厭硯彥諺驗鴦楊揚瘍陽癢養樣瑤搖堯遙窯謠藥爺頁業葉醫銥頤遺儀彜蟻藝億憶義詣議誼譯異繹蔭陰銀飲櫻嬰鷹應纓瑩螢營熒蠅穎喲擁傭癰踴詠湧優憂郵鈾猶遊誘輿魚漁娛與嶼語籲禦獄譽預馭鴛淵轅園員圓緣遠願約躍鑰嶽粵悅閱雲鄖勻隕運蘊醞暈韻雜災載攢暫贊贓髒鑿棗竈責擇則澤賊贈紮劄軋鍘閘詐齋債氈盞斬輾嶄棧戰綻張漲帳賬脹趙蟄轍鍺這貞針偵診鎮陣掙睜猙幀鄭證織職執紙摯擲幟質鍾終種腫衆謅軸皺晝驟豬諸誅燭矚囑貯鑄築駐專磚轉賺樁莊裝妝壯狀錐贅墜綴諄濁茲資漬蹤綜總縱鄒詛組鑽緻鐘麼為隻兇準啟闆裡靂餘鍊洩&quot; normal G let maxnum=line(&quot;.&quot;) normal gg let i=0 while i&lt;maxnum let curLine=getline(&quot;.&quot;) let newCurLine=tr(curLine,jianti,fanti) let result=setline(&quot;.&quot;,newCurLine) normal j let i=i+1 endwhile endfunction function! B2G() let jianti=&quot;皑蔼碍爱翱袄奥坝罢摆败颁办绊帮绑镑谤剥饱宝报鲍辈贝钡狈备惫绷笔毕毙闭边编贬变辩辫鳖瘪濒滨宾摈饼拨钵铂驳卜补参蚕残惭惨灿苍舱仓沧厕侧册测层诧搀掺蝉馋谗缠铲产阐颤场尝长偿肠厂畅钞车彻尘陈衬撑称惩诚骋痴迟驰耻齿炽冲虫宠畴踌筹绸丑橱厨锄雏础储触处传疮闯创锤纯绰辞词赐聪葱囱从丛凑窜错达带贷担单郸掸胆惮诞弹当挡党荡档捣岛祷导盗灯邓敌涤递缔点垫电淀钓调迭谍叠钉顶锭订东动栋冻斗犊独读赌镀锻断缎兑队对吨顿钝夺鹅额讹恶饿儿尔饵贰发罚阀珐矾钒烦范贩饭访纺飞废费纷坟奋愤粪丰枫锋风疯冯缝讽凤肤辐抚辅赋复负讣妇缚该钙盖干赶秆赣冈刚钢纲岗皋镐搁鸽阁铬个给龚宫巩贡钩沟构购够蛊顾剐关观馆惯贯广规硅归龟闺轨诡柜贵刽辊滚锅国过骇韩汉阂鹤贺横轰鸿红后壶护沪户哗华画划话怀坏欢环还缓换唤痪焕涣黄谎挥辉毁贿秽会烩汇讳诲绘荤浑伙获货祸击机积饥讥鸡绩缉极辑级挤几蓟剂济计记际继纪夹荚颊贾钾价驾歼监坚笺间艰缄茧检碱硷拣捡简俭减荐槛鉴践贱见键舰剑饯渐溅涧浆蒋桨奖讲酱胶浇骄娇搅铰矫侥脚饺缴绞轿较秸阶节茎惊经颈静镜径痉竞净纠厩旧驹举据锯惧剧鹃绢杰洁结诫届紧锦仅谨进晋烬尽劲荆觉决诀绝钧军骏开凯颗壳课垦恳抠库裤夸块侩宽矿旷况亏岿窥馈溃扩阔蜡腊莱来赖蓝栏拦篮阑兰澜谰揽览懒缆烂滥捞劳涝乐镭垒类泪篱离里鲤礼丽厉励砾历沥隶俩联莲连镰怜涟帘敛脸链恋炼练粮凉两辆谅疗辽镣猎临邻鳞凛赁龄铃凌灵岭领馏刘龙聋咙笼垄拢陇楼娄搂篓芦卢颅庐炉掳卤虏鲁赂禄录陆驴吕铝侣屡缕虑滤绿峦挛孪滦乱抡轮伦仑沦纶论萝罗逻锣箩骡骆络妈玛码蚂马骂吗买麦卖迈脉瞒馒蛮满谩猫锚铆贸么霉没镁门闷们锰梦谜弥觅绵缅庙灭悯闽鸣铭谬谋亩钠纳难挠脑恼闹馁腻撵捻酿鸟聂啮镊镍柠狞宁拧泞钮纽脓浓农疟诺欧鸥殴呕沤盘庞国爱赔喷鹏骗飘频贫苹凭评泼颇扑铺朴谱脐齐骑岂启气弃讫牵扦钎铅迁签谦钱钳潜浅谴堑枪呛墙蔷强抢锹桥乔侨翘窍窃钦亲轻氢倾顷请庆琼穷趋区躯驱龋颧权劝却鹊让饶扰绕热韧认纫荣绒软锐闰润洒萨鳃赛伞丧骚扫涩杀纱筛晒闪陕赡缮伤赏烧绍赊摄慑设绅审婶肾渗声绳胜圣师狮湿诗尸时蚀实识驶势释饰视试寿兽枢输书赎属术树竖数帅双谁税顺说硕烁丝饲耸怂颂讼诵擞苏诉肃虽绥岁孙损笋缩琐锁獭挞抬摊贪瘫滩坛谭谈叹汤烫涛绦腾誊锑题体屉条贴铁厅听烃铜统头图涂团颓蜕脱鸵驮驼椭洼袜弯湾顽万网韦违围为潍维苇伟伪纬谓卫温闻纹稳问瓮挝蜗涡窝呜钨乌诬无芜吴坞雾务误锡牺袭习铣戏细虾辖峡侠狭厦锨鲜纤咸贤衔闲显险现献县馅羡宪线厢镶乡详响项萧销晓啸蝎协挟携胁谐写泻谢锌衅兴汹锈绣虚嘘须许绪续轩悬选癣绚学勋询寻驯训讯逊压鸦鸭哑亚讶阉烟盐严颜阎艳厌砚彦谚验鸯杨扬疡阳痒养样瑶摇尧遥窑谣药爷页业叶医铱颐遗仪彝蚁艺亿忆义诣议谊译异绎荫阴银饮樱婴鹰应缨莹萤营荧蝇颖哟拥佣痈踊咏涌优忧邮铀犹游诱舆鱼渔娱与屿语吁御狱誉预驭鸳渊辕园员圆缘远愿约跃钥岳粤悦阅云郧匀陨运蕴酝晕韵杂灾载攒暂赞赃脏凿枣灶责择则泽贼赠扎札轧铡闸诈斋债毡盏斩辗崭栈战绽张涨帐账胀赵蛰辙锗这贞针侦诊镇阵挣睁狰帧郑证织职执纸挚掷帜质钟终种肿众诌轴皱昼骤猪诸诛烛瞩嘱贮铸筑驻专砖转赚桩庄装妆壮状锥赘坠缀谆浊兹资渍踪综总纵邹诅组钻致钟么为只凶准启板里雳余链泄&quot; let fanti=&quot;皚藹礙愛翺襖奧壩罷擺敗頒辦絆幫綁鎊謗剝飽寶報鮑輩貝鋇狽備憊繃筆畢斃閉邊編貶變辯辮鼈癟瀕濱賓擯餅撥缽鉑駁蔔補參蠶殘慚慘燦蒼艙倉滄廁側冊測層詫攙摻蟬饞讒纏鏟産闡顫場嘗長償腸廠暢鈔車徹塵陳襯撐稱懲誠騁癡遲馳恥齒熾沖蟲寵疇躊籌綢醜櫥廚鋤雛礎儲觸處傳瘡闖創錘純綽辭詞賜聰蔥囪從叢湊竄錯達帶貸擔單鄲撣膽憚誕彈當擋黨蕩檔搗島禱導盜燈鄧敵滌遞締點墊電澱釣調叠諜疊釘頂錠訂東動棟凍鬥犢獨讀賭鍍鍛斷緞兌隊對噸頓鈍奪鵝額訛惡餓兒爾餌貳發罰閥琺礬釩煩範販飯訪紡飛廢費紛墳奮憤糞豐楓鋒風瘋馮縫諷鳳膚輻撫輔賦複負訃婦縛該鈣蓋幹趕稈贛岡剛鋼綱崗臯鎬擱鴿閣鉻個給龔宮鞏貢鈎溝構購夠蠱顧剮關觀館慣貫廣規矽歸龜閨軌詭櫃貴劊輥滾鍋國過駭韓漢閡鶴賀橫轟鴻紅後壺護滬戶嘩華畫劃話懷壞歡環還緩換喚瘓煥渙黃謊揮輝毀賄穢會燴彙諱誨繪葷渾夥獲貨禍擊機積饑譏雞績緝極輯級擠幾薊劑濟計記際繼紀夾莢頰賈鉀價駕殲監堅箋間艱緘繭檢堿鹼揀撿簡儉減薦檻鑒踐賤見鍵艦劍餞漸濺澗漿蔣槳獎講醬膠澆驕嬌攪鉸矯僥腳餃繳絞轎較稭階節莖驚經頸靜鏡徑痙競淨糾廄舊駒舉據鋸懼劇鵑絹傑潔結誡屆緊錦僅謹進晉燼盡勁荊覺決訣絕鈞軍駿開凱顆殼課墾懇摳庫褲誇塊儈寬礦曠況虧巋窺饋潰擴闊蠟臘萊來賴藍欄攔籃闌蘭瀾讕攬覽懶纜爛濫撈勞澇樂鐳壘類淚籬離裏鯉禮麗厲勵礫曆瀝隸倆聯蓮連鐮憐漣簾斂臉鏈戀煉練糧涼兩輛諒療遼鐐獵臨鄰鱗凜賃齡鈴淩靈嶺領餾劉龍聾嚨籠壟攏隴樓婁摟簍蘆盧顱廬爐擄鹵虜魯賂祿錄陸驢呂鋁侶屢縷慮濾綠巒攣孿灤亂掄輪倫侖淪綸論蘿羅邏鑼籮騾駱絡媽瑪碼螞馬罵嗎買麥賣邁脈瞞饅蠻滿謾貓錨鉚貿麽黴沒鎂門悶們錳夢謎彌覓綿緬廟滅憫閩鳴銘謬謀畝鈉納難撓腦惱鬧餒膩攆撚釀鳥聶齧鑷鎳檸獰甯擰濘鈕紐膿濃農瘧諾歐鷗毆嘔漚盤龐國愛賠噴鵬騙飄頻貧蘋憑評潑頗撲鋪樸譜臍齊騎豈啓氣棄訖牽扡釺鉛遷簽謙錢鉗潛淺譴塹槍嗆牆薔強搶鍬橋喬僑翹竅竊欽親輕氫傾頃請慶瓊窮趨區軀驅齲顴權勸卻鵲讓饒擾繞熱韌認紉榮絨軟銳閏潤灑薩鰓賽傘喪騷掃澀殺紗篩曬閃陝贍繕傷賞燒紹賒攝懾設紳審嬸腎滲聲繩勝聖師獅濕詩屍時蝕實識駛勢釋飾視試壽獸樞輸書贖屬術樹豎數帥雙誰稅順說碩爍絲飼聳慫頌訟誦擻蘇訴肅雖綏歲孫損筍縮瑣鎖獺撻擡攤貪癱灘壇譚談歎湯燙濤縧騰謄銻題體屜條貼鐵廳聽烴銅統頭圖塗團頹蛻脫鴕馱駝橢窪襪彎灣頑萬網韋違圍爲濰維葦偉僞緯謂衛溫聞紋穩問甕撾蝸渦窩嗚鎢烏誣無蕪吳塢霧務誤錫犧襲習銑戲細蝦轄峽俠狹廈鍁鮮纖鹹賢銜閑顯險現獻縣餡羨憲線廂鑲鄉詳響項蕭銷曉嘯蠍協挾攜脅諧寫瀉謝鋅釁興洶鏽繡虛噓須許緒續軒懸選癬絢學勳詢尋馴訓訊遜壓鴉鴨啞亞訝閹煙鹽嚴顔閻豔厭硯彥諺驗鴦楊揚瘍陽癢養樣瑤搖堯遙窯謠藥爺頁業葉醫銥頤遺儀彜蟻藝億憶義詣議誼譯異繹蔭陰銀飲櫻嬰鷹應纓瑩螢營熒蠅穎喲擁傭癰踴詠湧優憂郵鈾猶遊誘輿魚漁娛與嶼語籲禦獄譽預馭鴛淵轅園員圓緣遠願約躍鑰嶽粵悅閱雲鄖勻隕運蘊醞暈韻雜災載攢暫贊贓髒鑿棗竈責擇則澤賊贈紮劄軋鍘閘詐齋債氈盞斬輾嶄棧戰綻張漲帳賬脹趙蟄轍鍺這貞針偵診鎮陣掙睜猙幀鄭證織職執紙摯擲幟質鍾終種腫衆謅軸皺晝驟豬諸誅燭矚囑貯鑄築駐專磚轉賺樁莊裝妝壯狀錐贅墜綴諄濁茲資漬蹤綜總縱鄒詛組鑽緻鐘麼為隻兇準啟闆裡靂餘鍊洩&quot; normal G let maxnum=line(&quot;.&quot;) normal gg let i=0 while i&lt;maxnum let curLine=getline(&quot;.&quot;) let newCurLine=tr(curLine,fanti,jianti) let result=setline(&quot;.&quot;,newCurLine) normal j let i=i+1 endwhile endfunction &quot;为了对多个文件进行简繁转换，临时将F7设置为转换的快捷键 &quot;map &lt;silent&gt;&lt;F7&gt; &lt;ESC&gt;:call G2B()&lt;CR&gt;  其中G2B是简转繁，B2G是繁转简。设置了F7为快捷键后，碰到需要转换的文件，直接按F7就搞定了，比起把代码复制到在线转换简繁的网站上进行转换，要快多了。
+        <br>
+        <a href="http://www.jiazhoulvke.com/2011/02/15/vime9878ce5afb9e69687e69cace8bf9be8a18ce7ae80e7b981e8bdace68da2/" class="postShorten-excerpt_link link">阅读全文</a>
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+        <a class="link-unstyled" href="http://www.jiazhoulvke.com/2011/02/14/hello-world/">
+          Hello world！
+        </a>
+      </h1>
+      <div class="postShorten-meta post-meta">
+  
+    <time itemprop="datePublished" datetime="2011-02-14T00:00:00Z">
+      
+  
+  
+  
+  
+    2011-02-14 00:00:00
+  
+
+    </time>
+  
+  
+  
+  
+    <span>发布在</span>
+    
+      <a class="category-link" href="http://www.jiazhoulvke.com/categories/%e5%8e%9f%e5%88%9b">原创</a>
+    
+  
+
+
+</div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      <p>
+        2011年2月15日，正式开博
+        <br>
+        <a href="http://www.jiazhoulvke.com/2011/02/14/hello-world/" class="postShorten-excerpt_link link">阅读全文</a>
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+          
+  <div class="pagination-bar">
+    <ul class="pagination">
+      
+        <li class="pagination-prev">
+          <a class="btn btn--default btn--small" href="http://www.jiazhoulvke.com/post/page/4/">
+            <i class="fa fa-angle-left text-base icon-mr"></i>
+            <span>上一页</span>
+          </a>
+        </li>
+      
+      
+      <li class="pagination-number">第 5 页 共 5 页</li>
+    </ul>
+  </div>
+
+
+        </section>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2017 <a href="http://www.jiazhoulvke.com">jiazhoulvke</a>. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="//www.gravatar.com/avatar/e7ef4511b5541c1345ba330dadf8234a?s=110" alt="作者的图片" />
+    
+    <h4 id="about-card-name">jiazhoulvke</h4>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Coder
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        China
+      </div>
+    
+  </div>
+</div>
+
+    <div id="algolia-search-modal" class="modal-container">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="close-button"><i class="fa fa-close"></i></span>
+      <a href="https://algolia.com" target="_blank" class="searchby-algolia text-color-light link-unstyled">
+        <span class="searchby-algolia-text text-color-light text-small">by</span>
+        <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+      </a>
+      <i class="search-icon fa fa-search"></i>
+      <form id="algolia-search-form">
+        <input type="text" id="algolia-search-input" name="search"
+          class="form-control input--large search-input" placeholder="搜索" />
+      </form>
+    </div>
+    <div class="modal-body">
+      <div class="no-result text-color-light text-center"></div>
+      <div class="results">
+        
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="http://www.jiazhoulvke.com/2014/10/27/linux/">
+                <h3 class="media-heading">linux迁移至固态硬盘全过程</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Oct 10, 2014
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">自从台式机上用上固态硬盘后，就再也受不了笔记本上的5400转的机械硬盘了，所以这次又买了块固态硬盘打算装到笔记本上。
+笔记本里装的是Ubuntu 14.04 + Win7双系统，Win7主要偶尔运行一些Windows Only的软件，或者偶尔玩一下游戏，没什么特殊的配置，所以重不重装倒无所谓。Ubuntu就不一样了，我的整个开发环境都在里面，假如重装的话配置起来超级麻烦的，当初给台式机重装系统和各种配置就花了我好几天的时间，所以这次决定要直接把原来的系统迁移过来，由于之前没这么干过，整个过程提心吊胆的，还好一次搞定了。
+###用到的硬件###
+ 笔记本Thinkpad T420，内置日立5400转硬盘、可拆卸式光驱 浦科特M6S固态硬盘 适用于T420的光驱位硬盘托架 容量为4GB的U盘  本次的主角小黑和M6S:
+###具体步骤###
+把笔记本自带的机械硬盘拆下来，把固态硬盘换上去；把光驱拆下来，把机械硬盘放到硬盘托里，再把硬盘托放进光驱位。固态硬盘成为主硬盘，机械硬盘成为副硬盘。
+将U盘插到电脑上，用Linux自带的dd将ubuntu 14.04的镜像文件写到U盘中:
+sudo dd bs=4M if=/home/jiazhoulvke/Downloads/ubuntu-14.04.1-desktop-amd64.iso of=/dev/sdc  用国产良心软件DiskGenius给固态硬盘分好区:
+ 100M的Win7的系统保留分区(有点像Linux里的/boot)。 50G的Win7系统分区。 8G的Linux交换分区。 400M给/boot。 剩下的空间全部给/。  安装Win7的过程不在本文讨论范围内，就不详述了。
+重启电脑，从U盘启动，进入live系统，挂载分区:
+#sda6为固态硬盘的boot分区 #sda7为固态硬盘的root分区 #sdb5为原机械硬盘的windows分区 #sdb6为原机械硬盘的boot分区 #sdb7为原机械硬盘的root分区 sudo -s mkdir /mnt/{data,new,old} mount /dev/sda7 /mnt/new mount /dev/sda6 /mnt/new/boot mount /dev/sdb5 /mnt/data mount /dev/sdb7 /mnt/old mount /dev/sdb6 /mnt/old/boot  用tar备份root分区和boot分区（也可以用dd或者cp -a直接复制，我是顺便做个备份，所以用tar）:
+cd /mnt/old tar czf /mnt/data/ubuntu14.04.tar.gz ./*  解压文件到固态硬盘：</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="http://www.jiazhoulvke.com/2014/03/22/firefoxandroidfirefox/">
+                <h3 class="media-heading">桌面端Firefox远程调试Android端Firefox</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Mar 3, 2014
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">随着智能手机的普及，移动网站的开发也显得也越来越重要了，利用Android版Firefox自带的远程调试功能可以轻松的在PC端调试手机端的网站，实在太方便了。
+###具体步骤###
+在PC端和手机端都装上Firefox。
+PC端Firefox打开about:config，设置devtools.debugger.remote-enabled为True。
+手机端Firefox点击菜单栏的&rdquo;设置&rdquo;-&gt;&ldquo;开发者工具&rdquo;，勾选&rdquo;远程调试&rdquo;。
+将手机连接到电脑上，并启用USB调试。
+在终端中输入如下命令进行端口转发:
+adb forward tcp:6000 tcp:6000  在PC端Firefox中点击&rdquo;工具&rdquo;-&gt;&ldquo;Web开发者&rdquo;-&gt;&ldquo;连接&hellip;&ldquo;，不用改动它的默认选项，直接点击连接。
+注意你的手机，应该会出现下图的对话框,点击&rdquo;确定&rdquo;即可:
+现在PC端的Firefox会出现下图:
+这里就点击&rdquo;Google&rdquo;来调试一下Andorid端已经打开的Google网站吧。PC端会弹出一个调试窗口，你可以利用它完全控制Android端Firefox的各种行为。</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="http://www.jiazhoulvke.com/2014/03/13/rss/">
+                <h3 class="media-heading">rss地址已改变</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Mar 3, 2014
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">feedsky实在是烂透了，趁这次迁移博客顺便把feedsky也换掉，现在新的feed是http://feeds.feedburner.com/jiazhoulvke。</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="http://www.jiazhoulvke.com/2014/03/12/github/">
+                <h3 class="media-heading">博客迁移至github</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Mar 3, 2014
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">目前用的便宜空间不够稳定，速度时快时慢，实在很影响心情，干脆一不做二不休也随波逐流换到github去了。</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="http://www.jiazhoulvke.com/2014/02/08/e697b6e99a94e4b8a4e5b9b4efbc8cmyprojecte7bb88e4ba8ee69bb4e696b0e4ba86/">
+                <h3 class="media-heading">时隔两年，myproject终于更新了</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Feb 2, 2014
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">2012年6月我写了myproject这个插件，还只是个半成品，不过凑合着也能用，就这样一直用下去了。每次想完善一下的时候就想着先凑合着用，等有时间再改，就这样居然拖了近两年……这次终于下定决心，利用过年前的空闲时间完全重写了myproject。其实真的写起来一天就搞定了，剩下几天都是测试、修复bug。
+更新内容  最开始的版本是纯vimscript的，后来因为在windows下更新tags时会弹出命令行窗口就加入了一部分python代码，现在为了兼容性还是改回了纯vimscript，不再依赖python。 增加 :MPCreate 命令，可以通过此命令创建项目。 增加 :MPProjectList 命令，可以浏览、删除、载入通过 :MPCreate 创建的项目。 保存、载入Session的命令从 :MPSaveSession、:MPLoadSession 改成了 :MPSessionSave、:MPSessionLoad。 :MPCreate、:MPLoad、:MPSessionLoad、:MPSessionSave等命令都可以补全了。 去掉几个实用性不大的选项。 修改了部分变量名。  命令说明 :MPCreate  直接输入 :MPCreate ，myproject会让你输入项目的路径及名称，然后会将该项目保存到项目列表中。当你用 :MPLoad 载入项目时就可以利用Tab自动补全项目路径了。 加入&rdquo;template&rdquo;参数(即:MPCreate template)，myproject会在项目中的project.vim文件中写入如下内容:   &ldquo;let g:MP_Ctags_Enable = 1
+&ldquo;let g:MP_Global_Enable = 1
+&ldquo;set cscopeprg=gtags-cscope
+&ldquo;let g:MP_Cscope_Enable = 1
+&ldquo;let g:MP_Session_AutoSave = 1
+&ldquo;let g:MP_Session_AutoLoad = 1
+&ldquo;let g:MP_Write_AutoUpdate = 1
+&ldquo;let g:MP_Source_File_Ext_Name = &ldquo;&rdquo;
+ 你可以按自己的需求去掉某个选项的注释。
+ 加入&rdquo;question&rdquo;参数(即:MPCreate question)，myproject会一一询问你是否需要开启某个选项，然后将结果保存到project.vim中。见下图:</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="http://www.jiazhoulvke.com/2013/11/26/e794a8e6a091e88e93e6b4bee68993e980a0e5a49ae58a9fe883bde5aeb6e5baade69c8de58aa1e599a8/">
+                <h3 class="media-heading">用树莓派打造多功能家庭服务器</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Nov 11, 2013
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">家里有块闲置的老硬盘，一直吃灰中，前几天买了个硬盘盒来，利用树莓派打造了一个家庭服务器，用起来非常不错。
+准备工作 首先要有一个配置好的树莓派，并且配置一个固定IP，本文中以192.168.1.172为例。将硬盘盒通过USB接口连接到树莓派上。
+挂载硬盘 通过ssh连接到树莓派上，输入sudo fdisk -l，不出意外的话应该会有一个/dev/sda的设备，那就是你的硬盘了。利用fdisk给硬盘分区，一般直接分一个区就好了，文件系统格式随意，我用的是ext4。
+安装autofs:
+sudo apt-get install autofs  编辑/etc/auto.master,输入如下内容：
+ /misc /etc/auto.misc
+ 编辑/etc/auto.misc,输入如下内容：
+ storage -fstype=ext4 :/dev/sda1
+ 重启autofs服务：
+sudo service autofs restart  创建一个链接：
+sudo ln -s /misc/storage /storage  配置samba服务器 sudo apt-get install samba samba-common-bin  我懒得设密码，配置成可以匿名访问的。
+sudo mv /etc/samba/smb.conf /etc/samba/smb.conf.bak  编辑/etc/samba/smb.conf，删掉自带的内容，输入如下内容:
+[global] workgroup = WORKGROUP netbios name = jiazhoulvke server string = Linux Samba Server security = share [samba] path = /storage/ writable = yes browseable = yes guest ok = yes  重启samba服务:</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="http://www.jiazhoulvke.com/2013/09/10/kindle-paperwhitee8b68ae78bb1e69bb4e68da2e5b18fe4bf9d/">
+                <h3 class="media-heading">kindle paperwhite越狱更换屏保</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Sep 9, 2013
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Kindle paperwhite（以下简称kpw）自带的壁纸其实挺好的，不过看多了也腻，所以想换点新鲜的。不过kpw的壁纸没法自定义，需要越狱以后才能换。
+先下载好需要用到的文件：
+ http://s3.amazonaws.com/G7G_FirmwareUpdates_WebDownloads/update_kindle_5.3.5.bin http://www.mobileread.com/forums/attachment.php?attachmentid=103175&amp;d=1363715068 http://www.mobileread.com/forums/attachment.php?attachmentid=109554&amp;d=1376755871 http://w065855.blob3.ge.tt/streams/3ZRY9XE/combined-dev-certs-20121002.zip?sig=-UEBboFiM5cbpuJPund6fzGi7WxZIkRJqQw&amp;type=download http://www.mobileread.com/forums/attachment.php?attachmentid=110497&amp;d=1378492891  由于版本等于5.3.3或高于5.3.5的系统还无法越狱，我的kpw系统版本是5.3.6,所以要从官方网站上下载5.3.5版的系统进行降级。
+将kpw通过usb线连接到电脑上，将update_kindle_5.3.5.bin复制到Kindle的根目录，然后断开usb连接，依次点击菜单按钮(三道杠那个)-&gt;&ldquo;设置&rdquo;-&gt;菜单按钮-&gt;&ldquo;更新您的Kindle&rdquo;，就开始更新系统了，更新后会自动重启。
+再解压下载的那个kpw_jb.zip，里面有这几个文件:
+ jailbreak.mobi jailbreak.sh MOBI8_DEBUG README.txt  连接kpw到电脑，将jailbreak.mobi复制到documents目录中，将jailbreak.sh和MOBI8_DEBUG复制到kpw的根目录，然后断开usb连接，在kpw里就会有本叫《Paperwhite Jailbreak》的书了，点&rdquo;Jailbreak&rdquo;,然后手指按住左上角的黑点两秒(实际操作中我试了好几次才成功，所以你没成功也不用着急，多按几次)，然后就开始越狱了。
+越狱成功后自动重启，会多出来一个jailbreak-log文件，是越狱日志，看看删了就行。
+现在可以下载安装最新的5.3.8，越狱不会丢的。不在乎系统新不新的话就保持5.3.5好了，反正也没太大区别。
+解压combined-dev-certs-20121002.zip，把其中的update_combined-dev-certs-20121002_install.bin复制到kpw的根目录，断开usb连接，然后像更新系统那样更新就行了。
+解压k5_rescure_pack_20130906.zip，将其中的update_rescue_pack.bin复制到kpw的根目录，断开usb连接，然后更新。
+解压update_usbnet_0.10.N.zip，复制update_usbnet_0.10.N_install.bin到kpw根目录，更新。
+点搜索按钮(也就是那个放大镜)，输入&rdquo;;un&rdquo;，然后按回车，就开启usbnet模式了(再次输入的话就是关闭)。再次连接电脑，输入如下命令：
+sudo ifconfig usb0 192.168.15.1 &amp;&amp; ssh root@192.168.15.244  我是直接在~/.bashrc中alias了一个别名：
+alias kindle='sudo ifconfig usb0 192.168.15.1 &amp;&amp; ssh root@192.168.15.244'  这样每次只要输入kindle就行了。
+kpw的root密码为空，提示输入root密码时直接回车即可，然后它会提示你目前系统是只读模式，按照提示输入如下命令进入读写模式：
+mntroot rw  
+先将系统原来的屏保备份到kpw的/mnt/us(也就是通过U盘模式连接到电脑上时显示的kpw根目录)：
+mv /usr/share/blanket/screensaver /mnt/us/screensaver.bak  再创建一个软链接，将放置屏保的目录链接到/mnt/us/screensaver：
+ln -sfn /mnt/us/screensaver /usr/share/blanket/screensaver  以后要改屏保就直接在电脑上把图片放到kpw的screensaver目录中就行了。
+图片要png格式，大小为758x1024，可以通过imagemagick转换，具体怎么转我也就不多说了。
+有一点一定要注意！文件名是规定死了的，必须是bg_medium_ss00.png、bg_medium_ss01.png这样的，之前我没改名直接放进去，结果根本没用，Google上搜到的好几篇国人写的教程也都没说，后来看了老外的一篇博文才知道。
+文件很多的情况下批量改名很麻烦，所以我写了个小脚本，把这段shell脚本放到screensaver里执行就可以。
+#!/bin/bash num=0 for file in .</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="http://www.jiazhoulvke.com/2013/08/27/e794a8crossovere5ae89e8a385photoshop-cs2/">
+                <h3 class="media-heading">用CrossOver安装Photoshop CS2</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Aug 8, 2013
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">什么是CrossOver 什么是crossover？用官网http://www.codeweavers.com/上的话说就是“在您的 Linux 操作系统上运行 Windows 软件”，它就是广大Linux群众喜闻乐见的wine的商业版，相比wine更易于使用，说白了就是更傻瓜化。
+最近crossover正在搞优惠活动，原价128块的crossover现在只要64块，和linux有关的付费服务我一直以来是能支持就支持的，只有这样才能促进linux的繁荣嘛，几十块的价格也不算贵，在我能承受的范围，于是果断下单了。炫耀一下软件截图……：
+
+获取Photoshop CS2 感谢Adobe大发慈悲，把Photoshop CS2给免费了，让我可以没有负罪感的用它了。b（￣▽￣）d
+Photoshop CS2下载地址: http://download.adobe.com/pub/adobe/magic/creativesuite/CS2_EOL/PHSP/PhSp_CS2_English.exe
+因为我的英语是体育老师教的，所以我还要装个汉化包: http://pcedu.pconline.com.cn/soft/gj/photo/1301/3142835.html 。
+安装Photoshop CS2 这里假设你已经装好了crossover，现在先打开crossover，点击“安装Windows软件”，在弹出的对话框中的“支持的程序”中的第二个就是“Adobe Photoshop CS2”。
+
+选中它，然后点击“选择一个程序安装包”，再点击“选择安装文件”，在弹出的对话框中选择你下载的Photoshop安装文件。
+
+至于下面的容器你可以不用管，没有容器的话crossover会自己创建的。
+现在点击“安装”，然后crossover会自动开始从网站上下载所需的运行库及字体，应该会弹出一些对话框，你只要一路点Next就行了。
+装完运行库就会开始安装Photoshop了，在要求你输入序列号的时候输入下面这个序列号：
+ 1045-1412-5685-1654-6343-1431
+ 
+然后继续一路点Next，安装完成。
+接下来就是安装汉化包了。汉化包是一个exe文件，其实就是一个rar自解压程序，直接用unrar就可以解压了：
+
+然后将解压出来的文件全部复制到photoshop安装目录的Required目录中。
+cp -v *.dat ~/.cxoffice/Adobe_Photoshop_CS2/drive_c/Program\ Files/Adobe/Adobe\ Photoshop\ CS2/Required  
+注意到我所写的命令和我实际操作截图里的不同了吗？“Adobe_Photoshop_CS2”是容器名，因为我之前安装了TM2013，所以已经有一个叫“腾讯_TM_2013”的容器了，这次安装Photoshop我选择把它安装到“腾讯_TM_2013”容器里，你如果是新装的容器那名字应该是“Adobe_Photosho_CS2”，请根据你的实际情况操作。
+文件复制过去也就安装好了，如果你是安装到新容器的话，100%是会有乱码的，因为crossover官方并没有想到你会安装汉化包，所以默认没有给你安装中文字体，你需要自行安装一个。安装是很简单的，和安装Photoshop的方法几乎一模一样，选择“运行时支持的组件”中的“文鼎中文字体”，然后选择Photoshop所在的容器，点“安装”既可。
+
+按照惯例，又到了秀截图时间了。</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="http://www.jiazhoulvke.com/2013/08/15/e4b880e4b8aamutte9858de7bdae/">
+                <h3 class="media-heading">一个mutt配置</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Aug 8, 2013
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">mutt的配置挺麻烦的，以前刚学用linux的时候就尝试过一次，失败了，从此再没碰过它，最近再次尝试，发觉也没想象中那么难，这里有我的配置: mutt_config，假如你不希望浪费精力去找教程慢慢配置的话，直接用我这个就好了，纯傻瓜式操作（当然也没傻瓜到outlook的地步……）。
+mutt与一般的邮件客户端很不一样。像outlook这种客户端，收发邮件和管理邮件都是自己搞定，而mutt则像是个老板，手下有一堆的员工，员工A负责收信，员工B负责发信，mutt只是一个控制中心罢了。我用到的软件(或者说员工)如下：
+ 收信:offlineimap 发信:msmtp 编辑邮件:vim (可以说最吸引我的就是这一点了，用习惯了vim，现在在浏览器里打完一行字都忍不住要按一下ESC……) 邮件提醒:gmail-notify 查看附件:wv、w3m  gmail-notify和offlineimap都被我设为开机自启动，offlineimap在后台隔几分钟同步一次，而当有新邮件时gmail-notify会弹出一个消息框提醒我有邮件。
+mutt作为一个纯命令行的邮件客户端自然是没法直接查看html格式的邮件的，所以需要通过w3m将html转换成纯文本；另外对于word、pdf之类的附件，则通过wv这类程序转换后查看;图片也可以调用display来显示。相关的转换规则可以在~/.mailcap里自行定义。
+我设置了&lt;super&gt;+M为唤出mutt的快捷键(super是linux下的windows键的叫法)，当我想发邮件或者查看邮件时按一下快捷键马上就能打开，比打开浏览器再点书签或者输网址不知快了多少倍。
+
+目前的使用还比较初级，宏什么的都还没来得及去研究，那才是mutt的精髓所在。
+最后秀一下mutt截图：</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="http://www.jiazhoulvke.com/2013/08/13/fuck-adobe/">
+                <h3 class="media-heading">Fuck Adobe!</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Aug 8, 2013
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+      </div>
+    </div>
+    <div class="modal-footer">
+      <p class="results-count text-medium"
+         data-message-zero=""
+         data-message-one=""
+         data-message-other="">
+         36 posts found
+      </p>
+    </div>
+  </div>
+</div>
+    
+  
+    
+    <div id="cover" style="background-image:url('http://www.jiazhoulvke.com/images/cover.jpg');"></div>
+  
+
+
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.js"></script>
+
+
+<script src="http://www.jiazhoulvke.com/js/script-wl33z0n6ocaypepiqrazthtivfrliqijej4rq8ek8gvrv1awftmgjuv8k4zc.min.js"></script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight').each(function(i, block) {
+    var code = "";
+    hljs.highlightAuto(block.innerText).value.split(/\r\n|\r|\n/).forEach(function(line) {
+      code += "<span class=\"line\">" + line + "</span><br>";
+    });
+    if (code.length > 0) {
+      block.innerHTML = code;  
+    }
+  });
+  $('pre > code').each(function(i, block) {
+    $(this).addClass('codeblock');
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+
+
+
+    
+  </body>
+</html>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+    <title>Rss on jiazhoulvke&#39;s Blog</title>
+    <link>http://www.jiazhoulvke.com/tags/rss/</link>
+    <description>Recent content in Rss on jiazhoulvke&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator> 
+    <language>zh-cn</language> 
+    <lastBuildDate>2014-03-13 00:00:00</lastBuildDate> 
+    <atom:link href="/tags/rss/" rel="self" type="application/rss+xml" /> 
+    <item>
+    <title>rss地址已改变</title>
+    <link>http://www.jiazhoulvke.com/2014/03/13/rss/</link>
+    <pubDate>2014-03-13 00:00:00</pubDate> 
+    <guid>http://www.jiazhoulvke.com/2014/03/13/rss/</guid>
+    <description>&lt;p&gt;feedsky实在是烂透了，趁这次迁移博客顺便把feedsky也换掉，现在新的feed是&lt;a href=&#34;http://feeds.feedburner.com/jiazhoulvke。&#34;&gt;http://feeds.feedburner.com/jiazhoulvke。&lt;/a&gt;&lt;/p&gt;
+</description></item></channel>
+</rss>

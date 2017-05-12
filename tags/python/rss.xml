@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+    <title>Python on jiazhoulvke&#39;s Blog</title>
+    <link>http://www.jiazhoulvke.com/tags/python/</link>
+    <description>Recent content in Python on jiazhoulvke&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator> 
+    <language>zh-cn</language> 
+    <lastBuildDate>2012-04-14 00:00:00</lastBuildDate> 
+    <atom:link href="/tags/python/" rel="self" type="application/rss+xml" /> 
+    <item>
+    <title>vim的Google翻译插件</title>
+    <link>http://www.jiazhoulvke.com/2012/04/14/vime79a84googlee7bfbbe8af91e68f92e4bbb6/</link>
+    <pubDate>2012-04-14 00:00:00</pubDate> 
+    <guid>http://www.jiazhoulvke.com/2012/04/14/vime79a84googlee7bfbbe8af91e68f92e4bbb6/</guid>
+    <description>&lt;p&gt;由于经常需要在vim里看一些英文帮助文档，又没有长年累月的运行一个翻译软件的习惯，所以还是写了个插件来搞定,用了python，所以windows下得确保安装了python。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2012/04/i1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;使用方法有几种：&lt;/p&gt;
+
+&lt;p&gt;1.将光标移动到需要翻译的英文单词上，按&amp;lt;leader&amp;gt;e2c(把中文翻译成英文就是&amp;lt;leader&amp;gt;c2e，下面就不多说了)。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://jiazhoulvke.com/wp-content/uploads/2012/04/i2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;2.选中需要翻译的英文，按&amp;lt;leader&amp;gt;e2c。&lt;/p&gt;
+
+&lt;p&gt;3.输入&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:E2C 想要翻译的英文
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;优点：因为是调用Google进行翻译，所以Google能翻译多少种语言，插件就能翻译多少种语言，不过默认只map了英译中和中译英的快捷键，其他的得自己定义了。&lt;/p&gt;
+
+&lt;p&gt;缺点：连不了网就死翘翘了。&lt;/p&gt;
+
+&lt;p&gt;快捷键定义方法举例:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;nmap &amp;lt;silent&amp;gt; &amp;lt;leader&amp;gt;e2c :echo Google_Translate(&#39;en&#39;,&#39;zh-CN&#39;,expand(&#39;&amp;lt;cword&amp;gt;&#39;))&amp;lt;cr&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;en是原文的语言，zh-CN是要翻译的语言。&lt;/p&gt;
+
+&lt;p&gt;下载地址:&lt;a href=&#34;http://code.google.com/p/jiazhoulvke/downloads/detail?name=googletranslate.vim&#34;&gt;http://code.google.com/p/jiazhoulvke/downloads/detail?name=googletranslate.vim&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;代码:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;quot; googletranslate.vim: 利用Google翻译在vim中进行翻译
+&amp;quot; Author:       jiazhoulvke
+&amp;quot; Blog:         http://jiazhoulvke.com
+&amp;quot; Date:         2012-4-10
+&amp;quot; Version:      1.0
+&amp;quot;-------------------------------------------------
+&amp;quot; Google_Translate: 谷歌翻译
+function! Google_Translate(lan1,lan2,word)
+python &amp;lt;&amp;lt; EOM
+#coding=utf-8
+import vim,urllib,urllib2
+word = vim.eval(&amp;quot;a:word&amp;quot;)
+word=word.replace(&#39;\n&#39;,&#39;&#39;)
+rword = urllib.urlencode({&#39;text&#39;:word})
+lan1 = vim.eval(&amp;quot;a:lan1&amp;quot;)
+lan2 = vim.eval(&amp;quot;a:lan2&amp;quot;)
+headers = {
+    &#39;User-Agent&#39;:&#39;Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.15 Safari/536.5&#39;
+}
+url = &#39;http://translate.google.com/translate_a/t?client=firefox-a&amp;amp;langpair;=&#39;+lan1+&#39;%7c&#39;+lan2+&#39;&amp;amp;ie;=UTF-8&amp;amp;oe;=UTF-8&amp;amp;&#39;+rword
+req = urllib2.Request(
+    url = url,
+    headers = headers
+)
+resultstr=&#39;&#39;
+gtresult = urllib2.urlopen(req)
+if gtresult.getcode()==200:
+    gtresultstr=gtresult.read()
+    po=eval(gtresultstr)
+    resultstr=&#39;&#39;
+    for poi in po[&#39;sentences&#39;]:
+        resultstr+=poi[&#39;trans&#39;]
+    if po.has_key(&#39;dict&#39;):
+        if len(po[&#39;dict&#39;])&amp;gt;0:
+            if po[&#39;dict&#39;][0].has_key(&#39;terms&#39;):
+                tr=&#39;,&#39;.join(po[&#39;dict&#39;][0][&#39;terms&#39;])
+                resultstr+=&#39;\n&#39;+word+&#39;:&#39;+tr
+vim.command(&#39;let resultstr = &amp;quot;%s&amp;quot;&#39; % resultstr)
+EOM
+return resultstr
+endfunction
+
+&amp;quot;-------------------------------------------------
+&amp;quot; Google_Translate_Selected_String: 翻译选中文本
+function! Google_Translate_Selected_String(lan1,lan2)
+    normal `&amp;lt;
+    normal v
+    normal `&amp;gt;
+    silent normal &amp;quot;ty
+    return Google_Translate(a:lan1,a:lan2,@t)
+endfunction
+
+&amp;quot;-------------------------------------------------
+&amp;quot; Key_and_command_bind: 按键及命令绑定
+if !hasmapto(&#39;&amp;lt;leader&amp;gt;e2c&#39;,&#39;n&#39;)
+    nmap &amp;lt;silent&amp;gt; &amp;lt;leader&amp;gt;e2c :echo Google_Translate(&#39;en&#39;,&#39;zh-CN&#39;,expand(&#39;&amp;lt;cword&amp;gt;&#39;))&amp;lt;cr&amp;gt;
+endif
+if !hasmapto(&#39;&amp;lt;leader&amp;gt;c2e&#39;,&#39;n&#39;)
+    nmap &amp;lt;silent&amp;gt; &amp;lt;leader&amp;gt;c2e :echo Google_Translate(&#39;zh-CN&#39;,&#39;en&#39;,expand(&#39;&amp;lt;cword&amp;gt;&#39;))&amp;lt;cr&amp;gt;
+endif
+if !hasmapto(&#39;&amp;lt;leader&amp;gt;e2c&#39;,&#39;v&#39;)
+    vmap &amp;lt;silent&amp;gt; &amp;lt;leader&amp;gt;e2c &amp;lt;esc&amp;gt;:echo Google_Translate_Selected_String(&#39;en&#39;,&#39;zh-CN&#39;)&amp;lt;cr&amp;gt;
+endif
+if !hasmapto(&#39;&amp;lt;leader&amp;gt;c2e&#39;,&#39;v&#39;)
+    vmap &amp;lt;silent&amp;gt; &amp;lt;leader&amp;gt;c2e &amp;lt;esc&amp;gt;:echo Google_Translate_Selected_String(&#39;zh-CN&#39;,&#39;en&#39;)&amp;lt;cr&amp;gt;
+endif
+if !exists(&amp;quot;:E2C&amp;quot;)
+    command! -nargs=+ E2C :echo Google_Translate(&amp;quot;en&amp;quot;,&amp;quot;zh-CN&amp;quot;,&amp;lt;q-args&amp;gt;)
+endif
+if !exists(&amp;quot;:C2E&amp;quot;)
+    command! -nargs=+ C2E :echo Google_Translate(&amp;quot;zh-CN&amp;quot;,&amp;quot;en&amp;quot;,&amp;lt;q-args&amp;gt;)
+endif
+&amp;quot;-------------------------------------------------
+&amp;quot; Modelines: 
+&amp;quot; vim: ts=4 nowrap fdm=marker foldcolumn=1 ft=vim
+&lt;/code&gt;&lt;/pre&gt;
+</description></item> 
+    <item>
+    <title>让windows下的vim支持vimpress</title>
+    <link>http://www.jiazhoulvke.com/2011/03/01/e8aea9windowse4b88be79a84vime694afe68c81vimpress/</link>
+    <pubDate>2011-03-01 00:00:00</pubDate> 
+    <guid>http://www.jiazhoulvke.com/2011/03/01/e8aea9windowse4b88be79a84vime694afe68c81vimpress/</guid>
+    <description>&lt;p&gt;由于wordpress总会很“贴心”的删掉我贴的代码里的空格(还好我贴的是vimscript和javascript，不讲究缩进，如果贴的是python，那不是要抓狂了么？)，所以我一直在找一个比较好用又不会自作聪明的离线编辑器。&lt;/p&gt;
+
+&lt;p&gt;微软的客户端蛋疼的不支持Windows2003，其他的一些离线编辑器感觉也不怎么好用，最终还是选择了&lt;a href=&#34;http://wowubuntu.com/vimrepress.html&#34;&gt;vimrepress&lt;/a&gt;，依赖python。我用的vim版本是7.2，默认支持的python版本是2.4，有点太低了，所以，还是得重新编译一个vim，让它支持更新版本的python。由于网上已经有人编译了支持python2.5和2.6的vim，所以不需要我们再去编译了，网址:&lt;a href=&#34;http://www.gooli.org/blog/gvim-72-with-python-2526-support-windows-binaries/&#34;&gt;http://www.gooli.org/blog/gvim-72-with-python-2526-support-windows-binaries/&lt;/a&gt;。里面有两个压缩包，一个是支持python2.5,一个是支持2.6，除非有特殊要求，否则一般来说当然是新的更好，所以我下载了gvim72python26.zip这个文件。&lt;/p&gt;
+
+&lt;p&gt;下载后解压会得到两个文件：gvim.exe和vim.exe，用这两个文件覆盖vim安装目录下的同名文件即可。&lt;/p&gt;
+
+&lt;p&gt;然后从python的官方网站上下载python2.6并安装，并把python的安装路径添加到系统环境变量里面，一切大功告成！&lt;/p&gt;
+
+&lt;p&gt;顺便说句，这篇文章就是在vimrepress里写的，嘿嘿！&lt;/p&gt;
+</description></item></channel>
+</rss>

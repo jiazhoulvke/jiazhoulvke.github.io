@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+    <title>Sendmail on jiazhoulvke&#39;s Blog</title>
+    <link>http://www.jiazhoulvke.com/tags/sendmail/</link>
+    <description>Recent content in Sendmail on jiazhoulvke&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator> 
+    <language>zh-cn</language> 
+    <lastBuildDate>2013-08-04 00:00:00</lastBuildDate> 
+    <atom:link href="/tags/sendmail/" rel="self" type="application/rss+xml" /> 
+    <item>
+    <title>linux登录时自动发送提醒邮件</title>
+    <link>http://www.jiazhoulvke.com/2013/08/04/linuxe799bbe5bd95e697b6e887aae58aa8e58f91e98081e68f90e98692e982aee4bbb6/</link>
+    <pubDate>2013-08-04 00:00:00</pubDate> 
+    <guid>http://www.jiazhoulvke.com/2013/08/04/linuxe799bbe5bd95e697b6e887aae58aa8e58f91e98081e68f90e98692e982aee4bbb6/</guid>
+    <description>&lt;p&gt;最近黑客太猖獗了，看公司的服务器日志文件可以看到每天黑客尝试各种sql注入各种扫描，于是我希望有一天当服务器真被攻破时，有用户通过ssh登录到公司的服务器后我能及时收到邮件提醒。&lt;/p&gt;
+
+&lt;p&gt;由于用户在登录时都会读取/etc/bashrc这个文件，利用这个原理，只要把shell脚本写在里面就会自动执行了。&lt;/p&gt;
+
+&lt;p&gt;最开始的版本是这样的:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;EMAILTMPFILE=&#39;/tmp/.userlogin.tmp&#39;
+echo &amp;quot;From: root@wtf.com&amp;quot; &amp;gt; $EMAILTMPFILE
+echo &amp;quot;sender: root@wtf.com &amp;gt;&amp;gt; $EMAILTMPFILE
+echo &amp;quot;To: jiazhoulvke@鸡妹儿.com&amp;quot; &amp;gt;&amp;gt; $EMAILTMPFILE
+echo &amp;quot;Subject: `whoami`登录到服务器&amp;quot; &amp;gt;&amp;gt; $EMAILTMPFILE
+echo &amp;quot;&amp;quot; &amp;gt;&amp;gt; $EMAILTMPFILE
+echo &amp;quot;时间:`date &#39;+%Y-%m-%d %H:%M:%S&#39;` &amp;gt;&amp;gt; $EMAILTMPFILE
+(cat $EMAILTMPFILE | sendmail jiazhoulvke@鸡妹儿.com &amp;amp;&amp;amp; rm -f $EMAILTMPFILE) &amp;amp;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;gmail可以正常接收，并且不会乱码。但当我把邮件通过gmail转发到139邮箱时(因为139邮箱有免费的短信提醒)，在139邮箱里会乱码。&lt;/p&gt;
+
+&lt;p&gt;这时就需要设置邮件的编码，邮件内容可以通过添加一个邮件头来说明它的编码，在Subject这行上面加入&amp;rdquo;Content-type: text/html;charset=utf-8&amp;rdquo;就行了。&lt;/p&gt;
+
+&lt;p&gt;邮件标题就有点麻烦了，得先用base64编码，然后在前后分别加入&amp;rdquo;=?UTF-8?B?&amp;ldquo;和&amp;rdquo;?=&amp;ldquo;才行。也就是：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Subject: =?UTF-8?B?已进行base64编码的标题?=
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;最后我想知道到底当前有那些登录用户，他们的IP是什么，于是利用w命令来输出这些内容:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;w | sed &amp;quot;s/$/&amp;lt;br\/&amp;gt;/g&amp;quot; | sed &amp;quot;s/\ /\&amp;amp;nbsp;/g&amp;quot; &amp;gt;&amp;gt; $EMAILTMPFILE
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;所以最终的版本如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;EMAILTMPFILE=&#39;/tmp/.userlogin.tmp&#39;
+echo &amp;quot;From: root@wtf.com&amp;quot; &amp;gt; $EMAILTMPFILE
+echo &amp;quot;sender: root@wtf.com &amp;gt;&amp;gt; $EMAILTMPFILE
+echo &amp;quot;To: jiazhoulvke@鸡妹儿.com&amp;quot; &amp;gt;&amp;gt; $EMAILTMPFILE
+echo &amp;quot;Content-type: text/html;charset=utf-8&amp;quot;
+MAILSUBJECT=&amp;quot;`whoami`登录到服务器&amp;quot;
+MAILSUBJECT_BASE64=`echo $MAILSUBJECT | base64`
+echo &amp;quot;Subject: =?UTF-8?B?$MAILSUBJECT_BASE64?=&amp;quot; &amp;gt;&amp;gt; $EMAILTMPFILE
+echo &amp;quot;&amp;quot; &amp;gt;&amp;gt; $EMAILTMPFILE
+echo &amp;quot;时间:`date &#39;+%Y-%m-%d %H:%M:%S&#39;` &amp;gt;&amp;gt; $EMAILTMPFILE
+w | sed &amp;quot;s/$/&amp;lt;br\/&amp;gt;/g&amp;quot; | sed &amp;quot;s/\ /\&amp;amp;nbsp;/g&amp;quot; &amp;gt;&amp;gt; $EMAILTMPFILE
+(cat $EMAILTMPFILE | sendmail jiazhoulvke@鸡妹儿.com &amp;amp;&amp;amp; rm -f $EMAILTMPFILE) &amp;amp;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;下辈子再也不想搞和网站有关的东西了，真心苦逼。&lt;/p&gt;
+</description></item></channel>
+</rss>

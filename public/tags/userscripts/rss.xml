@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+    <title>Userscripts on jiazhoulvke&#39;s Blog</title>
+    <link>http://www.jiazhoulvke.com/tags/userscripts/</link>
+    <description>Recent content in Userscripts on jiazhoulvke&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator> 
+    <language>zh-cn</language> 
+    <lastBuildDate>2011-02-17 00:00:00</lastBuildDate> 
+    <atom:link href="/tags/userscripts/" rel="self" type="application/rss+xml" /> 
+    <item>
+    <title>一个强制在当前标签打开链接的油猴脚本</title>
+    <link>http://www.jiazhoulvke.com/2011/02/17/e4b880e4b8aae5bcbae588b6e59ca8e5bd93e5898de6a087e7adbee68993e5bc80e993bee68ea5e79a84e6b2b9e78cb4e8849ae69cac/</link>
+    <pubDate>2011-02-17 00:00:00</pubDate> 
+    <guid>http://www.jiazhoulvke.com/2011/02/17/e4b880e4b8aae5bcbae588b6e59ca8e5bd93e5898de6a087e7adbee68993e5bc80e993bee68ea5e79a84e6b2b9e78cb4e8849ae69cac/</guid>
+    <description>&lt;p&gt;今天逛谷歌众包论坛时看到有人有这个需求：“&lt;a href=&#34;http://bbs.pxysm.com/thread-210028-1-1.html&#34;&gt;如何强制在当前页打开链接？&lt;/a&gt;”，之前从来没有为chrome写过扩展或者脚本，这次google了一下油猴脚本的写法，写了个简单的小玩意。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// ----------------------------------------
+// Name     open in current tab
+// Version  1.0
+// Author   jiazhoulvke
+// email    jiazhoulvke@gmail.com
+// blog     http://jiazhoulvke
+// ----------------------------------------
+// ==UserScript==
+// @name          open in current tab
+// @namespace     [http://jiazhoulvke.com/](http://jiazhoulvke.com/)
+// @version       1.0
+// @description   强制在当前窗口打开链接
+// @include       *
+// @exclude       http://chrome.google.com/*
+// ==/UserScript==
+
+var linkArray=document.getElementsByTagName(&amp;quot;A&amp;quot;);
+for (i=0;i&amp;lt;linkArray.length;i++) {
+    if (linkArray[i].target!=&amp;quot;&amp;quot;) {
+        linkArray[i].target=&amp;quot;_self&amp;quot;;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;上传到了userscripts:&lt;a href=&#34;http://userscripts.org/scripts/show/97166&#34;&gt;http://userscripts.org/scripts/show/97166&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;update:&lt;/p&gt;
+
+&lt;p&gt;由于没有考虑到有人在网页的头部添加&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;base target=&amp;quot;_blank&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;所以之前的版本对于某些网站网站无效(比如网易)，于是重新写了一个。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// ----------------------------------------
+// Name     open in current tab
+// Version  1.1
+// Author   jiazhoulvke
+// email    jiazhoulvke@gmail.com
+// blog     http://jiazhoulvke
+// ----------------------------------------
+// ==UserScript==
+// @name          open in current tab
+// @namespace     http://jiazhoulvke.com/
+// @version       1.1
+// @description   强制在当前窗口打开链接
+// @include       *
+// @exclude       http://chrome.google.com/*
+// ==/UserScript==
+
+var linkArray=**document**.getElementsByTagName(&amp;quot;A&amp;quot;);
+for (i=0;i&amp;lt;linkArray.length;i++) {
+    if (linkArray[i].href!=&amp;quot;#&amp;quot; &amp;amp;&amp;amp; linkArray[i].href!=&amp;quot;javascript:;&amp;quot; &amp;amp;&amp;amp; linkArray[i].href!=&amp;quot;javascript:void(0)&amp;quot;) {
+        linkArray[i].target=&amp;quot;_self&amp;quot;;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description></item></channel>
+</rss>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+    <title>Markdownview on jiazhoulvke&#39;s Blog</title>
+    <link>http://www.jiazhoulvke.com/tags/markdownview/</link>
+    <description>Recent content in Markdownview on jiazhoulvke&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator> 
+    <language>zh-cn</language> 
+    <lastBuildDate>2013-07-19 00:00:00</lastBuildDate> 
+    <atom:link href="/tags/markdownview/" rel="self" type="application/rss+xml" /> 
+    <item>
+    <title>MarkdownView更新了</title>
+    <link>http://www.jiazhoulvke.com/2013/07/19/markdownviewe69bb4e696b0e4ba86e4b880e4b88b/</link>
+    <pubDate>2013-07-19 00:00:00</pubDate> 
+    <guid>http://www.jiazhoulvke.com/2013/07/19/markdownviewe69bb4e696b0e4ba86e4b880e4b88b/</guid>
+    <description>&lt;p&gt;加了自定义样式表的功能，没有定义的话默认使用仿github的样式。
+&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=238&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/07/MarkdownView.png&#34; alt=&#34;MarkdownView&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;项目地址: &lt;a href=&#34;https://github.com/jiazhoulvke/MarkdownView&#34;&gt;https://github.com/jiazhoulvke/MarkdownView&lt;/a&gt;&lt;/p&gt;
+</description></item> 
+    <item>
+    <title>MarkdownView - Vim的markdown可视化编辑插件</title>
+    <link>http://www.jiazhoulvke.com/2013/01/23/markdownview-vime79a84markdowne58fafe8a786e58c96e7bc96e8be91e68f92e4bbb6/</link>
+    <pubDate>2013-01-23 00:00:00</pubDate> 
+    <guid>http://www.jiazhoulvke.com/2013/01/23/markdownview-vime79a84markdowne58fafe8a786e58c96e7bc96e8be91e68f92e4bbb6/</guid>
+    <description>
+
+&lt;h1 id=&#34;markdownview&#34;&gt;MarkdownView&lt;/h1&gt;
+
+&lt;p&gt;markdown可视化编辑插件，可以在编辑的同时看到最终效果。&lt;/p&gt;
+
+&lt;h2 id=&#34;安装需求&#34;&gt;安装需求&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Vim编译了python支持&lt;/li&gt;
+&lt;li&gt;安装了python-webkit、python-gtk、python-markdown&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;安装&#34;&gt;安装&lt;/h2&gt;
+
+&lt;p&gt;git clone &lt;a href=&#34;https://github.com/jiazhoulvke/MarkdownView&#34;&gt;https://github.com/jiazhoulvke/MarkdownView&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;使用&#34;&gt;使用&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;打开markdown文件&lt;/li&gt;
+&lt;li&gt;输入 :MarkdownView&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;效果展示&#34;&gt;效果展示&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=210&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/01/MarkdownView.png&#34; alt=&#34;MarkdownView&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;在Vim中对markdown文件进行修改会马上在右侧的窗口显示出来。&lt;/p&gt;
+
+&lt;h2 id=&#34;其他说明&#34;&gt;其他说明&lt;/h2&gt;
+
+&lt;p&gt;本插件在Linux mint 14下测试通过。&lt;/p&gt;
+</description></item></channel>
+</rss>

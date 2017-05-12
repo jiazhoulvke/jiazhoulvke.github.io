@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+    <title>树莓派 on jiazhoulvke&#39;s Blog</title>
+    <link>http://www.jiazhoulvke.com/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/</link>
+    <description>Recent content in 树莓派 on jiazhoulvke&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator> 
+    <language>zh-cn</language> 
+    <lastBuildDate>2013-11-26 00:00:00</lastBuildDate> 
+    <atom:link href="/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/" rel="self" type="application/rss+xml" /> 
+    <item>
+    <title>用树莓派打造多功能家庭服务器</title>
+    <link>http://www.jiazhoulvke.com/2013/11/26/e794a8e6a091e88e93e6b4bee68993e980a0e5a49ae58a9fe883bde5aeb6e5baade69c8de58aa1e599a8/</link>
+    <pubDate>2013-11-26 00:00:00</pubDate> 
+    <guid>http://www.jiazhoulvke.com/2013/11/26/e794a8e6a091e88e93e6b4bee68993e980a0e5a49ae58a9fe883bde5aeb6e5baade69c8de58aa1e599a8/</guid>
+    <description>
+
+&lt;p&gt;家里有块闲置的老硬盘，一直吃灰中，前几天买了个硬盘盒来，利用树莓派打造了一个家庭服务器，用起来非常不错。&lt;/p&gt;
+
+&lt;h2 id=&#34;准备工作&#34;&gt;准备工作&lt;/h2&gt;
+
+&lt;p&gt;首先要有一个配置好的树莓派，并且配置一个固定IP，本文中以192.168.1.172为例。将硬盘盒通过USB接口连接到树莓派上。&lt;/p&gt;
+
+&lt;h2 id=&#34;挂载硬盘&#34;&gt;挂载硬盘&lt;/h2&gt;
+
+&lt;p&gt;通过ssh连接到树莓派上，输入sudo fdisk -l，不出意外的话应该会有一个/dev/sda的设备，那就是你的硬盘了。利用fdisk给硬盘分区，一般直接分一个区就好了，文件系统格式随意，我用的是ext4。&lt;/p&gt;
+
+&lt;p&gt;安装autofs:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install autofs
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;编辑/etc/auto.master,输入如下内容：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;/misc /etc/auto.misc&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;编辑/etc/auto.misc,输入如下内容：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;storage     -fstype=ext4        :/dev/sda1&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;重启autofs服务：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo service autofs restart
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;创建一个链接：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo ln -s /misc/storage /storage
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;配置samba服务器&#34;&gt;配置samba服务器&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install samba samba-common-bin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;我懒得设密码，配置成可以匿名访问的。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo mv /etc/samba/smb.conf /etc/samba/smb.conf.bak
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;编辑/etc/samba/smb.conf，删掉自带的内容，输入如下内容:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[global] 
+workgroup = WORKGROUP 
+netbios name = jiazhoulvke 
+server string = Linux Samba Server 
+security = share 
+[samba] 
+path = /storage/ 
+writable = yes 
+browseable = yes 
+guest ok = yes 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;重启samba服务:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo service samba restart
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;现在就可以在你的台式机或笔记本上通过samba访问树莓派了，android的es文件管理也支持samba。&lt;/p&gt;
+
+&lt;h2 id=&#34;比samba更好的选择-sshfs&#34;&gt;比samba更好的选择:sshfs&lt;/h2&gt;
+
+&lt;p&gt;linux中有个很棒的软件叫sshfs，可以通过ssh将远程电脑的目录映射成本地目录，由于树莓派本身已经集成了ssh，所以配置起来非常方便。&lt;/p&gt;
+
+&lt;p&gt;先在你的台式机或笔记本上安装sshfs:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install sshfs
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;打开终端，输入如下命令:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;code&amp;gt;mkdir ~/rpi
+sshfs pi@192.168.1.172:/storage/ /home/jiazhoulvke/rpi
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;需要注意的是我的树莓派ssh是用key登录的，所以没有密码。&lt;/p&gt;
+
+&lt;p&gt;现在在你的系统中的~/rpi就是树莓派中的/storage了，你可以像操作本地目录一样随意操作。&lt;/p&gt;
+
+&lt;p&gt;为了重启后也能自动挂载，可以将挂载命令放入~/.profile中。&lt;/p&gt;
+
+&lt;p&gt;sshfs也有windows版的，请自行google之。&lt;/p&gt;
+
+&lt;h2 id=&#34;配置多媒体服务器&#34;&gt;配置多媒体服务器&lt;/h2&gt;
+
+&lt;p&gt;创建几个目录:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mkdir -p /storage/dlna/{video,music,picture}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;安装minidlna:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install minidlna
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;编辑/etc/minidlna.conf:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;media_dir=V,/storage/dlna/video
+media_dir=A,/storage/dlna/music
+media_dir=P,/storage/dlna/picture
+db_dir=/var/lib/minidlna
+log_dir=/var/log
+port=8200
+presentation_url=http://192.168.1.172:8200/
+friendly_name=MyRPi
+inotify=yes
+notify_interval=600
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;现在往/storage/video里放几个视频，往/storage/music里放几首mp3,然后重启minidlna服务吧:&lt;/p&gt;
+
+&lt;p&gt;sudo service minidlna force-reload&lt;/p&gt;
+
+&lt;p&gt;现在用浏览器打开192.168.1.172:8200，应该能看到类似下面的信息:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;MiniDLNA status&lt;br /&gt;
+Audio files: 917&lt;br /&gt;
+Video files: 42&lt;br /&gt;
+Image files: 123&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;利用xbmc访问dlna&#34;&gt;利用XBMC访问dlna&lt;/h2&gt;
+
+&lt;p&gt;要问PC上最好的dlna客户端是什么，那毫无疑问是XBMC了，不仅功能强大而且跨平台。&lt;/p&gt;
+
+&lt;p&gt;先安装xbmc：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install xbmc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;运行xbmc，然后按以下步骤配置视频源:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot005.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot005.png&#34; alt=&#34;screenshot005.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot006.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot006.png&#34; alt=&#34;screenshot006.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot007.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot007.png&#34; alt=&#34;screenshot007.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot000.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot000.png&#34; alt=&#34;screenshot000.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot001.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot001.png&#34; alt=&#34;screenshot001.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot002.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot002.png&#34; alt=&#34;screenshot002.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot003.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot003.png&#34; alt=&#34;screenshot003.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot004.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot004.png&#34; alt=&#34;screenshot004.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;接下来用同样的方法配置好音乐和图片。&lt;/p&gt;
+
+&lt;p&gt;再强烈推荐一个android应用&amp;ndash;&lt;a href=&#34;https://play.google.com/store/apps/details?id=org.xbmc.android.remote&#34;&gt;Official XBMC Remote&lt;/a&gt;,它可以遥控PC端的XBMC，把电脑变成电视机。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/unnamed.jpg&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/unnamed.jpg&#34; alt=&#34;unnamed.jpg&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;android手机同步相片到树莓派中&#34;&gt;android手机同步相片到树莓派中&lt;/h2&gt;
+
+&lt;p&gt;安装&lt;a href=&#34;https://play.google.com/store/apps/details?id=dk.tacit.android.foldersync.lite&#34;&gt;FolderSync Lite&lt;/a&gt;。点击&amp;rdquo;账户&amp;rdquo;,然后添加一个SFTP账户，&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/Screenshot_2013-11-26-22-04-30.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/Screenshot_2013-11-26-22-04-30.png&#34; alt=&#34;Screenshot_2013-11-26-22-04-30.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;然后输入树莓派的IP地址以及帐号密码并保存。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/Screenshot_2013-11-26-22-08-51.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/Screenshot_2013-11-26-22-08-51.png&#34; alt=&#34;Screenshot_2013-11-26-22-08-51.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;再点击文件夹配对，根据你手机的相片存储路径进行设置：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/Screenshot_2013-11-27-02-10-15.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/Screenshot_2013-11-27-02-10-15.png&#34; alt=&#34;Screenshot_2013-11-27-02-10-15.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;好了，现在可以开始同步了。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/Screenshot_2013-11-26-22-15-16.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/Screenshot_2013-11-26-22-15-16.png&#34; alt=&#34;Screenshot_2013-11-26-22-15-16.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;用树莓派下载文件&#34;&gt;用树莓派下载文件&lt;/h2&gt;
+
+&lt;p&gt;由于树莓派功耗非常低，所以非常适合用来挂机下载大文件。&lt;/p&gt;
+
+&lt;p&gt;先安装下载软件aria2和网页服务器lighttpd:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install aria2 lighttpd
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;创建/etc/init.d/aria2c,并输入如下内容：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/bin/sh
+### BEGIN INIT INFO
+# Provides:             aria2
+# Required-Start:       $remote_fs $network
+# Required-Stop:        $remote_fs $network
+# Default-Start:        2 3 4 5
+# Default-Stop:         0 1 6
+# Short-Description:    Aria2 Downloader
+### END INIT INFO
+
+case &amp;quot;$1&amp;quot; in
+start)
+        echo -n &amp;quot;Starting aria2c&amp;quot;
+        sudo -u pi aria2c --conf-path=/home/pi/.aria2/aria2.conf -D
+;;
+stop)
+        echo -n &amp;quot;Shutting down aria2c&amp;quot;
+        killall aria2c
+;;
+restart)
+        killall aria2c
+        sudo -u pi aria2c --conf-path=/home/pi/.aria2/aria2.conf -D
+;;
+esac
+exit
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;保存后赋予其可执行权限：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo chmod 755 /etc/init.d/aria2c
+
+mkdir ~/.aria2
+touch ~/.aria2/aria2.session
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;创建aria2配置文件~/.aria2/aria2.conf，并输入如下内容:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;dir=/storage/
+disable-ipv6=true
+enable-rpc=true
+rpc-allow-origin-all=true
+rpc-listen-all=true
+rpc-listen-port=6800
+continue=true
+input-file=/home/pi/.aria2/aria2.session
+save-session=/home/pi/.aria2/aria2.session
+max-concurrent-downloads=5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;将aria2c服务设置为自启动：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo update-rc.d aria2c defaults
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;运行aria2c服务:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo service aria2c start
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;克隆yaaw（一个aria2c的web前端）：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo chmod a+w -R /var/www
+cd /var/www/
+git clone http://github.com/wzhy90/yaaw
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;现在可以打开&lt;a href=&#34;http://192.168.1.172/yaaw/看看效果了。&#34;&gt;http://192.168.1.172/yaaw/看看效果了。&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/aria2.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/aria2.png&#34; alt=&#34;aria2.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;aria2还支持迅雷离线下载，当然前提是你有迅雷的vip会员，我个人觉得迅雷的离线下载还是很不错的，值得购买。&lt;/p&gt;
+
+&lt;p&gt;火狐安装此油猴脚本:&lt;a href=&#34;http://s.binux.me/TLE/master/ThunderLixianExporter.user.js&#34;&gt;http://s.binux.me/TLE/master/ThunderLixianExporter.user.js&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;chrome安装此扩展:&lt;a href=&#34;https://chrome.google.com/webstore/detail/thunderlixianassistant/eehlmkfpnagoieibahhcghphdbjcdmen&#34;&gt;https://chrome.google.com/webstore/detail/thunderlixianassistant/eehlmkfpnagoieibahhcghphdbjcdmen&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;打开&lt;a href=&#34;http://lixian.xunlei.com,点右上角的&amp;quot;设置&amp;quot;，然后进行如下设置:&#34;&gt;http://lixian.xunlei.com,点右上角的&amp;quot;设置&amp;quot;，然后进行如下设置:&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/xunleilixian.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/xunleilixian.png&#34; alt=&#34;xunleilixian.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;现在选择你要下载的文件然后点击“批量导出”，再选择YAAW就会开始下载了。&lt;/p&gt;
+
+&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
+
+&lt;p&gt;树莓派真的很好玩！&lt;/p&gt;
+
+&lt;p&gt;参考资料:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;《Raspberry Pi: the Perfect Home Server》&lt;a href=&#34;http://www.linuxjournal.com/content/raspberry-pi-perfect-home-server&#34;&gt;http://www.linuxjournal.com/content/raspberry-pi-perfect-home-server&lt;/a&gt;&lt;br /&gt;
+《树莓派做下载机！迅雷离线，Aria2！！！》&lt;a href=&#34;http://www.shumeipai.net/thread-19154-1-1.html&#34;&gt;http://www.shumeipai.net/thread-19154-1-1.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description></item> 
+    <item>
+    <title>树莓派Raspberry Pi与主机进行文件同步</title>
+    <link>http://www.jiazhoulvke.com/2013/01/06/198/</link>
+    <pubDate>2013-01-06 00:00:00</pubDate> 
+    <guid>http://www.jiazhoulvke.com/2013/01/06/198/</guid>
+    <description>
+
+&lt;h3 id=&#34;前言&#34;&gt;前言&lt;/h3&gt;
+
+&lt;p&gt;很想要一个类似于dropbox一样的同步工具来同步主机和树莓派中的文件，很显然树莓派里是别想有dropbox的，所以只好自己动手来实现类似的功能，用到的软件是linux里常见的rsync和python。&lt;/p&gt;
+
+&lt;h3 id=&#34;一-给树莓派设置静态ip&#34;&gt;一、给树莓派设置静态IP&lt;/h3&gt;
+
+&lt;p&gt;先用ssh登陆到树莓派，给树莓派设置一个静态IP ，可以在路由器上设置，也可以直接在树莓派里设置，我是在树莓派上设置的:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo vim /etc/network/interfaces
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;将内容改成下面这样:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;auto lo
+iface lo inet loopback
+iface eth0 inet static
+address 192.168.1.72
+gateway 192.168.1.1
+netmask 255.255.255.0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;保存并退出。&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;192.168.1.72&amp;rdquo;是我给树莓派设置的固定IP，&amp;rdquo;192.168.1.1&amp;rdquo;是路由器的IP，请根据你的实际情况进行更改。&lt;/p&gt;
+
+&lt;p&gt;重启网络服务:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo service networking restart
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;其实我觉得更方便的办法是直接拔掉电源再重新插上……反正树莓派启动还是挺快的。&lt;/p&gt;
+
+&lt;p&gt;现在树莓派的IP变成&amp;rdquo;192.168.1.72&amp;rdquo;了。&lt;/p&gt;
+
+&lt;h3 id=&#34;二-设置ssh-key&#34;&gt;二、设置SSH KEY&lt;/h3&gt;
+
+&lt;p&gt;为了避免以后每次ssh登陆到树莓派都需要输入密码，可以使用key登陆。&lt;/p&gt;
+
+&lt;p&gt;在主机上运行如下命令:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ssh-keygen -t rsa
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后按几次回车，搞定。&lt;/p&gt;
+
+&lt;p&gt;接下来用ssh-copy-id把公钥复制到树莓派中:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ssh-copy-id -i  ~/.ssh/id_rsa.pub pi@192.168.1.72
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;提示让你输入密码，输入密码后回车即可。&lt;/p&gt;
+
+&lt;p&gt;之后就可以直接用&amp;rdquo;ssh pi@192.168.1.72&amp;rdquo;登陆到树莓派了，不再需要输入密码。&lt;/p&gt;
+
+&lt;h3 id=&#34;三-实现主机到树莓派的同步&#34;&gt;三、实现主机到树莓派的同步&lt;/h3&gt;
+
+&lt;p&gt;分别在主机和树莓派上创建一个文件夹用于同步，先在主机上输入:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mkdir ~/rsync
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;再在树莓派中输入:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mkdir ~/rsync
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;再在主机中创建同步脚本:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;vim ~/bin/rsync.py
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;写入如下内容:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/usr/bin/env python
+import gio
+import glib
+import os
+
+RSYNC=&#39;/usr/bin/rsync&#39;
+SRC=&#39;/home/jiazhoulvke/rsync/&#39;
+DST=&#39;pi@192.168.1.72:/home/pi/rsync/&#39;
+
+def directory_changed(monitor,file1,file2,evt_type):
+    os.system(&amp;quot;%s -ahqzt --delete  %s %s&amp;quot; % (RSYNC,SRC,DST))
+
+gf = gio.File(SRC)
+monitor = gf.monitor_directory(gio.FILE_MONITOR_NONE,None)
+monitor.connect(&amp;quot;changed&amp;quot;,directory_changed)
+gml = glib.MainLoop()
+gml.run()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;其中SRC和DST根据自己的情况进行修改。&lt;/p&gt;
+
+&lt;p&gt;赋予脚本可执行权限:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;chmod a+x ~/bin/rsync.py
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;将脚本设置成开机自启动:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo vim /etc/rc.local
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;将下面这行加进去:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;su - jiazhoulvke -c &amp;quot;python /home/jiazhoulvke/bin/rsync.py&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;保存退出，然后重启主机。&lt;/p&gt;
+
+&lt;p&gt;执行如下命令查看脚本是否正常启动:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ps m|grep rsync.py
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;假如显示类似如下的内容则表示启动成功:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;2315 pts/0    -      0:00 python bin/rsync.py&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;现在测试一下能不能同步，在主机上输入:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;touch ~/rsync/test
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;登陆到树莓派中，输入:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ls ~/rsync
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;假如看到test文件，说明同步成功，没成功请仔细检查自己是否有哪个步骤做错了。&lt;/p&gt;
+
+&lt;h3 id=&#34;四-实现双向同步&#34;&gt;四、实现双向同步&lt;/h3&gt;
+
+&lt;p&gt;如今从主机到树莓派的单方向同步已经完成了。那么如何让树莓派上的修改也能马上同步到主机呢？很简单，把刚才的所有步骤在树莓派中再做一次，把那个python脚本里的ip地址和用户名都相应改一下就行了，在此就不细说了。&lt;/p&gt;
+
+&lt;p&gt;需要注意的是树莓派中的python默认是没有gio这个模块的，得安装一下:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install python-gobject
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;另外还要注意自己的主机有没有开启ssh服务，如果没有的话是不能从树莓派同步到主机上的。&lt;/p&gt;
+
+&lt;p&gt;PS:unison可以实现双向同步，不过我没试过，反正rsync对我来说已经完全够用了，感兴趣的可以自己尝试。&lt;/p&gt;
+
+&lt;h3 id=&#34;参考资料&#34;&gt;参考资料:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://heylinux.com/archives/817.html&#34;&gt;http://heylinux.com/archives/817.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.csdn.net/hechaoyuyu/article/details/6384418&#34;&gt;http://blog.csdn.net/hechaoyuyu/article/details/6384418&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description></item> 
+    <item>
+    <title>Raspberry Pi到手</title>
+    <link>http://www.jiazhoulvke.com/2012/12/29/189/</link>
+    <pubDate>2012-12-29 00:00:00</pubDate> 
+    <guid>http://www.jiazhoulvke.com/2012/12/29/189/</guid>
+    <description>&lt;p&gt;Raspberry Pi（国人一般称之为树莓派）最近很火，我受不了诱惑也买了一个来折腾。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=190&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2012/12/psb1.jpeg&#34; alt=&#34;psb1&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;树莓派非常小，显得很可爱。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=191&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2012/12/psb2.jpeg&#34; alt=&#34;psb2&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;旁边的那些板子是用来装树莓派的箱子，是和树莓派一起买来的，那层黄色的纸都可以撕掉的。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=192&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2012/12/psb3.jpeg&#34; alt=&#34;psb3&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;安装很简单，按照说明书用不了多久就可以搞定，最终一个小小的电脑就组装好了。&lt;/p&gt;
+
+&lt;p&gt;树莓派除了一块板什么都没有，其他设备都需要另外购买。它用的电源要求电压是5V，电流是750-1000mA，我的手机xt910用的电源是5.1V850mA，正好用得上。它用SD卡来作为存储器，在亚马逊花几十块买了个8G的Sandisk class10 SD卡，在卡上装好raspbian（基于debian的定制发行版），插上网线连上路由器，再插上电源，树莓派成功运行！&lt;/p&gt;
+
+&lt;p&gt;树莓派有hdmi接口，可以通过hdmi线输出到支持hdmi的显示器上，或者通过hdmi转vga输出到普通的显示器，不过我并不打算用它来放电影，所以没必要花这冤枉钱了，直接在台式机上通过ssh就能访问树莓派了。在路由器上找到树莓派所使用的ip（也可以在路由器上给它绑定一个静态的IP），通过 ssh pi@ip地址 连接到树莓派，然后输入密码raspberry，即可登陆。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=193&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2012/12/Screenshot-pi@raspberrypi-2.png&#34; alt=&#34;Screenshot-pi@raspberrypi: ~-2&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;登陆后第一步应该是换个更新源，否则默认的源速度会让人发疯的。我目前用的是新加坡的源，有200K以上的速度：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cat /etc/apt/sources.list
+deb http://mirror.nus.edu.sg/raspbian/raspbian wheezy main contrib non-free rpi
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;之后就是用更新了：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get update
+sudo apt-get upgrade
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;其他的一些配置可以通过一个内置的工具raspi-config搞定：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo raspi-config
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=194&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2012/12/Screenshot-pi@raspberrypi-.png&#34; alt=&#34;Screenshot-pi@raspberrypi: ~&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;树莓派的设置基本就搞定了，接下来就是各种折腾了，以后再说……&lt;/p&gt;
+</description></item></channel>
+</rss>

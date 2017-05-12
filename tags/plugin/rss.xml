@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+    <title>Plugin on jiazhoulvke&#39;s Blog</title>
+    <link>http://www.jiazhoulvke.com/tags/plugin/</link>
+    <description>Recent content in Plugin on jiazhoulvke&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator> 
+    <language>zh-cn</language> 
+    <lastBuildDate>2012-06-28 00:00:00</lastBuildDate> 
+    <atom:link href="/tags/plugin/" rel="self" type="application/rss+xml" /> 
+    <item>
+    <title>我的项目管理插件myproject</title>
+    <link>http://www.jiazhoulvke.com/2012/06/28/e68891e79a84e9a1b9e79baee7aea1e79086e68f92e4bbb6myproject/</link>
+    <pubDate>2012-06-28 00:00:00</pubDate> 
+    <guid>http://www.jiazhoulvke.com/2012/06/28/e68891e79a84e9a1b9e79baee7aea1e79086e68f92e4bbb6myproject/</guid>
+    <description>&lt;p&gt;发个我自己写的项目管理插件myproject，目前实现了针对项目手动/自动更新tags及cscope数据库、在项目中递归搜索等功能，自己用着还挺舒服的。&lt;/p&gt;
+
+&lt;p&gt;项目地址:&lt;a href=&#34;https://github.com/jiazhoulvke/myproject&#34;&gt;https://github.com/jiazhoulvke/myproject&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;最开始的版本是纯vimscript的，受不了更新tags时老是弹出命令行窗口，所以改成了python的，用vim的应该都装了python，所以应该不算什么大问题。&lt;/p&gt;
+
+&lt;p&gt;使用方法没project插件那么复杂,只要在项目的根目录下面放一个叫project.vim的文件就行了。该方法来源于这里：   &lt;a href=&#34;http://easwy.com/blog/archives/automatically_update_ctags_tag_cscope_database/#comment-10782&#34;&gt;http://easwy.com/blog/archives/automatically_update_ctags_tag_cscope_database/#comment-10782&lt;/a&gt; ，project.vim不仅仅是项目标识，同时也是项目的配置文件。&lt;/p&gt;
+
+&lt;p&gt;在vim里cd到项目目录中，或者直接打开项目中的文件，然后用“:MPLoad”载入project.vim及tags、cscope数据库（假如存在的话）。&lt;/p&gt;
+
+&lt;p&gt;用“:MPBuildTags”可以建立tags或cscope数据库&lt;/p&gt;
+
+&lt;p&gt;用“:MPUpdateTags”更新当前文件的tags或cscope数据库&lt;/p&gt;
+
+&lt;p&gt;用“:MPSearchInProject 字符串”在项目中递归搜索。grep可用的话会调用grep，否则使用内部的vimgrep。&lt;/p&gt;
+
+&lt;p&gt;假如安装了NerdTree，可以用“:MPNERDTREE”直接打开项目根目录&lt;/p&gt;
+
+&lt;p&gt;在vimrc里写上“let g:MP_Write_AutoUpdate = 1”就会在每次保存文件时自动更新tags，想临时禁用自动更新的话就输入“:let g:MP_Update_Enable = 0”&lt;/p&gt;
+
+&lt;p&gt;一些用于配置的全局变量：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;quot; 项目文件名
+let g:MyProjectFileName = &#39;project.vim&#39;
+&amp;quot; 是否启用ctags
+let g:MP_Ctags_Enable = 1
+&amp;quot; 是否启用cscope
+let g:MP_Cscope_Enable = 1
+&amp;quot; 定义ctags的路径
+let g:MP_Ctags_Path = &#39;ctags&#39;
+&amp;quot; 定义cscope的路径
+let g:MP_Cscope_Path = &#39;cscope&#39;
+&amp;quot;设置grep的路径
+&amp;quot; Tips: 如果是在windows下使用cygwin的grep的话，搜索结果中经常会出现警告，需要在系统中添加一个名叫CYGWIN，值为nodosfilewarning的环境变量
+let g:MP_Grep_Path = &#39;grep&#39;
+&amp;quot; 定义ctags参数,比如c++项目可以在project.vim中定义&amp;quot;--c++-kinds=+px&amp;quot;
+let g:MP_Ctags_Opt = &#39;&#39;
+&amp;quot; 在文件写入时是否自动更新tags
+let g:MP_Write_AutoUpdate = 0
+&amp;quot; 是否自动载入项目文件
+let g:MP_Bufread_AutoLoad = 0
+&amp;quot; 是否允许更新tags(适合临时设置禁用或启用)
+let g:MP_Update_Enable = 1
+&amp;quot; 是否允许载入tags(适合临时设置禁用或启用)
+let g:MP_Load_Enable = 1
+&amp;quot; 需要建立tags的文件后缀名(可以针对不同项目在各自的project.vim文件中定义)
+let g:MP_Source_File_Ext_Name = &#39;c,h,cpp,vim,php,py&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;更具体的使用方法就直接看代码吧，里面的注释还是蛮详细的。&lt;/p&gt;
+
+&lt;p&gt;发一个我的配置&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let g:MP_Bufread_AutoLoad = 1
+let g:MP_Source_File_Ext_Name = &#39;htm,js,c,h,cpp,vim,php,py,asp&#39;
+map &amp;lt;f3&amp;gt; &amp;lt;esc&amp;gt;:MPSearchInProject &amp;lt;c-r&amp;gt;=expand(&amp;quot;&amp;lt;cword&amp;gt;&amp;quot;)&amp;lt;cr&amp;gt;&amp;lt;cr&amp;gt;
+map &amp;lt;silent&amp;gt;&amp;lt;f5&amp;gt; &amp;lt;esc&amp;gt;:MPLoad&amp;lt;cr&amp;gt;
+map &amp;lt;silent&amp;gt;&amp;lt;f6&amp;gt; &amp;lt;esc&amp;gt;:MPUpdateTags&amp;lt;cr&amp;gt;
+
+if has(&amp;quot;cscope&amp;quot;)
+    set cscopequickfix=s-,c-,d-,i-,t-,e-
+    set cscopetagorder=0
+    set cscopetag
+    set nocscopeverbose
+    nmap &amp;lt;C-@&amp;gt;s :cs find s &amp;lt;c-r&amp;gt;=expand(&amp;quot;&amp;lt;cword&amp;gt;&amp;quot;)&amp;lt;cr&amp;gt;&amp;lt;cr&amp;gt;:copen&amp;lt;cr&amp;gt;
+    nmap &amp;lt;C-@&amp;gt;g :cs find g &amp;lt;c-r&amp;gt;=expand(&amp;quot;&amp;lt;cword&amp;gt;&amp;quot;)&amp;lt;cr&amp;gt;&amp;lt;cr&amp;gt;
+    nmap &amp;lt;C-@&amp;gt;c :cs find c &amp;lt;c-r&amp;gt;=expand(&amp;quot;&amp;lt;cword&amp;gt;&amp;quot;)&amp;lt;cr&amp;gt;&amp;lt;cr&amp;gt;:copen&amp;lt;cr&amp;gt;
+    nmap &amp;lt;C-@&amp;gt;t :cs find t &amp;lt;c-r&amp;gt;=expand(&amp;quot;&amp;lt;cword&amp;gt;&amp;quot;)&amp;lt;cr&amp;gt;&amp;lt;cr&amp;gt;:copen&amp;lt;cr&amp;gt;
+    nmap &amp;lt;C-@&amp;gt;e :cs find e &amp;lt;c-r&amp;gt;=expand(&amp;quot;&amp;lt;cword&amp;gt;&amp;quot;)&amp;lt;cr&amp;gt;&amp;lt;cr&amp;gt;:copen&amp;lt;cr&amp;gt;
+    nmap &amp;lt;C-@&amp;gt;f :cs find f &amp;lt;c-r&amp;gt;=expand(&amp;quot;&amp;lt;cfile&amp;gt;&amp;quot;)&amp;lt;cr&amp;gt;&amp;lt;cr&amp;gt;:copen&amp;lt;cr&amp;gt;
+    nmap &amp;lt;C-@&amp;gt;i :cs find i ^&amp;lt;c-r&amp;gt;=expand(&amp;quot;&amp;lt;cfile&amp;gt;&amp;quot;)&amp;lt;cr&amp;gt;$&amp;lt;cr&amp;gt;:copen&amp;lt;cr&amp;gt;
+    nmap &amp;lt;C-@&amp;gt;d :cs find d &amp;lt;c-r&amp;gt;=expand(&amp;quot;&amp;lt;cword&amp;gt;&amp;quot;)&amp;lt;cr&amp;gt;&amp;lt;cr&amp;gt;:copen&amp;lt;cr&amp;gt;
+endif
+&lt;/code&gt;&lt;/pre&gt;
+</description></item></channel>
+</rss>

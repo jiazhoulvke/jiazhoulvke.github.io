@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+    <title>Soft on jiazhoulvke&#39;s Blog</title>
+    <link>http://www.jiazhoulvke.com/tags/soft/</link>
+    <description>Recent content in Soft on jiazhoulvke&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator> 
+    <language>zh-cn</language> 
+    <lastBuildDate>2012-09-19 00:00:00</lastBuildDate> 
+    <atom:link href="/tags/soft/" rel="self" type="application/rss+xml" /> 
+    <item>
+    <title>clink：加强window下的cmd</title>
+    <link>http://www.jiazhoulvke.com/2012/09/19/clinkefbc9ae58aa0e5bcbawindowe4b88be79a84cmd/</link>
+    <pubDate>2012-09-19 00:00:00</pubDate> 
+    <guid>http://www.jiazhoulvke.com/2012/09/19/clinkefbc9ae58aa0e5bcbawindowe4b88be79a84cmd/</guid>
+    <description>
+
+&lt;p&gt;作为码农免不了要用用命令行。用惯了linux下的终端，再用window下的cmd，绝对会让人感到生不如死：复制、粘贴方式极其脑残，不能&amp;lt;Ctrl-U&amp;gt;删除一整行，不能&amp;lt;Alt-.&amp;gt;补全上次命令的最后参数,不能……&lt;/p&gt;
+
+&lt;p&gt;这时有两个选择：一是装个类似于cygwin这样的模拟环境，二就是使用这次要介绍的神器——clink。&lt;/p&gt;
+
+&lt;p&gt;项目地址： &lt;a href=&#34;https://code.google.com/p/clink/&#34;&gt;https://code.google.com/p/clink/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;使用方法很简单，直接下载安装即可，也就不多说了。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;h3 id=&#34;features&#34;&gt;Features&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Powerful Bash-like line editing from GNU&amp;rsquo;s Readline library. Read more on Readline&amp;rsquo;s keyboard shortcuts.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Superior path completion (TAB).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Paste from clipboard (Ctrl-V).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Support for the completion of executables/commands, and environment variables.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Undo/Redo (Ctrl-_ or Ctrl-X, Ctrl-U)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Improved command line history.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Persists across sessions.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Searchable (Ctrl-R and Ctrl-S).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;History expansion (e.g. !!, !, and !$).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Scriptable completion using Lua.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+</description></item></channel>
+</rss>

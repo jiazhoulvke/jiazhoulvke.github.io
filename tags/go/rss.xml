@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+    <title>Go on jiazhoulvke&#39;s Blog</title>
+    <link>http://www.jiazhoulvke.com/tags/go/</link>
+    <description>Recent content in Go on jiazhoulvke&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator> 
+    <language>zh-cn</language> 
+    <lastBuildDate>2012-04-29 00:00:00</lastBuildDate> 
+    <atom:link href="/tags/go/" rel="self" type="application/rss+xml" /> 
+    <item>
+    <title>手机通过wifi控制电脑上的foobar2000</title>
+    <link>http://www.jiazhoulvke.com/2012/04/29/e6898be69cbae9809ae8bf87wifie68ea7e588b6e794b5e88491e4b88ae79a84foobar2000/</link>
+    <pubDate>2012-04-29 00:00:00</pubDate> 
+    <guid>http://www.jiazhoulvke.com/2012/04/29/e6898be69cbae9809ae8bf87wifie68ea7e588b6e794b5e88491e4b88ae79a84foobar2000/</guid>
+    <description>&lt;p&gt;必须先感叹一句，GO语言太强了，自带的库很丰富，语法够简洁，即使没接触过GO，稍微学习一下就能用几十行代码做出个简单的web服务器。&lt;/p&gt;
+
+&lt;p&gt;由于foobar2000可以通过命令行进行操作，比如:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;foobar2000.exe /command:Next
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;就是切换到下一曲。利用这个特性，就能很轻易的实现远程操控foobar2000。&lt;/p&gt;
+
+&lt;p&gt;下面是GO语言的代码,文件名为foobar2k_web.go:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;package main
+
+import (
+    &amp;quot;os/exec&amp;quot;
+    &amp;quot;fmt&amp;quot;
+    &amp;quot;io&amp;quot;
+    &amp;quot;net/http&amp;quot;
+    &amp;quot;os&amp;quot;
+)
+
+var service_port   = &amp;quot;:9527&amp;quot;
+var service_path  = &amp;quot;/foobar2k&amp;quot;
+var foobar2k_path = &amp;quot;d:\\bin\\foobar2000\\foobar2000.exe&amp;quot;
+var fbcmd_map     = map[string]string{&amp;quot;prev&amp;quot;:&amp;quot;Previous&amp;quot;,&amp;quot;next&amp;quot;:&amp;quot;Next&amp;quot;,&amp;quot;vdown&amp;quot;:&amp;quot;Down&amp;quot;,&amp;quot;vup&amp;quot;:&amp;quot;Up&amp;quot;,&amp;quot;playpause&amp;quot;:&amp;quot;Play or pause&amp;quot;}
+
+func FB2KServer(w http.ResponseWriter, req  *http.Request) {
+    io.WriteString(w, &amp;quot;&amp;quot;)
+    io.WriteString(w, &amp;quot;&amp;quot;)
+    io.WriteString(w, &amp;quot;&amp;quot;)
+    io.WriteString(w, &amp;quot;&amp;lt;style type=&amp;quot;\&amp;amp;quot;text/css\&amp;amp;quot;&amp;quot;&amp;gt;div.bt {width:100px;height:100px;float:left;text-align:center;line-height:100px;background-color:green;}div.bt a{font-size:72px;color:white;font-weight:bold;text-decoration:none;}&amp;lt;/style&amp;gt;&amp;quot;)
+    io.WriteString(w, &amp;quot;&amp;quot;)
+    io.WriteString(w, &amp;quot;&amp;quot;)
+    io.WriteString(w, &amp;quot;&amp;lt;div style=&amp;quot;\&amp;amp;quot;width:500px;height:100px;margin:100px&amp;quot; auto;\&amp;quot;=&amp;quot;&amp;quot;&amp;gt;&amp;quot;)
+    io.WriteString(w, &amp;quot;&amp;lt;div class=&amp;quot;\&amp;amp;quot;bt\&amp;amp;quot;&amp;quot;&amp;gt;&amp;lt;a target=&amp;quot;\&amp;amp;quot;_self\&amp;amp;quot;&amp;quot; href=&amp;quot;\&amp;amp;quot;&amp;amp;quot;+service_path+&amp;amp;quot;?fbcmd=prev\&amp;amp;quot;&amp;quot;&amp;gt;《&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;&amp;quot;)
+    io.WriteString(w, &amp;quot;&amp;lt;div class=&amp;quot;\&amp;amp;quot;bt\&amp;amp;quot;&amp;quot;&amp;gt;&amp;lt;a target=&amp;quot;\&amp;amp;quot;_self\&amp;amp;quot;&amp;quot; href=&amp;quot;\&amp;amp;quot;&amp;amp;quot;+service_path+&amp;amp;quot;?fbcmd=next\&amp;amp;quot;&amp;quot;&amp;gt;》&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;&amp;quot;)
+    io.WriteString(w, &amp;quot;&amp;lt;div class=&amp;quot;\&amp;amp;quot;bt\&amp;amp;quot;&amp;quot;&amp;gt;&amp;lt;a target=&amp;quot;\&amp;amp;quot;_self\&amp;amp;quot;&amp;quot; href=&amp;quot;\&amp;amp;quot;&amp;amp;quot;+service_path+&amp;amp;quot;?fbcmd=playpause\&amp;amp;quot;&amp;quot;&amp;gt;||&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;&amp;quot;)
+    io.WriteString(w, &amp;quot;&amp;lt;div class=&amp;quot;\&amp;amp;quot;bt\&amp;amp;quot;&amp;quot;&amp;gt;&amp;lt;a target=&amp;quot;\&amp;amp;quot;_self\&amp;amp;quot;&amp;quot; href=&amp;quot;\&amp;amp;quot;&amp;amp;quot;+service_path+&amp;amp;quot;?fbcmd=vdown\&amp;amp;quot;&amp;quot;&amp;gt;◣&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;&amp;quot;)
+    io.WriteString(w, &amp;quot;&amp;lt;div class=&amp;quot;\&amp;amp;quot;bt\&amp;amp;quot;&amp;quot;&amp;gt;&amp;lt;a target=&amp;quot;\&amp;amp;quot;_self\&amp;amp;quot;&amp;quot; href=&amp;quot;\&amp;amp;quot;&amp;amp;quot;+service_path+&amp;amp;quot;?fbcmd=vup\&amp;amp;quot;&amp;quot;&amp;gt;◢&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;&amp;quot;)
+    io.WriteString(w, &amp;quot;&amp;lt;/div&amp;gt;&amp;quot;)
+    io.WriteString(w, &amp;quot;&amp;quot;)
+    io.WriteString(w, &amp;quot;&amp;quot;)
+    var fbcmd = req.FormValue(&amp;quot;fbcmd&amp;quot;)
+    cmd := exec.Command(foobar2k_path,&amp;quot;/command:&amp;quot;+fbcmd_map[fbcmd])
+    cmd.Start()
+}
+
+func main() {
+    http.HandleFunc(service_path,FB2KServer)
+    fmt.Printf(&amp;quot;started!&amp;quot;);
+    err := http.ListenAndServe(service_port ,nil)
+    if err != nil {
+        fmt.Printf(&amp;quot;ERR:=%s\n&amp;quot;,err)
+        os.Exit(-1)
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;其中service_port定义的是端口号，service_path定义的是服务的路径，foobar2k_path定义的是foobar2000在电脑上的绝对路径,fbcmd_map定义的是foobar2000支持的操作命令，这里只定义了下一曲、上一曲、播放/暂停等常用命令。&lt;/p&gt;
+
+&lt;p&gt;用go编译后生成foobar2k_web.exe,双击运行后会弹出个控制台窗口，显示”started!”。&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&#34;opacity: 1;&#34; lazyloadpass=&#34;1&#34; title=&#34;foobar2k_web.JPG&#34; src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2012/04/foobar2k_web.jpg&#34; file=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2012/04/foobar2k_web.jpg&#34; class=&#34;aligncenter lh_lazyimg&#34;&gt;&lt;noscript&gt;&lt;img title=&#34;foobar2k_web.JPG&#34; src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2012/04/foobar2k_web.jpg&#34; class=&#34;aligncenter&#34; /&gt;&lt;/noscript&gt;&lt;/p&gt;
+
+&lt;p&gt;然后用手机连接wifi，访问 http://电脑端的ip:端口号/路径 ,比如我的电脑端的ip地址是192.168.1.3,定义的端口号是9527,定义的路径是/foobar2k，那么就可以访问 &lt;a href=&#34;http://192.168.1.3:9527/foobar2k&#34;&gt;http://192.168.1.3:9527/foobar2k&lt;/a&gt; ，不出意外的话在手机上就能看到如下界面：&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&#34;opacity: 1;&#34; lazyloadpass=&#34;1&#34; title=&#34;foobar2k_web_phone.png&#34; src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2012/04/foobar2k_web_phone.png&#34; file=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2012/04/foobar2k_web_phone.png&#34; class=&#34;aligncenter lh_lazyimg&#34;&gt;&lt;noscript&gt;&lt;img title=&#34;foobar2k_web_phone.png&#34; src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2012/04/foobar2k_web_phone.png&#34; class=&#34;aligncenter&#34; /&gt;&lt;/noscript&gt;&lt;/p&gt;
+
+&lt;p&gt;点击手机上的按钮，foobar2000就会做出相应动作，假如foobar2000还没有启动的话，则会自动启动。&lt;/p&gt;
+
+&lt;p&gt;目前的程序功能还很简陋，要好用点还得再完善一下，比如定义的端口号、foobar2000路径都放到配置文件里，操作界面美化等。&lt;/p&gt;
+</description></item></channel>
+</rss>
