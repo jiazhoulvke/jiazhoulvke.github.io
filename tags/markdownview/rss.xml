@@ -14,7 +14,7 @@
     <pubDate>2013-07-19 00:00:00</pubDate> 
     <guid>http://www.jiazhoulvke.com/2013/07/19/markdownviewe69bb4e696b0e4ba86e4b880e4b88b/</guid>
     <description>&lt;p&gt;加了自定义样式表的功能，没有定义的话默认使用仿github的样式。
-&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=238&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/07/MarkdownView.png&#34; alt=&#34;MarkdownView&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=238&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/07/MarkdownView.png&#34; alt=&#34;MarkdownView&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;项目地址: &lt;a href=&#34;https://github.com/jiazhoulvke/MarkdownView&#34;&gt;https://github.com/jiazhoulvke/MarkdownView&lt;/a&gt;&lt;/p&gt;
 </description></item> 
@@ -49,7 +49,7 @@
 
 &lt;h2 id=&#34;效果展示&#34;&gt;效果展示&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=210&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/01/MarkdownView.png&#34; alt=&#34;MarkdownView&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=210&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/01/MarkdownView.png&#34; alt=&#34;MarkdownView&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;在Vim中对markdown文件进行修改会马上在右侧的窗口显示出来。&lt;/p&gt;
 

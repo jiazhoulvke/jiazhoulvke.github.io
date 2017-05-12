@@ -55,13 +55,13 @@
 &lt;li&gt;加入&amp;rdquo;question&amp;rdquo;参数(即:MPCreate question)，myproject会一一询问你是否需要开启某个选项，然后将结果保存到project.vim中。见下图:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2014/02/MPCreate_question.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2014/02/MPCreate_question.png&#34; alt=&#34;MPCreate_question.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2014/02/MPCreate_question.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2014/02/MPCreate_question.png&#34; alt=&#34;MPCreate_question.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;mpprojectlist&#34;&gt;:MPProjectList&lt;/h3&gt;
 
 &lt;p&gt;输入 :MPProjectList 会打开项目列表窗口，列出所有你创建的项目。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2014/02/MPProjectList.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2014/02/MPProjectList.png&#34; alt=&#34;MPProjectList.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2014/02/MPProjectList.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2014/02/MPProjectList.png&#34; alt=&#34;MPProjectList.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;移动光标到到你需要载入的项目上，按回车即可载入。按d则删除项目。&lt;/p&gt;
 
@@ -73,7 +73,7 @@
 
 &lt;p&gt;输入&amp;rdquo;:MPLoad &amp;ldquo;后按Tab可以自动补全项目列表中的项目。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2014/02/MPLoad.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2014/02/MPLoad.png&#34; alt=&#34;MPLoad.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2014/02/MPLoad.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2014/02/MPLoad.png&#34; alt=&#34;MPLoad.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;mpsessionsave&#34;&gt;:MPSessionSave&lt;/h3&gt;
 
@@ -89,7 +89,7 @@
 
 &lt;p&gt;输入&amp;rdquo;:MPSessionLoad &amp;ldquo;后按Tab可以自动补全项目根目录中所有后缀为&amp;rdquo;.session.vim&amp;rdquo;的文件名。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2014/02/MPSessionLoad.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2014/02/MPSessionLoad.png&#34; alt=&#34;MPSessionLoad.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2014/02/MPSessionLoad.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2014/02/MPSessionLoad.png&#34; alt=&#34;MPSessionLoad.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;变量说明&#34;&gt;变量说明&lt;/h2&gt;
 
@@ -220,7 +220,7 @@ copy src\xxd\xxd.exe vim74
 
 &lt;h3 id=&#34;最后附上我编译的vim74的截图&#34;&gt;最后附上我编译的vim74的截图&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/08/Screenshot-ProjectPath-GVIM.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/08/Screenshot-ProjectPath-GVIM.png&#34; alt=&#34;Screenshot-ProjectPath-GVIM.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/08/Screenshot-ProjectPath-GVIM.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/08/Screenshot-ProjectPath-GVIM.png&#34; alt=&#34;Screenshot-ProjectPath-GVIM.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;嫌自己编译麻烦&#34;&gt;嫌自己编译麻烦？&lt;/h3&gt;
 
@@ -232,7 +232,7 @@ copy src\xxd\xxd.exe vim74
     <pubDate>2013-07-19 00:00:00</pubDate> 
     <guid>http://www.jiazhoulvke.com/2013/07/19/markdownviewe69bb4e696b0e4ba86e4b880e4b88b/</guid>
     <description>&lt;p&gt;加了自定义样式表的功能，没有定义的话默认使用仿github的样式。
-&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=238&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/07/MarkdownView.png&#34; alt=&#34;MarkdownView&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=238&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/07/MarkdownView.png&#34; alt=&#34;MarkdownView&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;项目地址: &lt;a href=&#34;https://github.com/jiazhoulvke/MarkdownView&#34;&gt;https://github.com/jiazhoulvke/MarkdownView&lt;/a&gt;&lt;/p&gt;
 </description></item> 
@@ -267,7 +267,7 @@ copy src\xxd\xxd.exe vim74
 
 &lt;h2 id=&#34;效果展示&#34;&gt;效果展示&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=210&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/01/MarkdownView.png&#34; alt=&#34;MarkdownView&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=210&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/01/MarkdownView.png&#34; alt=&#34;MarkdownView&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;在Vim中对markdown文件进行修改会马上在右侧的窗口显示出来。&lt;/p&gt;
 
@@ -400,13 +400,13 @@ endif
     <guid>http://www.jiazhoulvke.com/2012/04/14/vime79a84googlee7bfbbe8af91e68f92e4bbb6/</guid>
     <description>&lt;p&gt;由于经常需要在vim里看一些英文帮助文档，又没有长年累月的运行一个翻译软件的习惯，所以还是写了个插件来搞定,用了python，所以windows下得确保安装了python。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2012/04/i1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2012/04/i1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;使用方法有几种：&lt;/p&gt;
 
 &lt;p&gt;1.将光标移动到需要翻译的英文单词上，按&amp;lt;leader&amp;gt;e2c(把中文翻译成英文就是&amp;lt;leader&amp;gt;c2e，下面就不多说了)。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://jiazhoulvke.com/wp-content/uploads/2012/04/i2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2012/04/i2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;2.选中需要翻译的英文，按&amp;lt;leader&amp;gt;e2c。&lt;/p&gt;
 
@@ -709,13 +709,13 @@ vim里的文件管理器,以前我用的是winmanager，但这个nerdtree更好�
 
 &lt;p&gt;下面是截图:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://jiazhoulvke.com/?attachment_id=85&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2011/05/11.png&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://jiazhoulvke.com/?attachment_id=85&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2011/05/11.png&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://jiazhoulvke.com/?attachment_id=86&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2011/05/2.png&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://jiazhoulvke.com/?attachment_id=86&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2011/05/2.png&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://jiazhoulvke.com/?attachment_id=87&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2011/05/3.png&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://jiazhoulvke.com/?attachment_id=87&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2011/05/3.png&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://jiazhoulvke.com/?attachment_id=88&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2011/05/4.png&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://jiazhoulvke.com/?attachment_id=88&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2011/05/4.png&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description></item> 
     <item>
     <title>vim里的调色板</title>
@@ -733,7 +733,7 @@ googlecode:&lt;a href=&#34;http://jiazhoulvke.googlecode.com/files/colorpicker_f
 
 &lt;p&gt;现在一切搞定了，打开vim，按Alt+C，就会弹出一个调色板了，hoho～～&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://jiazhoulvke.com/?attachment_id=71&#34;&gt;&lt;img src=&#34;http://jiazhoulvke.com/wp-content/uploads/2011/04/colorpicker.jpg&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://jiazhoulvke.com/?attachment_id=71&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2011/04/colorpicker.jpg&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;update:回去看了一下依云同学（colorpicker作者）博客的更新，才想起用windows的人基本都没装过gtk运行库的，失策啊，没这玩意是用不了colorpicker，赶紧的，去下载个gtk运行库吧！&lt;a href=&#34;http://gtk-win.sourceforge.net&#34;&gt;http://gtk-win.sourceforge.net&lt;/a&gt;&lt;/p&gt;
 </description></item> 

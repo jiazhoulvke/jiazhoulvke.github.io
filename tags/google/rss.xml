@@ -13,9 +13,9 @@
     <link>http://www.jiazhoulvke.com/2013/07/01/ripgoogle-reader/</link>
     <pubDate>2013-07-01 00:00:00</pubDate> 
     <guid>http://www.jiazhoulvke.com/2013/07/01/ripgoogle-reader/</guid>
-    <description>&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=223&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/07/google_reader_1.jpg&#34; alt=&#34;google_reader_1&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+    <description>&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=223&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/07/google_reader_1.jpg&#34; alt=&#34;google_reader_1&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=224&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/07/google_reader_2.jpg&#34; alt=&#34;google_reader_2&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=224&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/07/google_reader_2.jpg&#34; alt=&#34;google_reader_2&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description></item> 
     <item>
     <title>vim的Google翻译插件</title>
@@ -24,13 +24,13 @@
     <guid>http://www.jiazhoulvke.com/2012/04/14/vime79a84googlee7bfbbe8af91e68f92e4bbb6/</guid>
     <description>&lt;p&gt;由于经常需要在vim里看一些英文帮助文档，又没有长年累月的运行一个翻译软件的习惯，所以还是写了个插件来搞定,用了python，所以windows下得确保安装了python。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2012/04/i1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2012/04/i1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;使用方法有几种：&lt;/p&gt;
 
 &lt;p&gt;1.将光标移动到需要翻译的英文单词上，按&amp;lt;leader&amp;gt;e2c(把中文翻译成英文就是&amp;lt;leader&amp;gt;c2e，下面就不多说了)。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://jiazhoulvke.com/wp-content/uploads/2012/04/i2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2012/04/i2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;2.选中需要翻译的英文，按&amp;lt;leader&amp;gt;e2c。&lt;/p&gt;
 

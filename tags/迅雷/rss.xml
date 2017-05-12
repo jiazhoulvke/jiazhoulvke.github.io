@@ -36,7 +36,7 @@ winetricks
 
 &lt;p&gt;会出现这样的对话框:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/01/Winetricks.png&#34; alt=&#34;winetricks&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/01/Winetricks.png&#34; alt=&#34;winetricks&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;点&amp;rdquo;确定&amp;rdquo;，再点&amp;rdquo;Install a Windows DLL or component&amp;rdquo;，选择&amp;rdquo;ie6&amp;rdquo;，点&amp;rdquo;确定&amp;rdquo;，然后会弹出提示，让你去 &lt;a href=&#34;http://www.oldversion.com/windows/internet-explorer-6-0&#34;&gt;http://www.oldversion.com/windows/internet-explorer-6-0&lt;/a&gt; 这个地址下载ie6的安装文件放到_~/.cache/winetricks/ie6_里。&lt;/p&gt;
 

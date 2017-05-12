@@ -28,9 +28,9 @@
 
 &lt;p&gt;本次的主角小黑和M6S:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/img/IMG_20140921_095854.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/img/IMG_20140921_095854.jpg&#34; alt=&#34;&#34; /&gt;
 　　
-&lt;img src=&#34;http://www.jiazhoulvke.com/img/IMG_20141026_160058.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;http://www.jiazhoulvke.com/static/img/IMG_20141026_160058.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;###具体步骤###&lt;/p&gt;
 
@@ -131,11 +131,11 @@ mount --bind /sys /mnt/new/sys
 
 &lt;p&gt;先在win7下用as ssd benchmark测试一下:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/img/as-ssd-bench PLEXTOR PX-128M6 2014.10.26 19-47-52.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/img/as-ssd-bench PLEXTOR PX-128M6 2014.10.26 19-47-52.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;写入稍微有点慢，没有台式机上的三星840EVO快，不过还能接受。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/img/as-ssd-bench Samsung SSD 840  2014.6.11 19-03-57.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/img/as-ssd-bench Samsung SSD 840  2014.6.11 19-03-57.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;再在ubuntu下用hdparm对比一下固态硬盘和机械硬盘的速度:&lt;/p&gt;
 
@@ -173,7 +173,7 @@ mount --bind /sys /mnt/new/sys
 
 &lt;p&gt;手机端Firefox点击菜单栏的&amp;rdquo;设置&amp;rdquo;-&amp;gt;&amp;ldquo;开发者工具&amp;rdquo;，勾选&amp;rdquo;远程调试&amp;rdquo;。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/img/Screenshot_2014-03-22-12-50-24.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/img/Screenshot_2014-03-22-12-50-24.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;将手机连接到电脑上，并启用USB调试。&lt;/p&gt;
 
@@ -184,21 +184,21 @@ mount --bind /sys /mnt/new/sys
 
 &lt;p&gt;在PC端Firefox中点击&amp;rdquo;工具&amp;rdquo;-&amp;gt;&amp;ldquo;Web开发者&amp;rdquo;-&amp;gt;&amp;ldquo;连接&amp;hellip;&amp;ldquo;，不用改动它的默认选项，直接点击连接。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/img/2014-03-22_12.59.39.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/img/2014-03-22_12.59.39.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;注意你的手机，应该会出现下图的对话框,点击&amp;rdquo;确定&amp;rdquo;即可:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/img/Screenshot_2014-03-22-13-04-53.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/img/Screenshot_2014-03-22-13-04-53.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;现在PC端的Firefox会出现下图:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/img/2014-03-22_13.07.35.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/img/2014-03-22_13.07.35.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;这里就点击&amp;rdquo;Google&amp;rdquo;来调试一下Andorid端已经打开的Google网站吧。PC端会弹出一个调试窗口，你可以利用它完全控制Android端Firefox的各种行为。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/img/2014-03-22-13_20_05.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/img/2014-03-22-13_20_05.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/img/Screenshot_2014-03-22-13-18-45.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/img/Screenshot_2014-03-22-13-18-45.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description></item> 
     <item>
     <title>rss地址已改变</title>
@@ -261,13 +261,13 @@ mount --bind /sys /mnt/new/sys
 &lt;li&gt;加入&amp;rdquo;question&amp;rdquo;参数(即:MPCreate question)，myproject会一一询问你是否需要开启某个选项，然后将结果保存到project.vim中。见下图:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2014/02/MPCreate_question.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2014/02/MPCreate_question.png&#34; alt=&#34;MPCreate_question.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2014/02/MPCreate_question.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2014/02/MPCreate_question.png&#34; alt=&#34;MPCreate_question.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;mpprojectlist&#34;&gt;:MPProjectList&lt;/h3&gt;
 
 &lt;p&gt;输入 :MPProjectList 会打开项目列表窗口，列出所有你创建的项目。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2014/02/MPProjectList.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2014/02/MPProjectList.png&#34; alt=&#34;MPProjectList.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2014/02/MPProjectList.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2014/02/MPProjectList.png&#34; alt=&#34;MPProjectList.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;移动光标到到你需要载入的项目上，按回车即可载入。按d则删除项目。&lt;/p&gt;
 
@@ -279,7 +279,7 @@ mount --bind /sys /mnt/new/sys
 
 &lt;p&gt;输入&amp;rdquo;:MPLoad &amp;ldquo;后按Tab可以自动补全项目列表中的项目。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2014/02/MPLoad.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2014/02/MPLoad.png&#34; alt=&#34;MPLoad.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2014/02/MPLoad.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2014/02/MPLoad.png&#34; alt=&#34;MPLoad.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;mpsessionsave&#34;&gt;:MPSessionSave&lt;/h3&gt;
 
@@ -295,7 +295,7 @@ mount --bind /sys /mnt/new/sys
 
 &lt;p&gt;输入&amp;rdquo;:MPSessionLoad &amp;ldquo;后按Tab可以自动补全项目根目录中所有后缀为&amp;rdquo;.session.vim&amp;rdquo;的文件名。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2014/02/MPSessionLoad.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2014/02/MPSessionLoad.png&#34; alt=&#34;MPSessionLoad.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2014/02/MPSessionLoad.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2014/02/MPSessionLoad.png&#34; alt=&#34;MPSessionLoad.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;变量说明&#34;&gt;变量说明&lt;/h2&gt;
 
@@ -496,45 +496,45 @@ Image files: 123&lt;/p&gt;
 
 &lt;p&gt;运行xbmc，然后按以下步骤配置视频源:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot005.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot005.png&#34; alt=&#34;screenshot005.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/screenshot005.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/screenshot005.png&#34; alt=&#34;screenshot005.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot006.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot006.png&#34; alt=&#34;screenshot006.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/screenshot006.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/screenshot006.png&#34; alt=&#34;screenshot006.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot007.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot007.png&#34; alt=&#34;screenshot007.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/screenshot007.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/screenshot007.png&#34; alt=&#34;screenshot007.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot000.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot000.png&#34; alt=&#34;screenshot000.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/screenshot000.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/screenshot000.png&#34; alt=&#34;screenshot000.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot001.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot001.png&#34; alt=&#34;screenshot001.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/screenshot001.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/screenshot001.png&#34; alt=&#34;screenshot001.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot002.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot002.png&#34; alt=&#34;screenshot002.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/screenshot002.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/screenshot002.png&#34; alt=&#34;screenshot002.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot003.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot003.png&#34; alt=&#34;screenshot003.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/screenshot003.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/screenshot003.png&#34; alt=&#34;screenshot003.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot004.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/screenshot004.png&#34; alt=&#34;screenshot004.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/screenshot004.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/screenshot004.png&#34; alt=&#34;screenshot004.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;接下来用同样的方法配置好音乐和图片。&lt;/p&gt;
 
 &lt;p&gt;再强烈推荐一个android应用&amp;ndash;&lt;a href=&#34;https://play.google.com/store/apps/details?id=org.xbmc.android.remote&#34;&gt;Official XBMC Remote&lt;/a&gt;,它可以遥控PC端的XBMC，把电脑变成电视机。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/unnamed.jpg&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/unnamed.jpg&#34; alt=&#34;unnamed.jpg&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/unnamed.jpg&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/unnamed.jpg&#34; alt=&#34;unnamed.jpg&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;android手机同步相片到树莓派中&#34;&gt;android手机同步相片到树莓派中&lt;/h2&gt;
 
 &lt;p&gt;安装&lt;a href=&#34;https://play.google.com/store/apps/details?id=dk.tacit.android.foldersync.lite&#34;&gt;FolderSync Lite&lt;/a&gt;。点击&amp;rdquo;账户&amp;rdquo;,然后添加一个SFTP账户，&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/Screenshot_2013-11-26-22-04-30.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/Screenshot_2013-11-26-22-04-30.png&#34; alt=&#34;Screenshot_2013-11-26-22-04-30.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/Screenshot_2013-11-26-22-04-30.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/Screenshot_2013-11-26-22-04-30.png&#34; alt=&#34;Screenshot_2013-11-26-22-04-30.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;然后输入树莓派的IP地址以及帐号密码并保存。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/Screenshot_2013-11-26-22-08-51.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/Screenshot_2013-11-26-22-08-51.png&#34; alt=&#34;Screenshot_2013-11-26-22-08-51.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/Screenshot_2013-11-26-22-08-51.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/Screenshot_2013-11-26-22-08-51.png&#34; alt=&#34;Screenshot_2013-11-26-22-08-51.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;再点击文件夹配对，根据你手机的相片存储路径进行设置：&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/Screenshot_2013-11-27-02-10-15.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/Screenshot_2013-11-27-02-10-15.png&#34; alt=&#34;Screenshot_2013-11-27-02-10-15.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/Screenshot_2013-11-27-02-10-15.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/Screenshot_2013-11-27-02-10-15.png&#34; alt=&#34;Screenshot_2013-11-27-02-10-15.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;好了，现在可以开始同步了。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/Screenshot_2013-11-26-22-15-16.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/Screenshot_2013-11-26-22-15-16.png&#34; alt=&#34;Screenshot_2013-11-26-22-15-16.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/Screenshot_2013-11-26-22-15-16.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/Screenshot_2013-11-26-22-15-16.png&#34; alt=&#34;Screenshot_2013-11-26-22-15-16.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;用树莓派下载文件&#34;&gt;用树莓派下载文件&lt;/h2&gt;
 
@@ -615,7 +615,7 @@ git clone http://github.com/wzhy90/yaaw
 
 &lt;p&gt;现在可以打开&lt;a href=&#34;http://192.168.1.172/yaaw/看看效果了。&#34;&gt;http://192.168.1.172/yaaw/看看效果了。&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/aria2.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/aria2.png&#34; alt=&#34;aria2.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/aria2.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/aria2.png&#34; alt=&#34;aria2.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;aria2还支持迅雷离线下载，当然前提是你有迅雷的vip会员，我个人觉得迅雷的离线下载还是很不错的，值得购买。&lt;/p&gt;
 
@@ -625,7 +625,7 @@ git clone http://github.com/wzhy90/yaaw
 
 &lt;p&gt;打开&lt;a href=&#34;http://lixian.xunlei.com,点右上角的&amp;quot;设置&amp;quot;，然后进行如下设置:&#34;&gt;http://lixian.xunlei.com,点右上角的&amp;quot;设置&amp;quot;，然后进行如下设置:&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/xunleilixian.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/11/xunleilixian.png&#34; alt=&#34;xunleilixian.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/xunleilixian.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/11/xunleilixian.png&#34; alt=&#34;xunleilixian.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;现在选择你要下载的文件然后点击“批量导出”，再选择YAAW就会开始下载了。&lt;/p&gt;
 
@@ -699,7 +699,7 @@ git clone http://github.com/wzhy90/yaaw
 &lt;pre&gt;&lt;code&gt;mntroot rw
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/09/Screenshot-home-jiazhoulvke.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/09/Screenshot-home-jiazhoulvke.png&#34; alt=&#34;Screenshot-home-jiazhoulvke.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/09/Screenshot-home-jiazhoulvke.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/09/Screenshot-home-jiazhoulvke.png&#34; alt=&#34;Screenshot-home-jiazhoulvke.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;先将系统原来的屏保备份到kpw的/mnt/us(也就是通过U盘模式连接到电脑上时显示的kpw根目录)：&lt;/p&gt;
 
@@ -737,7 +737,7 @@ done
 
 &lt;p&gt;最后附上高清无码大图一张:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/09/IMG_20130910_111300.jpg&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/09/IMG_20130910_111300.jpg&#34; alt=&#34;IMG_20130910_111300.jpg&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/09/IMG_20130910_111300.jpg&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/09/IMG_20130910_111300.jpg&#34; alt=&#34;IMG_20130910_111300.jpg&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description></item> 
     <item>
     <title>用CrossOver安装Photoshop CS2</title>
@@ -752,7 +752,7 @@ done
 
 &lt;p&gt;最近crossover正在搞&lt;a href=&#34;http://linuxtoy.org/archives/codeweavers-crossover-chinese-official-online-with-sale-activity.html&#34;&gt;优惠活动&lt;/a&gt;，原价128块的crossover现在只要64块，和linux有关的付费服务我一直以来是能支持就支持的，只有这样才能促进linux的繁荣嘛，几十块的价格也不算贵，在我能承受的范围，于是果断下单了。炫耀一下软件截图……：&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/08/crossover.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/08/crossover.png&#34; alt=&#34;crossover.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/08/crossover.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/08/crossover.png&#34; alt=&#34;crossover.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;获取photoshop-cs2&#34;&gt;获取Photoshop CS2&lt;/h3&gt;
 
@@ -766,11 +766,11 @@ done
 
 &lt;p&gt;这里假设你已经装好了crossover，现在先打开crossover，点击“安装Windows软件”，在弹出的对话框中的“支持的程序”中的第二个就是“Adobe Photoshop CS2”。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/08/crossover1.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/08/crossover1.png&#34; alt=&#34;crossover1.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/08/crossover1.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/08/crossover1.png&#34; alt=&#34;crossover1.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;选中它，然后点击“选择一个程序安装包”，再点击“选择安装文件”，在弹出的对话框中选择你下载的Photoshop安装文件。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/08/crossover2.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/08/crossover2.png&#34; alt=&#34;crossover2.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/08/crossover2.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/08/crossover2.png&#34; alt=&#34;crossover2.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;至于下面的容器你可以不用管，没有容器的话crossover会自己创建的。&lt;/p&gt;
 
@@ -782,30 +782,30 @@ done
 &lt;p&gt;1045-1412-5685-1654-6343-1431&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/08/photoshop_setup.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/08/photoshop_setup.png&#34; alt=&#34;photoshop_setup.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/08/photoshop_setup.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/08/photoshop_setup.png&#34; alt=&#34;photoshop_setup.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;然后继续一路点Next，安装完成。&lt;/p&gt;
 
 &lt;p&gt;接下来就是安装汉化包了。汉化包是一个exe文件，其实就是一个rar自解压程序，直接用unrar就可以解压了：&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/08/unrar.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/08/unrar.png&#34; alt=&#34;unrar.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/08/unrar.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/08/unrar.png&#34; alt=&#34;unrar.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;然后将解压出来的文件全部复制到photoshop安装目录的Required目录中。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;cp -v *.dat ~/.cxoffice/Adobe_Photoshop_CS2/drive_c/Program\ Files/Adobe/Adobe\ Photoshop\ CS2/Required
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/08/hhb.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/08/hhb.png&#34; alt=&#34;hhb.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/08/hhb.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/08/hhb.png&#34; alt=&#34;hhb.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;注意到我所写的命令和我实际操作截图里的不同了吗？“Adobe_Photoshop_CS2”是容器名，因为我之前安装了TM2013，所以已经有一个叫“腾讯_TM_2013”的容器了，这次安装Photoshop我选择把它安装到“腾讯_TM_2013”容器里，你如果是新装的容器那名字应该是“Adobe_Photosho_CS2”，请根据你的实际情况操作。&lt;/p&gt;
 
 &lt;p&gt;文件复制过去也就安装好了，如果你是安装到新容器的话，100%是会有乱码的，因为crossover官方并没有想到你会安装汉化包，所以默认没有给你安装中文字体，你需要自行安装一个。安装是很简单的，和安装Photoshop的方法几乎一模一样，选择“运行时支持的组件”中的“文鼎中文字体”，然后选择Photoshop所在的容器，点“安装”既可。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/08/wending.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/08/wending.png&#34; alt=&#34;wending.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/08/wending.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/08/wending.png&#34; alt=&#34;wending.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;按照惯例，又到了秀截图时间了。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/08/photoshop1.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/08/photoshop1.png&#34; alt=&#34;photoshop.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/08/photoshop1.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/08/photoshop1.png&#34; alt=&#34;photoshop.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description></item> 
     <item>
     <title>一个mutt配置</title>
@@ -830,20 +830,20 @@ done
 
 &lt;p&gt;我设置了&amp;lt;super&amp;gt;+M为唤出mutt的快捷键(super是linux下的windows键的叫法)，当我想发邮件或者查看邮件时按一下快捷键马上就能打开，比打开浏览器再点书签或者输网址不知快了多少倍。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/08/截图-2013年08月15日-20时36分26秒.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/08/截图-2013年08月15日-20时36分26秒.png&#34; alt=&#34;截图-2013年08月15日-20时36分26秒.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/08/截图-2013年08月15日-20时36分26秒.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/08/截图-2013年08月15日-20时36分26秒.png&#34; alt=&#34;截图-2013年08月15日-20时36分26秒.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;目前的使用还比较初级，宏什么的都还没来得及去研究，那才是mutt的精髓所在。&lt;/p&gt;
 
 &lt;p&gt;最后秀一下mutt截图：&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/08/截图-2013年08月15日-20时38分49秒.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/08/截图-2013年08月15日-20时38分49秒.png&#34; alt=&#34;截图-2013年08月15日-20时38分49秒.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/08/截图-2013年08月15日-20时38分49秒.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/08/截图-2013年08月15日-20时38分49秒.png&#34; alt=&#34;截图-2013年08月15日-20时38分49秒.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description></item> 
     <item>
     <title>Fuck Adobe!</title>
     <link>http://www.jiazhoulvke.com/2013/08/13/fuck-adobe/</link>
     <pubDate>2013-08-13 00:00:00</pubDate> 
     <guid>http://www.jiazhoulvke.com/2013/08/13/fuck-adobe/</guid>
-    <description>&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/08/Screenshot-rxvt-unicode.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/08/Screenshot-rxvt-unicode.png&#34; alt=&#34;Screenshot-rxvt-unicode.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+    <description>&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/08/Screenshot-rxvt-unicode.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/08/Screenshot-rxvt-unicode.png&#34; alt=&#34;Screenshot-rxvt-unicode.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description></item> 
     <item>
     <title>Vim7.4正式发布，编译一个来体验一下！</title>
@@ -923,7 +923,7 @@ copy src\xxd\xxd.exe vim74
 
 &lt;h3 id=&#34;最后附上我编译的vim74的截图&#34;&gt;最后附上我编译的vim74的截图&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/08/Screenshot-ProjectPath-GVIM.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/08/Screenshot-ProjectPath-GVIM.png&#34; alt=&#34;Screenshot-ProjectPath-GVIM.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/08/Screenshot-ProjectPath-GVIM.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/08/Screenshot-ProjectPath-GVIM.png&#34; alt=&#34;Screenshot-ProjectPath-GVIM.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;嫌自己编译麻烦&#34;&gt;嫌自己编译麻烦？&lt;/h3&gt;
 
@@ -988,7 +988,7 @@ w | sed &amp;quot;s/$/&amp;lt;br\/&amp;gt;/g&amp;quot; | sed &amp;quot;s/\ /\&am
     <pubDate>2013-07-19 00:00:00</pubDate> 
     <guid>http://www.jiazhoulvke.com/2013/07/19/markdownviewe69bb4e696b0e4ba86e4b880e4b88b/</guid>
     <description>&lt;p&gt;加了自定义样式表的功能，没有定义的话默认使用仿github的样式。
-&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=238&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/07/MarkdownView.png&#34; alt=&#34;MarkdownView&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=238&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/07/MarkdownView.png&#34; alt=&#34;MarkdownView&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;项目地址: &lt;a href=&#34;https://github.com/jiazhoulvke/MarkdownView&#34;&gt;https://github.com/jiazhoulvke/MarkdownView&lt;/a&gt;&lt;/p&gt;
 </description></item> 
@@ -997,9 +997,9 @@ w | sed &amp;quot;s/$/&amp;lt;br\/&amp;gt;/g&amp;quot; | sed &amp;quot;s/\ /\&am
     <link>http://www.jiazhoulvke.com/2013/07/01/ripgoogle-reader/</link>
     <pubDate>2013-07-01 00:00:00</pubDate> 
     <guid>http://www.jiazhoulvke.com/2013/07/01/ripgoogle-reader/</guid>
-    <description>&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=223&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/07/google_reader_1.jpg&#34; alt=&#34;google_reader_1&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+    <description>&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=223&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/07/google_reader_1.jpg&#34; alt=&#34;google_reader_1&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=224&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/07/google_reader_2.jpg&#34; alt=&#34;google_reader_2&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=224&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/07/google_reader_2.jpg&#34; alt=&#34;google_reader_2&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description></item> 
     <item>
     <title>wine迅雷的乱码问题</title>
@@ -1029,7 +1029,7 @@ winetricks
 
 &lt;p&gt;会出现这样的对话框:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/01/Winetricks.png&#34; alt=&#34;winetricks&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/01/Winetricks.png&#34; alt=&#34;winetricks&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;点&amp;rdquo;确定&amp;rdquo;，再点&amp;rdquo;Install a Windows DLL or component&amp;rdquo;，选择&amp;rdquo;ie6&amp;rdquo;，点&amp;rdquo;确定&amp;rdquo;，然后会弹出提示，让你去 &lt;a href=&#34;http://www.oldversion.com/windows/internet-explorer-6-0&#34;&gt;http://www.oldversion.com/windows/internet-explorer-6-0&lt;/a&gt; 这个地址下载ie6的安装文件放到_~/.cache/winetricks/ie6_里。&lt;/p&gt;
 
@@ -1068,7 +1068,7 @@ winetricks
 
 &lt;h2 id=&#34;效果展示&#34;&gt;效果展示&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=210&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/01/MarkdownView.png&#34; alt=&#34;MarkdownView&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=210&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/01/MarkdownView.png&#34; alt=&#34;MarkdownView&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;在Vim中对markdown文件进行修改会马上在右侧的窗口显示出来。&lt;/p&gt;
 
@@ -1244,15 +1244,15 @@ gml.run()
     <guid>http://www.jiazhoulvke.com/2012/12/29/189/</guid>
     <description>&lt;p&gt;Raspberry Pi（国人一般称之为树莓派）最近很火，我受不了诱惑也买了一个来折腾。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=190&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2012/12/psb1.jpeg&#34; alt=&#34;psb1&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=190&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2012/12/psb1.jpeg&#34; alt=&#34;psb1&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;树莓派非常小，显得很可爱。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=191&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2012/12/psb2.jpeg&#34; alt=&#34;psb2&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=191&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2012/12/psb2.jpeg&#34; alt=&#34;psb2&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;旁边的那些板子是用来装树莓派的箱子，是和树莓派一起买来的，那层黄色的纸都可以撕掉的。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=192&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2012/12/psb3.jpeg&#34; alt=&#34;psb3&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=192&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2012/12/psb3.jpeg&#34; alt=&#34;psb3&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;安装很简单，按照说明书用不了多久就可以搞定，最终一个小小的电脑就组装好了。&lt;/p&gt;
 
@@ -1260,7 +1260,7 @@ gml.run()
 
 &lt;p&gt;树莓派有hdmi接口，可以通过hdmi线输出到支持hdmi的显示器上，或者通过hdmi转vga输出到普通的显示器，不过我并不打算用它来放电影，所以没必要花这冤枉钱了，直接在台式机上通过ssh就能访问树莓派了。在路由器上找到树莓派所使用的ip（也可以在路由器上给它绑定一个静态的IP），通过 ssh pi@ip地址 连接到树莓派，然后输入密码raspberry，即可登陆。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=193&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2012/12/Screenshot-pi@raspberrypi-2.png&#34; alt=&#34;Screenshot-pi@raspberrypi: ~-2&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=193&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2012/12/Screenshot-pi@raspberrypi-2.png&#34; alt=&#34;Screenshot-pi@raspberrypi: ~-2&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;登陆后第一步应该是换个更新源，否则默认的源速度会让人发疯的。我目前用的是新加坡的源，有200K以上的速度：&lt;/p&gt;
 
@@ -1279,7 +1279,7 @@ sudo apt-get upgrade
 &lt;pre&gt;&lt;code&gt;sudo raspi-config
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=194&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2012/12/Screenshot-pi@raspberrypi-.png&#34; alt=&#34;Screenshot-pi@raspberrypi: ~&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/?attachment_id=194&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2012/12/Screenshot-pi@raspberrypi-.png&#34; alt=&#34;Screenshot-pi@raspberrypi: ~&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;树莓派的设置基本就搞定了，接下来就是各种折腾了，以后再说……&lt;/p&gt;
 </description></item> 
@@ -1544,11 +1544,11 @@ func main() {
 
 &lt;p&gt;用go编译后生成foobar2k_web.exe,双击运行后会弹出个控制台窗口，显示”started!”。&lt;/p&gt;
 
-&lt;p&gt;&lt;img style=&#34;opacity: 1;&#34; lazyloadpass=&#34;1&#34; title=&#34;foobar2k_web.JPG&#34; src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2012/04/foobar2k_web.jpg&#34; file=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2012/04/foobar2k_web.jpg&#34; class=&#34;aligncenter lh_lazyimg&#34;&gt;&lt;noscript&gt;&lt;img title=&#34;foobar2k_web.JPG&#34; src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2012/04/foobar2k_web.jpg&#34; class=&#34;aligncenter&#34; /&gt;&lt;/noscript&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img style=&#34;opacity: 1;&#34; lazyloadpass=&#34;1&#34; title=&#34;foobar2k_web.JPG&#34; src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2012/04/foobar2k_web.jpg&#34; file=&#34;/static/wp-content/uploads/2012/04/foobar2k_web.jpg&#34; class=&#34;aligncenter lh_lazyimg&#34;&gt;&lt;noscript&gt;&lt;img title=&#34;foobar2k_web.JPG&#34; src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2012/04/foobar2k_web.jpg&#34; class=&#34;aligncenter&#34; /&gt;&lt;/noscript&gt;&lt;/p&gt;
 
 &lt;p&gt;然后用手机连接wifi，访问 http://电脑端的ip:端口号/路径 ,比如我的电脑端的ip地址是192.168.1.3,定义的端口号是9527,定义的路径是/foobar2k，那么就可以访问 &lt;a href=&#34;http://192.168.1.3:9527/foobar2k&#34;&gt;http://192.168.1.3:9527/foobar2k&lt;/a&gt; ，不出意外的话在手机上就能看到如下界面：&lt;/p&gt;
 
-&lt;p&gt;&lt;img style=&#34;opacity: 1;&#34; lazyloadpass=&#34;1&#34; title=&#34;foobar2k_web_phone.png&#34; src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2012/04/foobar2k_web_phone.png&#34; file=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2012/04/foobar2k_web_phone.png&#34; class=&#34;aligncenter lh_lazyimg&#34;&gt;&lt;noscript&gt;&lt;img title=&#34;foobar2k_web_phone.png&#34; src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2012/04/foobar2k_web_phone.png&#34; class=&#34;aligncenter&#34; /&gt;&lt;/noscript&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img style=&#34;opacity: 1;&#34; lazyloadpass=&#34;1&#34; title=&#34;foobar2k_web_phone.png&#34; src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2012/04/foobar2k_web_phone.png&#34; file=&#34;/static/wp-content/uploads/2012/04/foobar2k_web_phone.png&#34; class=&#34;aligncenter lh_lazyimg&#34;&gt;&lt;noscript&gt;&lt;img title=&#34;foobar2k_web_phone.png&#34; src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2012/04/foobar2k_web_phone.png&#34; class=&#34;aligncenter&#34; /&gt;&lt;/noscript&gt;&lt;/p&gt;
 
 &lt;p&gt;点击手机上的按钮，foobar2000就会做出相应动作，假如foobar2000还没有启动的话，则会自动启动。&lt;/p&gt;
 
@@ -1561,13 +1561,13 @@ func main() {
     <guid>http://www.jiazhoulvke.com/2012/04/14/vime79a84googlee7bfbbe8af91e68f92e4bbb6/</guid>
     <description>&lt;p&gt;由于经常需要在vim里看一些英文帮助文档，又没有长年累月的运行一个翻译软件的习惯，所以还是写了个插件来搞定,用了python，所以windows下得确保安装了python。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2012/04/i1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2012/04/i1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;使用方法有几种：&lt;/p&gt;
 
 &lt;p&gt;1.将光标移动到需要翻译的英文单词上，按&amp;lt;leader&amp;gt;e2c(把中文翻译成英文就是&amp;lt;leader&amp;gt;c2e，下面就不多说了)。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://jiazhoulvke.com/wp-content/uploads/2012/04/i2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2012/04/i2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;2.选中需要翻译的英文，按&amp;lt;leader&amp;gt;e2c。&lt;/p&gt;
 
@@ -1870,13 +1870,13 @@ vim里的文件管理器,以前我用的是winmanager，但这个nerdtree更好�
 
 &lt;p&gt;下面是截图:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://jiazhoulvke.com/?attachment_id=85&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2011/05/11.png&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://jiazhoulvke.com/?attachment_id=85&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2011/05/11.png&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://jiazhoulvke.com/?attachment_id=86&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2011/05/2.png&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://jiazhoulvke.com/?attachment_id=86&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2011/05/2.png&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://jiazhoulvke.com/?attachment_id=87&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2011/05/3.png&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://jiazhoulvke.com/?attachment_id=87&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2011/05/3.png&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://jiazhoulvke.com/?attachment_id=88&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2011/05/4.png&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://jiazhoulvke.com/?attachment_id=88&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2011/05/4.png&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description></item> 
     <item>
     <title>vim里的调色板</title>
@@ -1894,7 +1894,7 @@ googlecode:&lt;a href=&#34;http://jiazhoulvke.googlecode.com/files/colorpicker_f
 
 &lt;p&gt;现在一切搞定了，打开vim，按Alt+C，就会弹出一个调色板了，hoho～～&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://jiazhoulvke.com/?attachment_id=71&#34;&gt;&lt;img src=&#34;http://jiazhoulvke.com/wp-content/uploads/2011/04/colorpicker.jpg&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://jiazhoulvke.com/?attachment_id=71&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2011/04/colorpicker.jpg&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;update:回去看了一下依云同学（colorpicker作者）博客的更新，才想起用windows的人基本都没装过gtk运行库的，失策啊，没这玩意是用不了colorpicker，赶紧的，去下载个gtk运行库吧！&lt;a href=&#34;http://gtk-win.sourceforge.net&#34;&gt;http://gtk-win.sourceforge.net&lt;/a&gt;&lt;/p&gt;
 </description></item> 

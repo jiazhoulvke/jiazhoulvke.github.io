@@ -55,13 +55,13 @@
 &lt;li&gt;加入&amp;rdquo;question&amp;rdquo;参数(即:MPCreate question)，myproject会一一询问你是否需要开启某个选项，然后将结果保存到project.vim中。见下图:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2014/02/MPCreate_question.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2014/02/MPCreate_question.png&#34; alt=&#34;MPCreate_question.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2014/02/MPCreate_question.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2014/02/MPCreate_question.png&#34; alt=&#34;MPCreate_question.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;mpprojectlist&#34;&gt;:MPProjectList&lt;/h3&gt;
 
 &lt;p&gt;输入 :MPProjectList 会打开项目列表窗口，列出所有你创建的项目。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2014/02/MPProjectList.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2014/02/MPProjectList.png&#34; alt=&#34;MPProjectList.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2014/02/MPProjectList.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2014/02/MPProjectList.png&#34; alt=&#34;MPProjectList.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;移动光标到到你需要载入的项目上，按回车即可载入。按d则删除项目。&lt;/p&gt;
 
@@ -73,7 +73,7 @@
 
 &lt;p&gt;输入&amp;rdquo;:MPLoad &amp;ldquo;后按Tab可以自动补全项目列表中的项目。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2014/02/MPLoad.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2014/02/MPLoad.png&#34; alt=&#34;MPLoad.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2014/02/MPLoad.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2014/02/MPLoad.png&#34; alt=&#34;MPLoad.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;mpsessionsave&#34;&gt;:MPSessionSave&lt;/h3&gt;
 
@@ -89,7 +89,7 @@
 
 &lt;p&gt;输入&amp;rdquo;:MPSessionLoad &amp;ldquo;后按Tab可以自动补全项目根目录中所有后缀为&amp;rdquo;.session.vim&amp;rdquo;的文件名。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2014/02/MPSessionLoad.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2014/02/MPSessionLoad.png&#34; alt=&#34;MPSessionLoad.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2014/02/MPSessionLoad.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2014/02/MPSessionLoad.png&#34; alt=&#34;MPSessionLoad.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;变量说明&#34;&gt;变量说明&lt;/h2&gt;
 

@@ -206,430 +206,6 @@
     
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="http://www.jiazhoulvke.com/2013/01/28/winee8bf85e99bb7e79a84e4b9b1e7a081e997aee9a298/">
-          wine迅雷的乱码问题
-        </a>
-      </h1>
-      <div class="postShorten-meta post-meta">
-  
-    <time itemprop="datePublished" datetime="2013-01-28T00:00:00Z">
-      
-  
-  
-  
-  
-    2013-01-28 00:00:00
-  
-
-    </time>
-  
-  
-  
-  
-    <span>发布在</span>
-    
-      <a class="category-link" href="http://www.jiazhoulvke.com/categories/%e5%8e%9f%e5%88%9b">原创</a>
-    
-  
-
-
-</div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      <p>
-        平时下载一些东西我都是直接用浏览器，大一点的会用aria2或者amule，不过对于死链，linux下的所有下载工具都没辙，迅雷在这方面确实是有很大的优势。
-我用的是linuxdeepin里提供的打包好的wine迅雷:
- <a href="http://packages.linuxdeepin.com/deepin/pool/main/d/deepinwine-thunder5/deepinwine-thunder5_0.0.2_all.deb">http://packages.linuxdeepin.com/deepin/pool/main/d/deepinwine-thunder5/deepinwine-thunder5_0.0.2_all.deb</a>
- 顺便提供qq2012和深度截图的地址：
- <a href="http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-scrot/deepin-scrot_2.0-0deepin_all.deb">http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-scrot/deepin-scrot_2.0-0deepin_all.deb</a>
-<a href="http://packages.linuxdeepin.com/deepin/pool/main/d/deepinwine-qq2012/deepinwine-qq2012_0.0.1_i386.deb">http://packages.linuxdeepin.com/deepin/pool/main/d/deepinwine-qq2012/deepinwine-qq2012_0.0.1_i386.deb</a>
- wine迅雷下载一般的http资源是一点问题都没有的，速度也很快，但下载bt文件的时候所有的文件名全部是乱码，提示无法保存，让我很无奈，Google了一下，看到这个帖子里有人提出同一个问题，原来是要再装一个ie6，这就好办了，打开终端，输入下面的代码：
-export WINEPREFIX=$HOME/.deepinwine/wine-thunder5 winetricks  会出现这样的对话框:
-点&rdquo;确定&rdquo;，再点&rdquo;Install a Windows DLL or component&rdquo;，选择&rdquo;ie6&rdquo;，点&rdquo;确定&rdquo;，然后会弹出提示，让你去 <a href="http://www.oldversion.com/windows/internet-explorer-6-0">http://www.oldversion.com/windows/internet-explorer-6-0</a> 这个地址下载ie6的安装文件放到_~/.cache/winetricks/ie6_里。
-完成后在终端里再次运行_winetricks_，依照之前的顺序点击菜单，就会开始安装了，这一步没啥好说的。
-再用wine迅雷打开bt种子，已经不会乱码了。
-        <br>
-        <a href="http://www.jiazhoulvke.com/2013/01/28/winee8bf85e99bb7e79a84e4b9b1e7a081e997aee9a298/" class="postShorten-excerpt_link link">阅读全文</a>
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-            
-              
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="http://www.jiazhoulvke.com/2013/01/23/markdownview-vime79a84markdowne58fafe8a786e58c96e7bc96e8be91e68f92e4bbb6/">
-          MarkdownView - Vim的markdown可视化编辑插件
-        </a>
-      </h1>
-      <div class="postShorten-meta post-meta">
-  
-    <time itemprop="datePublished" datetime="2013-01-23T00:00:00Z">
-      
-  
-  
-  
-  
-    2013-01-23 00:00:00
-  
-
-    </time>
-  
-  
-  
-  
-    <span>发布在</span>
-    
-      <a class="category-link" href="http://www.jiazhoulvke.com/categories/%e5%8e%9f%e5%88%9b">原创</a>
-    
-  
-
-
-</div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      <p>
-        MarkdownView markdown可视化编辑插件，可以在编辑的同时看到最终效果。
-安装需求  Vim编译了python支持 安装了python-webkit、python-gtk、python-markdown  安装 git clone <a href="https://github.com/jiazhoulvke/MarkdownView">https://github.com/jiazhoulvke/MarkdownView</a>
-使用  打开markdown文件 输入 :MarkdownView  效果展示
-在Vim中对markdown文件进行修改会马上在右侧的窗口显示出来。
-其他说明 本插件在Linux mint 14下测试通过。
-        <br>
-        <a href="http://www.jiazhoulvke.com/2013/01/23/markdownview-vime79a84markdowne58fafe8a786e58c96e7bc96e8be91e68f92e4bbb6/" class="postShorten-excerpt_link link">阅读全文</a>
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-            
-              
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="http://www.jiazhoulvke.com/2013/01/06/198/">
-          树莓派Raspberry Pi与主机进行文件同步
-        </a>
-      </h1>
-      <div class="postShorten-meta post-meta">
-  
-    <time itemprop="datePublished" datetime="2013-01-06T00:00:00Z">
-      
-  
-  
-  
-  
-    2013-01-06 00:00:00
-  
-
-    </time>
-  
-  
-  
-  
-    <span>发布在</span>
-    
-      <a class="category-link" href="http://www.jiazhoulvke.com/categories/%e5%8e%9f%e5%88%9b">原创</a>
-    
-  
-
-
-</div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      <p>
-        前言 很想要一个类似于dropbox一样的同步工具来同步主机和树莓派中的文件，很显然树莓派里是别想有dropbox的，所以只好自己动手来实现类似的功能，用到的软件是linux里常见的rsync和python。
-一、给树莓派设置静态IP 先用ssh登陆到树莓派，给树莓派设置一个静态IP ，可以在路由器上设置，也可以直接在树莓派里设置，我是在树莓派上设置的:
-sudo vim /etc/network/interfaces  将内容改成下面这样:
-auto lo iface lo inet loopback iface eth0 inet static address 192.168.1.72 gateway 192.168.1.1 netmask 255.255.255.0  保存并退出。
-&ldquo;192.168.1.72&rdquo;是我给树莓派设置的固定IP，&rdquo;192.168.1.1&rdquo;是路由器的IP，请根据你的实际情况进行更改。
-重启网络服务:
-sudo service networking restart  其实我觉得更方便的办法是直接拔掉电源再重新插上……反正树莓派启动还是挺快的。
-现在树莓派的IP变成&rdquo;192.168.1.72&rdquo;了。
-二、设置SSH KEY 为了避免以后每次ssh登陆到树莓派都需要输入密码，可以使用key登陆。
-在主机上运行如下命令:
-ssh-keygen -t rsa  然后按几次回车，搞定。
-接下来用ssh-copy-id把公钥复制到树莓派中:
-ssh-copy-id -i ~/.ssh/id_rsa.pub pi@192.168.1.72  提示让你输入密码，输入密码后回车即可。
-之后就可以直接用&rdquo;ssh pi@192.168.1.72&rdquo;登陆到树莓派了，不再需要输入密码。
-三、实现主机到树莓派的同步 分别在主机和树莓派上创建一个文件夹用于同步，先在主机上输入:
-mkdir ~/rsync  再在树莓派中输入:
-mkdir ~/rsync  再在主机中创建同步脚本:
-vim ~/bin/rsync.py  写入如下内容:
-        <br>
-        <a href="http://www.jiazhoulvke.com/2013/01/06/198/" class="postShorten-excerpt_link link">阅读全文</a>
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-            
-              
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="http://www.jiazhoulvke.com/2012/12/29/189/">
-          Raspberry Pi到手
-        </a>
-      </h1>
-      <div class="postShorten-meta post-meta">
-  
-    <time itemprop="datePublished" datetime="2012-12-29T00:00:00Z">
-      
-  
-  
-  
-  
-    2012-12-29 00:00:00
-  
-
-    </time>
-  
-  
-  
-  
-    <span>发布在</span>
-    
-      <a class="category-link" href="http://www.jiazhoulvke.com/categories/%e5%8e%9f%e5%88%9b">原创</a>
-    
-  
-
-
-</div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      <p>
-        Raspberry Pi（国人一般称之为树莓派）最近很火，我受不了诱惑也买了一个来折腾。</p>
-
-<p>树莓派非常小，显得很可爱。</p>
-
-<p>旁边的那些板子是用来装树莓派的箱子，是和树莓派一起买来的，那层黄色的纸都可以撕掉的。</p>
-
-<p>安装很简单，按照说明书用不了多久就可以搞定，最终一个小小的电脑就组装好了。
-树莓派除了一块板什么都没有，其他设备都需要另外购买。它用的电源要求电压是5V，电流是750-1000mA，我的手机xt910用的电源是5.1V850mA，正好用得上。它用SD卡来作为存储器，在亚马逊花几十块买了个8G的Sandisk class10 SD卡，在卡上装好raspbian（基于debian的定制发行版），插上网线连上路由器，再插上电源，树莓派成功运行！
-树莓派有hdmi接口，可以通过hdmi线输出到支持hdmi的显示器上，或者通过hdmi转vga输出到普通的显示器，不过我并不打算用它来放电影，所以没必要花这冤枉钱了，直接在台式机上通过ssh就能访问树莓派了。在路由器上找到树莓派所使用的ip（也可以在路由器上给它绑定一个静态的IP），通过 ssh pi@ip地址 连接到树莓派，然后输入密码raspberry，即可登陆。</p>
-
-<p>登陆后第一步应该是换个更新源，否则默认的源速度会让人发疯的。我目前用的是新加坡的源，有200K以上的速度：
-cat /etc/apt/sources.list deb <a href="http://mirror.nus.edu.sg/raspbian/raspbian">http://mirror.nus.edu.sg/raspbian/raspbian</a> wheezy main contrib non-free rpi  之后就是用更新了：
-sudo apt-get update sudo apt-get upgrade  其他的一些配置可以通过一个内置的工具raspi-config搞定：
-sudo raspi-config<br />
-树莓派的设置基本就搞定了，接下来就是各种折腾了，以后再说……
-        <br>
-        <a href="http://www.jiazhoulvke.com/2012/12/29/189/" class="postShorten-excerpt_link link">阅读全文</a>
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-            
-              
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="http://www.jiazhoulvke.com/2012/11/28/e588a9e794a8vime5928cwgete4b88be8bdbdgooglee79a84e79bb8e5868c/">
-          利用vim和wget下载google&#43;的相册
-        </a>
-      </h1>
-      <div class="postShorten-meta post-meta">
-  
-    <time itemprop="datePublished" datetime="2012-11-28T00:00:00Z">
-      
-  
-  
-  
-  
-    2012-11-28 00:00:00
-  
-
-    </time>
-  
-  
-  
-  
-    <span>发布在</span>
-    
-      <a class="category-link" href="http://www.jiazhoulvke.com/categories/%e5%8e%9f%e5%88%9b">原创</a>
-    
-  
-
-
-</div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      <p>
-        先找到相册地址，比如 <a href="https://plus.google.com/photos/113638836970166422741/albums/5812010190409709377">https://plus.google.com/photos/113638836970166422741/albums/5812010190409709377</a> ，里面很多妹子，很合我的胃口。
-右键查看源代码，复制到vim中（当然你也可以直接用wget下载网页）,然后执行
-:%s/&quot;/\r/g :sort u  按
-/^https.*jpg$  找到第一个图片链接,在它上面一行按dgg，再按N，反向查找最后一个图片链接，在它下面一行按dG，即可得到所有图片的地址。
-由于留下的地址列表里包含两种缩略图，所以要删除缩略图，留下所有原图:
-:g/w800-h800\//d :g/s300-c\//d  将最后的结果保存：
-:w c:\mm.list  现在利用万能的wget批量下载。因为gfw的原因需要一个代理，我用的是goagent，在goagent已经运行的前提下输入:
-wget -i c:\mm.list -e http_proxy=127.0.0.1:8087 &ndash;no-check-certificate  之后慢慢等它下载好就行了。一个vim的简单应用。
-        <br>
-        <a href="http://www.jiazhoulvke.com/2012/11/28/e588a9e794a8vime5928cwgete4b88be8bdbdgooglee79a84e79bb8e5868c/" class="postShorten-excerpt_link link">阅读全文</a>
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-            
-              
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="http://www.jiazhoulvke.com/2012/09/19/clinkefbc9ae58aa0e5bcbawindowe4b88be79a84cmd/">
-          clink：加强window下的cmd
-        </a>
-      </h1>
-      <div class="postShorten-meta post-meta">
-  
-    <time itemprop="datePublished" datetime="2012-09-19T00:00:00Z">
-      
-  
-  
-  
-  
-    2012-09-19 00:00:00
-  
-
-    </time>
-  
-  
-  
-  
-    <span>发布在</span>
-    
-      <a class="category-link" href="http://www.jiazhoulvke.com/categories/%e5%8e%9f%e5%88%9b">原创</a>
-    
-  
-
-
-</div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      <p>
-        作为码农免不了要用用命令行。用惯了linux下的终端，再用window下的cmd，绝对会让人感到生不如死：复制、粘贴方式极其脑残，不能&lt;Ctrl-U&gt;删除一整行，不能&lt;Alt-.&gt;补全上次命令的最后参数,不能……
-这时有两个选择：一是装个类似于cygwin这样的模拟环境，二就是使用这次要介绍的神器——clink。
-项目地址： <a href="https://code.google.com/p/clink/">https://code.google.com/p/clink/</a>
-使用方法很简单，直接下载安装即可，也就不多说了。
- Features  Powerful Bash-like line editing from GNU&rsquo;s Readline library. Read more on Readline&rsquo;s keyboard shortcuts.
- Superior path completion (TAB).
- Paste from clipboard (Ctrl-V).
- Support for the completion of executables/commands, and environment variables.
- Undo/Redo (Ctrl-_ or Ctrl-X, Ctrl-U)
- Improved command line history.
- Persists across sessions.
- Searchable (Ctrl-R and Ctrl-S).
- History expansion (e.g. !!, !, and !
-        <br>
-        <a href="http://www.jiazhoulvke.com/2012/09/19/clinkefbc9ae58aa0e5bcbawindowe4b88be79a84cmd/" class="postShorten-excerpt_link link">阅读全文</a>
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-            
-              
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
         <a class="link-unstyled" href="http://www.jiazhoulvke.com/2012/06/28/e68891e79a84e9a1b9e79baee7aea1e79086e68f92e4bbb6myproject/">
           我的项目管理插件myproject
         </a>
@@ -684,6 +260,601 @@ wget -i c:\mm.list -e http_proxy=127.0.0.1:8087 &ndash;no-check-certificate  之
 </article>
 
             
+              
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+        <a class="link-unstyled" href="http://www.jiazhoulvke.com/2012/05/08/e794a8iptablese998b2e6ada2e69ab4e58a9be7a0b4e8a7a3ftpe5af86e7a081/">
+          用iptables防止暴力破解ftp密码
+        </a>
+      </h1>
+      <div class="postShorten-meta post-meta">
+  
+    <time itemprop="datePublished" datetime="2012-05-08T00:00:00Z">
+      
+  
+  
+  
+  
+    2012-05-08 00:00:00
+  
+
+    </time>
+  
+  
+  
+  
+    <span>发布在</span>
+    
+      <a class="category-link" href="http://www.jiazhoulvke.com/categories/%e5%8e%9f%e5%88%9b">原创</a>
+    
+  
+
+
+</div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      <p>
+        最近一直有个傻逼黑客暴力破解公司的FTP服务器，虽然我有信心他50年内绝对猜不出密码，但看到日志里一大堆的登录信息还是挺烦的，于是便想用iptables屏蔽它，手工屏蔽肯定是不现实的，人家手上一堆的肉鸡呢，封完一个ip人家换一个ip就行了。解决方法就是写个脚本来分析系统日志，然后识别出属于暴利破解的ip，然后添加到iptables的屏蔽列表中。网上虽然有很多现成的脚本，但都是针对英文系统的，而我公司的系统里面日志是中文的，并不能匹配，只好稍加改变。 show代码：
+#!/bin/bash grep &quot;pure-ftpd.*[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.*WARNING&quot; /var/log/messages | awk &lsquo;{print $5,$6}&rsquo; | sed &quot;s/^.<em>pure-ftpd.</em>(.<em>@(.</em>)).*$/\1/g&quot; | sort | uniq -c &gt; /tmp/pureftpban.tmp cat /tmp/pureftpban.tmp | while read line do COUNT1=<code>echo ${line}|awk '{print $1}'</code> IP1=<code>echo ${line}|awk '{print $2}'</code> if [ $COUNT1 -gt 10 ] &amp;&amp; [ -z &quot;<code>iptables -vnL INPUT|grep $IP1</code>&quot; ] then iptables -I INPUT -s $IP1 -m state &ndash;state NEW,RELATED,ESTABLISHED -j DROP fi done  以上代码保存到/root/checksys.sh，并添加可执行权限。 然后用vim编辑/etc/crontab
+vim /etc/crontab  添加如下内容：
+        <br>
+        <a href="http://www.jiazhoulvke.com/2012/05/08/e794a8iptablese998b2e6ada2e69ab4e58a9be7a0b4e8a7a3ftpe5af86e7a081/" class="postShorten-excerpt_link link">阅读全文</a>
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+            
+              
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+        <a class="link-unstyled" href="http://www.jiazhoulvke.com/2012/04/29/e6898be69cbae9809ae8bf87wifie68ea7e588b6e794b5e88491e4b88ae79a84foobar2000/">
+          手机通过wifi控制电脑上的foobar2000
+        </a>
+      </h1>
+      <div class="postShorten-meta post-meta">
+  
+    <time itemprop="datePublished" datetime="2012-04-29T00:00:00Z">
+      
+  
+  
+  
+  
+    2012-04-29 00:00:00
+  
+
+    </time>
+  
+  
+  
+  
+    <span>发布在</span>
+    
+      <a class="category-link" href="http://www.jiazhoulvke.com/categories/%e5%8e%9f%e5%88%9b">原创</a>
+    
+  
+
+
+</div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      <p>
+        必须先感叹一句，GO语言太强了，自带的库很丰富，语法够简洁，即使没接触过GO，稍微学习一下就能用几十行代码做出个简单的web服务器。
+由于foobar2000可以通过命令行进行操作，比如:
+foobar2000.exe /command:Next  就是切换到下一曲。利用这个特性，就能很轻易的实现远程操控foobar2000。
+下面是GO语言的代码,文件名为foobar2k_web.go:
+package main import ( &quot;os/exec&quot; &quot;fmt&quot; &quot;io&quot; &quot;net/http&quot; &quot;os&quot; ) var service_port = &quot;:9527&quot; var service_path = &quot;/foobar2k&quot; var foobar2k_path = &quot;d:\bin\foobar2000\foobar2000.exe&quot; var fbcmd_map = map[string]string{&quot;prev&quot;:&quot;Previous&quot;,&quot;next&quot;:&quot;Next&quot;,&quot;vdown&quot;:&quot;Down&quot;,&quot;vup&quot;:&quot;Up&quot;,&quot;playpause&quot;:&quot;Play or pause&quot;} func FB2KServer(w http.ResponseWriter, req *http.Request) { io.WriteString(w, &quot;&quot;) io.WriteString(w, &quot;&quot;) io.WriteString(w, &quot;&quot;) io.WriteString(w, &quot;&lt;style type=&quot;&amp;amp;quot;text/css&amp;amp;quot;&quot;&gt;div.bt {width:100px;height:100px;float:left;text-align:center;line-height:100px;background-color:green;}div.bt a{font-size:72px;color:white;font-weight:bold;text-decoration:none;}&lt;/style&gt;&quot;) io.WriteString(w, &quot;&quot;) io.WriteString(w, &quot;&quot;) io.WriteString(w, &quot;&lt;div style=&quot;&amp;amp;quot;width:500px;height:100px;margin:100px&quot; auto;&amp;quot;=&quot;&quot;&gt;&quot;) io.WriteString(w, &quot;&lt;div class=&quot;&amp;amp;quot;bt&amp;amp;quot;&quot;&gt;&lt;a target=&quot;&amp;amp;quot;_self&amp;amp;quot;&quot; href=&quot;&amp;amp;quot;&amp;quot;+service_path+&amp;quot;?fbcmd=prev&amp;amp;quot;&quot;&gt;《&lt;/a&gt;&lt;/div&gt;&quot;) io.WriteString(w, &quot;&lt;div class=&quot;&amp;amp;quot;bt&amp;amp;quot;&quot;&gt;&lt;a target=&quot;&amp;amp;quot;_self&amp;amp;quot;&quot; href=&quot;&amp;amp;quot;&amp;quot;+service_path+&amp;quot;?fbcmd=next&amp;amp;quot;&quot;&gt;》&lt;/a&gt;&lt;/div&gt;&quot;) io.
+        <br>
+        <a href="http://www.jiazhoulvke.com/2012/04/29/e6898be69cbae9809ae8bf87wifie68ea7e588b6e794b5e88491e4b88ae79a84foobar2000/" class="postShorten-excerpt_link link">阅读全文</a>
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+            
+              
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+        <a class="link-unstyled" href="http://www.jiazhoulvke.com/2012/04/14/vime79a84googlee7bfbbe8af91e68f92e4bbb6/">
+          vim的Google翻译插件
+        </a>
+      </h1>
+      <div class="postShorten-meta post-meta">
+  
+    <time itemprop="datePublished" datetime="2012-04-14T00:00:00Z">
+      
+  
+  
+  
+  
+    2012-04-14 00:00:00
+  
+
+    </time>
+  
+  
+  
+  
+    <span>发布在</span>
+    
+      <a class="category-link" href="http://www.jiazhoulvke.com/categories/%e5%8e%9f%e5%88%9b">原创</a>
+    
+  
+
+
+</div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      <p>
+        由于经常需要在vim里看一些英文帮助文档，又没有长年累月的运行一个翻译软件的习惯，所以还是写了个插件来搞定,用了python，所以windows下得确保安装了python。
+使用方法有几种：
+1.将光标移动到需要翻译的英文单词上，按&lt;leader&gt;e2c(把中文翻译成英文就是&lt;leader&gt;c2e，下面就不多说了)。
+2.选中需要翻译的英文，按&lt;leader&gt;e2c。
+3.输入
+:E2C 想要翻译的英文  优点：因为是调用Google进行翻译，所以Google能翻译多少种语言，插件就能翻译多少种语言，不过默认只map了英译中和中译英的快捷键，其他的得自己定义了。
+缺点：连不了网就死翘翘了。
+快捷键定义方法举例:
+nmap &lt;silent&gt; &lt;leader&gt;e2c :echo Google_Translate(&lsquo;en&rsquo;,&lsquo;zh-CN&rsquo;,expand(&rsquo;&lt;cword&gt;&rsquo;))&lt;cr&gt;  en是原文的语言，zh-CN是要翻译的语言。
+下载地址:<a href="http://code.google.com/p/jiazhoulvke/downloads/detail?name=googletranslate.vim">http://code.google.com/p/jiazhoulvke/downloads/detail?name=googletranslate.vim</a>
+代码:
+&quot; googletranslate.vim: 利用Google翻译在vim中进行翻译 &quot; Author: jiazhoulvke &quot; Blog: <a href="http://jiazhoulvke.com">http://jiazhoulvke.com</a> &quot; Date: 2012-4-10 &quot; Version: 1.0 &quot;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;- &quot; Google_Translate: 谷歌翻译 function! Google_Translate(lan1,lan2,word) python &lt;&lt; EOM #coding=utf-8 import vim,urllib,urllib2 word = vim.eval(&quot;a:word&quot;) word=word.replace(&rsquo;\n&rsquo;,&ldquo;) rword = urllib.urlencode({&lsquo;text&rsquo;:word}) lan1 = vim.eval(&quot;a:lan1&quot;) lan2 = vim.eval(&quot;a:lan2&quot;) headers = { &lsquo;User-Agent&rsquo;:&lsquo;Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.
+        <br>
+        <a href="http://www.jiazhoulvke.com/2012/04/14/vime79a84googlee7bfbbe8af91e68f92e4bbb6/" class="postShorten-excerpt_link link">阅读全文</a>
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+            
+              
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+        <a class="link-unstyled" href="http://www.jiazhoulvke.com/2012/03/13/e585b3e4ba8evime698bee7a4bae79a84e997aee9a298/">
+          关于vim显示的问题
+        </a>
+      </h1>
+      <div class="postShorten-meta post-meta">
+  
+    <time itemprop="datePublished" datetime="2012-03-13T00:00:00Z">
+      
+  
+  
+  
+  
+    2012-03-13 00:00:00
+  
+
+    </time>
+  
+  
+  
+  
+    <span>发布在</span>
+    
+      <a class="category-link" href="http://www.jiazhoulvke.com/categories/%e5%8e%9f%e5%88%9b">原创</a>
+    
+  
+
+
+</div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      <p>
+        一、过长的行显示不全 当一行字过长时，vim总是无法正常显示，会显示很多“@”符号，很久以前我以为是vim的一个bug，后来问了高手才知道是设置问题，在配置文件里面加上一句
+set display=lastline  问题就解决了。
+二、代码高亮不正常 当一个文件里的代码很长时，往往会出现这种问题：当你移动光标查看代码时，本来高亮显示的代码全部变成白色，严重影响阅读。滚动一下光标到上一页，又突然正常了，又是vim默认设置的问题。这个在帮助文档里有说明，输入
+:h 06.2  看最后一段：
+ 在自下往上滚屏的过程中颜色显示不对。 Vim 在分析文本的时候不对整个文件进行处理，它只分析你要显示的部分。这 样能省不少时间，但也会因此带来错误。一个简单的修正方法是敲 CTRL-L。 或者往回滚动一下再回来。要彻底解决这个问题，请参见 |:syn-sync|。有些 语法定义文件有办法自己找到前面的内容，这可以参见相应的语法定义文件。 例如，|tex.vim| 中可以查到 Tex 语法定义。
+ 下面这句就能解决:
+syntax sync fromstart
+        <br>
+        <a href="http://www.jiazhoulvke.com/2012/03/13/e585b3e4ba8evime698bee7a4bae79a84e997aee9a298/" class="postShorten-excerpt_link link">阅读全文</a>
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+            
+              
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+        <a class="link-unstyled" href="http://www.jiazhoulvke.com/2012/01/06/e585b3e4ba8epathogene5ae89e8a385vbae58c85e79a84e997aee9a298/">
+          关于pathogen安装vba包的问题
+        </a>
+      </h1>
+      <div class="postShorten-meta post-meta">
+  
+    <time itemprop="datePublished" datetime="2012-01-06T00:00:00Z">
+      
+  
+  
+  
+  
+    2012-01-06 00:00:00
+  
+
+    </time>
+  
+  
+  
+  
+    <span>发布在</span>
+    
+      <a class="category-link" href="http://www.jiazhoulvke.com/categories/%e5%8e%9f%e5%88%9b">原创</a>
+    
+  
+
+
+</div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      <p>
+        在之前的一篇文章中我推荐了几款vim比较实用的插件，其中第一款就是pathogen，是的，虽然只有短短两百来行的代码，但就像我给它的评分一样：Life Changing。
+为了解决文件混乱的问题vim搞出了vba这种格式，想法很好，但实际应用中效果却不能尽如人意。因为并非所有的插件发布者都会把插件打包成vba格式，很多都只是简单的压缩成zip或者tar.gz之类的压缩包，假如插件只有一个vim文件的话连压缩都不用了……
+而使用pathogen的话，则每个插件都会拥有一个自己的文件夹，这样要删除某个插件直接找到这个插件所在的文件夹，然后删掉它就行了。
+好吧，前面说了一大堆废话来凑字数，就是为了引出下面的正题。
+现在很多插件都只发布vba包，之前我不知道该怎么解压，用了一种很二的方法：先按照正常的方法安装这个vba包，然后在bundle目录里新建一个目录，再把刚才安装的那些文件移进去……我忘了有伟大的&rdquo;:h&rdquo;。……
+用&rdquo;:h vba&rdquo;可以看到相关帮助，其实只需要几步就能安装：
+1.先创建相应的文件夹。其中的plugin_name是实际的插件名
+mkdir ~/.vim/bundle/plugin_name  2.用vim打开需要安装的vba包。
+vim someplugin.vba  3.在vim中执行下面的代码:
+:UseVimball ~/.vim/bundle/plugin_name  作为一个蛋疼得必须要治的人，我写了小插件，貌似会更方便一点：
+&quot;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; &quot; pathogen_install_vba.vim &quot; Author: jiazhoulvke &quot; Email: jiazhoulvke [AT] gmail.com &quot; Blog: <a href="http://jiazhoulvke.com">http://jiazhoulvke.com</a> &quot; Version: 0.1 &quot;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; if &amp;cp; || exists(&quot;g:loaded_pathogen_install_vba&quot;) finish endif let g:loaded_pathogen_install_vba=&quot;v0.1&quot; command! PathogenInstallVBA :call Pathogen_Install_VBA() function! Pathogen_Install_VBA() let jzlk_extname=expand(&quot;%:e&quot;) if jzlk_extname!=&quot;vba&quot; echo &lsquo;这个文件不是vba安装包哦。&rsquo; else let vba_dir_name=input(&quot;插件文件夹名: &quot;) if has(&quot;win32&quot;) let vba_dir_path=$VIM . &quot;\vimfiles\bundle\&quot; . vba_dir_name call system(&quot;md &quot; .
+        <br>
+        <a href="http://www.jiazhoulvke.com/2012/01/06/e585b3e4ba8epathogene5ae89e8a385vbae58c85e79a84e997aee9a298/" class="postShorten-excerpt_link link">阅读全文</a>
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+            
+              
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+        <a class="link-unstyled" href="http://www.jiazhoulvke.com/2011/07/05/vime68f92e4bbb6e68ea8e88d90/">
+          Vim插件推荐
+        </a>
+      </h1>
+      <div class="postShorten-meta post-meta">
+  
+    <time itemprop="datePublished" datetime="2011-07-05T00:00:00Z">
+      
+  
+  
+  
+  
+    2011-07-05 00:00:00
+  
+
+    </time>
+  
+  
+  
+  
+    <span>发布在</span>
+    
+      <a class="category-link" href="http://www.jiazhoulvke.com/categories/%e5%8e%9f%e5%88%9b">原创</a>
+    
+  
+
+
+</div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      <p>
+        1.pathogen(<a href="http://www.vim.org/scripts/script.php?script_id=2332">http://www.vim.org/scripts/script.php?script_id=2332</a>)
+pathogen是用来管理插件的插件。vim的插件是混在一起的，这在插件少的时候没什么问题，但当插件数量达到两位数时，问题就出来了——当我们下载试用某个插件，发现并不适合自己或者此插件和自己原来的插件有某些冲突时，你会发现很难清理掉刚刚安装的插件，因为有的插件有多达上百个文件，分布在不同的文件夹中。如果此插件是个vba包，那倒没什么问题，它可以像你在系统里安装的软件一样，通过一句命令清除掉,但问题是有些插件就是一个压缩包而已，并没有安装记录。这时pathogen就派上用场了，它会把每个插件放到各自的文件夹中，不需要用的时候直接删掉这个文件夹就行了，实在是很方便。
+2.fencview(<a href="http://www.vim.org/scripts/script.php?script_id=1708">http://www.vim.org/scripts/script.php?script_id=1708</a>)
+这个插件的功能就是识别文件编码，对国人来说很有用。安装后可以在菜单项里找到识别编码的选项，不过用vim到一定程度的人，应该都不会还保留着菜单栏的吧？我的vimrc里加了一句:
+nmap &lt;leader&gt;fenc &lt;esc&gt;:FencAutoDetect&lt;cr&gt;  需要识别的时候通过快捷键就能识别了。还可以设置自动识别编码:
+let g:fencview_auto_patterns=&rsquo;<em>.txt,</em>.htm{l\=},<em>.php,</em>.c,*.py&rsquo;  3.neocomplcache(<a href="http://www.vim.org/scripts/script.php?script_id=2620">http://www.vim.org/scripts/script.php?script_id=2620</a>) vim的补全插件里我最喜欢的一个。不像其他补全插件实时查找，而是在缓存中查找，用起来感觉很快。我的配置:
+let g:neocomplcache_enable_at_startup=1 let g:neocomplcache_enable_smart_case=1 let g:neocomplcache_enable_camel_case_completion=1 let g:neocomplcache_enable_underbar_completion=1 let g:neocomplcache_min_syntax_length=3 let g:neocomplcache_manual_completion_start_length=3 let g:neocomplcache_enable_ignore_case=1 let g:neocomplcache_lock_buffer_name_pattern=&rsquo;*ku*&rsquo; let g:neocomplcache_max_list=100 let g:neocomplcache_enable_auto_select = 1 imap &lt;expr&gt;&lt;c-y&gt; neocomplcache#close_popup() imap &lt;expr&gt;&lt;c-e&gt; neocomplcache#cancel_popup()  4.taglist(<a href="http://www.vim.org/scripts/script.php?script_id=273">http://www.vim.org/scripts/script.php?script_id=273</a>) 类似于一些IDE，会在左边显示一个函数、变量列表(当然通过配置也可以显示在右边)，需要跳转到指定的函数时直接在函数名上面按回车即可。此插件需要ctags的支持。 我的配置:
+ map &lt;silent&gt;&lt;f6&gt; &lt;esc&gt;:TlistToggle&lt;cr&gt;  5.nerdtree(<a href="http://www.vim.org/scripts/script.php?script_id=1658">http://www.vim.org/scripts/script.php?script_id=1658</a>) vim里的文件管理器,以前我用的是winmanager，但这个nerdtree更好用。 我的配置:
+nmap &lt;silent&gt;&lt;f8&gt; &lt;esc&gt;:NERDTreeToggle&lt;cr&gt;  6.tabbar(<a href="http://www.vim.org/scripts/script.php?script_id=1338">http://www.vim.org/scripts/script.php?script_id=1338</a>) 类似于以前常用的minibufexpl，可以在顶部显示出已打开的buffer的列表，就像现在浏览器上的标签栏一样。tabbar比起minibufexpl更强大的功能是，它可以通过alt+数字直接在各个buffer中切换，还可以通过ctrl+tab轮换。
+7.mark(<a href="http://www.vim.org/scripts/script.php?script_id=2666,旧版:http://www.vim.org/scripts/script.php?script_id=1238">http://www.vim.org/scripts/script.php?script_id=2666,旧版:http://www.vim.org/scripts/script.php?script_id=1238</a>) 此插件的功能很简单，将光标移动到你需要高亮显示的关键字上面,比如test，按下&lt;leader&gt;m，则该文件中的所有test都会高亮显示。也许你会说，vim搜索的时候不是也可以高亮吗？是的，但是它只能高亮一个关键字，而mark可以同时高亮多个关键字，并且每个关键字都有不同的颜色(当你标记的关键字多的时候看起来非常漂亮)，这在阅读一些代码时非常好用。
+8.project(<a href="http://www.vim.org/scripts/script.php?script_id=69">http://www.vim.org/scripts/script.php?script_id=69</a>) 用来管理项目的插件。手头有一些比较大的项目需要管理时，这个插件就显得非常有用。
+9.zencoding(<a href="http://www.vim.org/scripts/script.php?script_id=2981">http://www.vim.org/scripts/script.php?script_id=2981</a>) 一个可以快速编写html代码的插件。比如输入 html:xt ,然后按 &lt;C-y&gt;, ，就会生成一大段的html代码，类似于snip,但在某些方面来说比snip更灵活更智能一点，具体不太好说，要用过才能体会。
+        <br>
+        <a href="http://www.jiazhoulvke.com/2011/07/05/vime68f92e4bbb6e68ea8e88d90/" class="postShorten-excerpt_link link">阅读全文</a>
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+            
+              
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+        <a class="link-unstyled" href="http://www.jiazhoulvke.com/2011/06/16/e8a7a3e586b3e4ba86e4b880e4b8aae5be88e7baa0e7bb93e79a84vime68c89e994aee698a0e5b084e997aee9a298/">
+          解决了一个很纠结的Vim按键映射问题
+        </a>
+      </h1>
+      <div class="postShorten-meta post-meta">
+  
+    <time itemprop="datePublished" datetime="2011-06-16T00:00:00Z">
+      
+  
+  
+  
+  
+    2011-06-16 00:00:00
+  
+
+    </time>
+  
+  
+  
+  
+    <span>发布在</span>
+    
+      <a class="category-link" href="http://www.jiazhoulvke.com/categories/%e5%8e%9f%e5%88%9b">原创</a>
+    
+  
+
+
+</div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      <p>
+        vim里默认的复制粘贴系统剪贴板内容的按键非常的蛋疼，&rdquo;+y(复制)和&rdquo;+gP(粘贴)这种按键，光看就觉得别扭，于是一些人就把默认的剪贴板设置为系统剪贴板，有些人则是直接导入vim自带的那个windows按键配置文件，我以前也是一直用这个办法，但很快发现了一个弊端：C-V是用来进入列选择模式的，虽然可以用C-Q代替，但如果使用终端下的vim的话，C-Q通常是不起作用的（在vim输入:h ctrl-Q有解释）。于是我尝试着用&lt;leader&gt;vv这样的组合键来代替C-V，但用了一段时间，连我自己都受不了了，最终还是改回了C-V。然后突然想到，终端里不能按C-Q，那就给它映射个别的按键呗，于是：
+nmap vv &lt;C-Q&gt;  脑袋总算转过弯了……
+        <br>
+        <a href="http://www.jiazhoulvke.com/2011/06/16/e8a7a3e586b3e4ba86e4b880e4b8aae5be88e7baa0e7bb93e79a84vime68c89e994aee698a0e5b084e997aee9a298/" class="postShorten-excerpt_link link">阅读全文</a>
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+            
+              
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+        <a class="link-unstyled" href="http://www.jiazhoulvke.com/2011/05/11/vime794a8e79a84e59bbee78987e783ade782b9e993bee68ea5e7949fe68890e5b7a5e585b7/">
+          vim用的图片热点链接生成工具
+        </a>
+      </h1>
+      <div class="postShorten-meta post-meta">
+  
+    <time itemprop="datePublished" datetime="2011-05-11T00:00:00Z">
+      
+  
+  
+  
+  
+    2011-05-11 00:00:00
+  
+
+    </time>
+  
+  
+  
+  
+    <span>发布在</span>
+    
+      <a class="category-link" href="http://www.jiazhoulvke.com/categories/%e5%8e%9f%e5%88%9b">原创</a>
+    
+  
+
+
+</div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      <p>
+        上次的vim调色板给我很大的启发，利用这种调用图形程序的方式，完全可以将很多原本不能或者很难实现的功能轻易实现，比如这次我需要做一个图片的热点链接（就是在一张图片上划分出N块区域，每块区域都能使用不同的链接），当然不可能还在vim里手工写坐标，那也太逆天了，所以只好无奈的打开N年没用过Dreamweaver，这让我心有不甘，太不装B了！而且Dreamweaver的启动速度也慢得让人蛋疼。这就是我写这个小程序的原因。
+本来是想用gtk开发，无奈目前gtk还刚刚入门呢，所以先用我相对比较拿手的C#来开发（开发工具是vs2008 express），等以后再写个gtk版的。
+c#的代码比较分散，就不贴上来了，程序和源文件我都打包传到了我的googlecode上。直接下载链接：<a href="http://jiazhoulvke.googlecode.com/files/ImageMap%20for%20vim.7z">http://jiazhoulvke.googlecode.com/files/ImageMap%20for%20vim.7z</a>
+下载，解压，复制imagemap.vim到vim的plugin文件夹中，复制imagemap.exe到gvim.exe所在的目录（或者复制到windows系统文件夹下，如c:\windows）,确保已经安装了蛋疼的.net framework（程序用的版本是2.0），在一个空行里输入一个图片名称，必须是有效的，然后在插入模式下按Alt+M(要改快捷键可以到imagemap.vim中改最后一行的代码)，只要图片路径正确，会弹出一个窗口，直接用鼠标拖选一块区域，然后输入链接的属性，就成功添加了一个热点，添加了所有的热点后直接点关闭按钮，生成的代码就出现在vim里了。
+下面是截图:
+        <br>
+        <a href="http://www.jiazhoulvke.com/2011/05/11/vime794a8e79a84e59bbee78987e783ade782b9e993bee68ea5e7949fe68890e5b7a5e585b7/" class="postShorten-excerpt_link link">阅读全文</a>
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+            
+              
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+        <a class="link-unstyled" href="http://www.jiazhoulvke.com/2011/04/09/vime9878ce79a84e8b083e889b2e69dbf/">
+          vim里的调色板
+        </a>
+      </h1>
+      <div class="postShorten-meta post-meta">
+  
+    <time itemprop="datePublished" datetime="2011-04-09T00:00:00Z">
+      
+  
+  
+  
+  
+    2011-04-09 00:00:00
+  
+
+    </time>
+  
+  
+  
+  
+    <span>发布在</span>
+    
+      <a class="category-link" href="http://www.jiazhoulvke.com/categories/%e5%8e%9f%e5%88%9b">原创</a>
+    
+  
+
+
+</div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      <p>
+        今天无意中看到了一篇文章《colorpicker: 给 Vim 加一个调色板！》，才知道原来vim里也能调用调色板，唉，火星了。
+colorpicker需要一段vim代码和一个gtk程序的配合，作者给出了gtk程序的代码，但没有windows下的可执行程序，正好我前不久刚刚搭建了一个windows下的gtk开发环境，于是就派上用场啦。写了一个makefile，一次性编译通过，嘿嘿！
+文件下载地址: googlecode:<a href="http://jiazhoulvke.googlecode.com/files/colorpicker_for_vim.7z">http://jiazhoulvke.googlecode.com/files/colorpicker_for_vim.7z</a>
+压缩包下载下来后，解压，将plugin文件夹里的colorpicker.vim复制到vim里的相应目录中，再把colorpicker文件夹中的colorpicker.exe复制到系统目录中，比如c:\windows。不过我比较喜欢把程序放到vim的安装目录里面，比如c:\program files\vim\vim73，vim一样可以访问到，而且更加绿色环保。
+现在一切搞定了，打开vim，按Alt+C，就会弹出一个调色板了，hoho～～</p>
+
+<p>update:回去看了一下依云同学（colorpicker作者）博客的更新，才想起用windows的人基本都没装过gtk运行库的，失策啊，没这玩意是用不了colorpicker，赶紧的，去下载个gtk运行库吧！<a href="http://gtk-win.sourceforge.net">http://gtk-win.sourceforge.net</a>
+        <br>
+        <a href="http://www.jiazhoulvke.com/2011/04/09/vime9878ce79a84e8b083e889b2e69dbf/" class="postShorten-excerpt_link link">阅读全文</a>
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+            
             
   <div class="pagination-bar">
     <ul class="pagination">
@@ -703,7 +874,7 @@ wget -i c:\mm.list -e http_proxy=127.0.0.1:8087 &ndash;no-check-certificate  之
           </a>
         </li>
       
-      <li class="pagination-number">第 3 页 共 5 页</li>
+      <li class="pagination-number">第 3 页 共 4 页</li>
     </ul>
   </div>
 

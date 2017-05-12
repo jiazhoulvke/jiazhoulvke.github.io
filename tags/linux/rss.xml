@@ -28,9 +28,9 @@
 
 &lt;p&gt;本次的主角小黑和M6S:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/img/IMG_20140921_095854.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/img/IMG_20140921_095854.jpg&#34; alt=&#34;&#34; /&gt;
 　　
-&lt;img src=&#34;http://www.jiazhoulvke.com/img/IMG_20141026_160058.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;http://www.jiazhoulvke.com/static/img/IMG_20141026_160058.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;###具体步骤###&lt;/p&gt;
 
@@ -131,11 +131,11 @@ mount --bind /sys /mnt/new/sys
 
 &lt;p&gt;先在win7下用as ssd benchmark测试一下:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/img/as-ssd-bench PLEXTOR PX-128M6 2014.10.26 19-47-52.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/img/as-ssd-bench PLEXTOR PX-128M6 2014.10.26 19-47-52.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;写入稍微有点慢，没有台式机上的三星840EVO快，不过还能接受。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/img/as-ssd-bench Samsung SSD 840  2014.6.11 19-03-57.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/img/as-ssd-bench Samsung SSD 840  2014.6.11 19-03-57.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;再在ubuntu下用hdparm对比一下固态硬盘和机械硬盘的速度:&lt;/p&gt;
 
@@ -163,7 +163,7 @@ mount --bind /sys /mnt/new/sys
     <link>http://www.jiazhoulvke.com/2013/08/13/fuck-adobe/</link>
     <pubDate>2013-08-13 00:00:00</pubDate> 
     <guid>http://www.jiazhoulvke.com/2013/08/13/fuck-adobe/</guid>
-    <description>&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/08/Screenshot-rxvt-unicode.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/08/Screenshot-rxvt-unicode.png&#34; alt=&#34;Screenshot-rxvt-unicode.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+    <description>&lt;p&gt;&lt;a href=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/08/Screenshot-rxvt-unicode.png&#34;&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/08/Screenshot-rxvt-unicode.png&#34; alt=&#34;Screenshot-rxvt-unicode.png&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description></item> 
     <item>
     <title>linux登录时自动发送提醒邮件</title>
@@ -246,7 +246,7 @@ winetricks
 
 &lt;p&gt;会出现这样的对话框:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/wp-content/uploads/2013/01/Winetricks.png&#34; alt=&#34;winetricks&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.jiazhoulvke.com/static/wp-content/uploads/2013/01/Winetricks.png&#34; alt=&#34;winetricks&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;点&amp;rdquo;确定&amp;rdquo;，再点&amp;rdquo;Install a Windows DLL or component&amp;rdquo;，选择&amp;rdquo;ie6&amp;rdquo;，点&amp;rdquo;确定&amp;rdquo;，然后会弹出提示，让你去 &lt;a href=&#34;http://www.oldversion.com/windows/internet-explorer-6-0&#34;&gt;http://www.oldversion.com/windows/internet-explorer-6-0&lt;/a&gt; 这个地址下载ie6的安装文件放到_~/.cache/winetricks/ie6_里。&lt;/p&gt;
 
