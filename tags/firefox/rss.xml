@@ -13,9 +13,11 @@
     <link>http://www.jiazhoulvke.com/2014/03/22/firefoxandroidfirefox/</link>
     <pubDate>2014-03-22 00:00:00</pubDate> 
     <guid>http://www.jiazhoulvke.com/2014/03/22/firefoxandroidfirefox/</guid>
-    <description>&lt;p&gt;随着智能手机的普及，移动网站的开发也显得也越来越重要了，利用Android版Firefox自带的远程调试功能可以轻松的在PC端调试手机端的网站，实在太方便了。&lt;/p&gt;
+    <description>
 
-&lt;p&gt;###具体步骤###&lt;/p&gt;
+&lt;p&gt;随着智能手机的普及，移动网站的开发也显得也越来越重要了，利用Android版Firefox自带的远程调试功能可以轻松的在PC端调试手机端的网站，实在太方便了。&lt;/p&gt;
+
+&lt;h3 id=&#34;具体步骤&#34;&gt;具体步骤&lt;/h3&gt;
 
 &lt;p&gt;在PC端和手机端都装上Firefox。&lt;/p&gt;
 

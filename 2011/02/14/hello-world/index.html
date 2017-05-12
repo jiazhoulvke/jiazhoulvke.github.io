@@ -439,10 +439,8 @@
               </span>
               <div class="media-content hide-xs font-merryweather">自从台式机上用上固态硬盘后，就再也受不了笔记本上的5400转的机械硬盘了，所以这次又买了块固态硬盘打算装到笔记本上。
 笔记本里装的是Ubuntu 14.04 + Win7双系统，Win7主要偶尔运行一些Windows Only的软件，或者偶尔玩一下游戏，没什么特殊的配置，所以重不重装倒无所谓。Ubuntu就不一样了，我的整个开发环境都在里面，假如重装的话配置起来超级麻烦的，当初给台式机重装系统和各种配置就花了我好几天的时间，所以这次决定要直接把原来的系统迁移过来，由于之前没这么干过，整个过程提心吊胆的，还好一次搞定了。
-###用到的硬件###
- 笔记本Thinkpad T420，内置日立5400转硬盘、可拆卸式光驱 浦科特M6S固态硬盘 适用于T420的光驱位硬盘托架 容量为4GB的U盘  本次的主角小黑和M6S:
-###具体步骤###
-把笔记本自带的机械硬盘拆下来，把固态硬盘换上去；把光驱拆下来，把机械硬盘放到硬盘托里，再把硬盘托放进光驱位。固态硬盘成为主硬盘，机械硬盘成为副硬盘。
+用到的硬件  笔记本Thinkpad T420，内置日立5400转硬盘、可拆卸式光驱 浦科特M6S固态硬盘 适用于T420的光驱位硬盘托架 容量为4GB的U盘  本次的主角小黑和M6S:
+具体步骤 把笔记本自带的机械硬盘拆下来，把固态硬盘换上去；把光驱拆下来，把机械硬盘放到硬盘托里，再把硬盘托放进光驱位。固态硬盘成为主硬盘，机械硬盘成为副硬盘。
 将U盘插到电脑上，用Linux自带的dd将ubuntu 14.04的镜像文件写到U盘中:
 sudo dd bs=4M if=/home/jiazhoulvke/Downloads/ubuntu-14.04.1-desktop-amd64.iso of=/dev/sdc  用国产良心软件DiskGenius给固态硬盘分好区:
  100M的Win7的系统保留分区(有点像Linux里的/boot)。 50G的Win7系统分区。 8G的Linux交换分区。 400M给/boot。 剩下的空间全部给/。  安装Win7的过程不在本文讨论范围内，就不详述了。
@@ -466,8 +464,7 @@ cd /mnt/old tar czf /mnt/data/ubuntu14.04.tar.gz ./*  解压文件到固态硬�
                 </span>
               </span>
               <div class="media-content hide-xs font-merryweather">随着智能手机的普及，移动网站的开发也显得也越来越重要了，利用Android版Firefox自带的远程调试功能可以轻松的在PC端调试手机端的网站，实在太方便了。
-###具体步骤###
-在PC端和手机端都装上Firefox。
+具体步骤 在PC端和手机端都装上Firefox。
 PC端Firefox打开about:config，设置devtools.debugger.remote-enabled为True。
 手机端Firefox点击菜单栏的&rdquo;设置&rdquo;-&gt;&ldquo;开发者工具&rdquo;，勾选&rdquo;远程调试&rdquo;。
 将手机连接到电脑上，并启用USB调试。
